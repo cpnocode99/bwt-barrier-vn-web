@@ -170,6 +170,10 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
 .hero__media::after{content:"";position:absolute;width:104%;aspect-ratio:1;border-radius:50%;
   background:radial-gradient(circle,rgba(255,255,255,.16),rgba(255,255,255,0) 62%);z-index:-1}
 .hero__media img{filter:drop-shadow(0 26px 46px rgba(0,0,0,.42));max-height:460px;width:auto}
+/* Anh chup that: khung bo goc thay vi cutout tha noi */
+.hero__photo{width:100%;max-width:400px;aspect-ratio:4/5;height:auto;max-height:none;object-fit:cover;border-radius:26px;filter:none;
+  box-shadow:0 26px 60px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.14)}
+@media(max-width:900px){.hero__photo{max-width:300px}}
 @media(max-width:900px){
   .hero__in{grid-template-columns:1fr;gap:32px;padding:48px 20px 56px;text-align:center}
   .hero__lead{margin-inline:auto}
