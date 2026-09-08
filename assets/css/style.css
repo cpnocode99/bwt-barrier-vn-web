@@ -26,11 +26,11 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
   margin:0;font-family:var(--font);color:var(--ink);background:var(--white);
   font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
+  overflow-x:clip;
 }
 img{max-width:100%;height:auto;display:block}
 a{color:var(--blue);text-decoration:none}
