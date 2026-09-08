@@ -28,11 +28,6 @@
     var menu = $("#site-nav");
     if (!burger || !menu) return;
 
-    /* Dua menu ra truc tiep duoi body de tran sat 100% man hinh moi thiet bi */
-    if (menu.parentNode !== document.body) {
-      document.body.appendChild(menu);
-    }
-
     var backdrop = document.createElement("div");
     backdrop.className = "nav-backdrop";
     document.body.appendChild(backdrop);
