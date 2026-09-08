@@ -11,12 +11,12 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 # ============================================================
 # DỮ LIỆU CHUNG
 # ============================================================
-SITE_NAME = "BWT Barrier Việt Nam"
+SITE_NAME = "Trung tâm bảo hành BWT Barrier"
 DOMAIN = "https://bwtbarrier.com.vn"
 
 # >>> THÔNG TIN LIÊN HỆ — sửa 3 dòng dưới đây là đổi toàn site <<<
-HOTLINE_TEXT = "0896 613 768"
-HOTLINE_TEL = "+84896613768"
+HOTLINE_TEXT = "1800 8134"
+HOTLINE_TEL = "18008134"
 ADDRESS = "90 Đinh Thị Thi, Hiệp Bình, Hồ Chí Minh"
 MAP_LINK = "https://maps.app.goo.gl/h5tJqBYY9ZJqJzLB9"
 MAP_EMBED = ("https://www.google.com/maps?q=10.845839,106.712965"
@@ -55,7 +55,7 @@ PRODUCTS = [
             "Lắp âm dưới chậu rửa, chỉ chiếm 240 x 150 x 330 mm",
         ],
         "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
+            ("Thương hiệu", "BWT Barrier"),
             ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "Ion-Exchange ByPass+, Magnesium Mineralizer, Nano Plus, Than hoạt tính tẩm bạc"),
             ("Công suất lọc định mức", "8.000 lít (khoảng 12 tháng sử dụng)"),
@@ -98,7 +98,7 @@ PRODUCTS = [
             "Thiết kế âm tủ gọn gàng, chỉ chiếm 240 x 150 x 330 mm",
         ],
         "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
+            ("Thương hiệu", "BWT Barrier"),
             ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "iMaster L, Ion-Exchange ByPass Plus, Nano Plus, Silver-Impregnated Carbon"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
@@ -138,10 +138,10 @@ PRODUCTS = [
             "Loại bỏ clo dư, mùi vị lạ, kim loại nặng và vi khuẩn nhờ Nano-Plus và than hoạt tính tẩm bạc",
             "Bảo vệ ấm siêu tốc, bình đun, thiết bị gia dụng khỏi lớp cặn trắng bám đáy",
             "Không dùng điện, không nước thải, tốc độ 2 lít/phút",
-            "Đạt chứng nhận NSF/ANSI, ISO 9001",
+            "Được trung tâm tiếp nhận bảo hành và hỗ trợ thay lõi tại nhà",
         ],
         "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
+            ("Thương hiệu", "BWT Barrier"),
             ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "Ion-Exchange ByPass+, Softening, Nano-Plus, Than hoạt tính tẩm bạc (Ag)"),
             ("Công suất lọc định mức", "8.000 lít (khoảng 12 tháng sử dụng)"),
@@ -185,7 +185,7 @@ PRODUCTS = [
             "Lắp âm dưới chậu rửa, thay lõi One Touch tại nhà",
         ],
         "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
+            ("Thương hiệu", "BWT Barrier"),
             ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "Ion-Exchange ByPass+, Magnesium Mineralizer, Nano Plus, Than hoạt tính tẩm bạc"),
             ("Công suất lọc định mức", "8.000 lít (khoảng 12 tháng sử dụng)"),
@@ -228,7 +228,7 @@ PRODUCTS = [
             "Thiết kế âm tủ gọn gàng, chỉ chiếm 240 x 150 x 330 mm",
         ],
         "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
+            ("Thương hiệu", "BWT Barrier"),
             ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "iMaster L, Ion-Exchange ByPass Plus, Nano Plus, Silver-Impregnated Carbon"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
@@ -270,7 +270,7 @@ PRODUCTS = [
             "Không dùng điện, không nước thải, tốc độ 2 lít/phút",
         ],
         "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
+            ("Thương hiệu", "BWT Barrier"),
             ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "Ion-Exchange ByPass+, Softening, Nano-Plus, Than hoạt tính tẩm bạc (Ag)"),
             ("Công suất lọc định mức", "8.000 lít (khoảng 12 tháng sử dụng)"),
@@ -314,7 +314,7 @@ PRODUCTS = [
             "One Touch thay lõi nhanh, Smart Lock chống rò rỉ",
         ],
         "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
+            ("Thương hiệu", "BWT Barrier"),
             ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "iON-Exchange ByPass Plus, Nano Plus, Silver Impregnated Carbon, iON-Exchange Fiber"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
@@ -356,7 +356,7 @@ PRODUCTS = [
             "Không dùng điện, không nước thải, thiết kế nguyên khối âm tủ",
         ],
         "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
+            ("Thương hiệu", "BWT Barrier"),
             ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "iON-Exchange ByPass Plus, Softening, Nano Plus, Silver Impregnated Carbon"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
@@ -482,7 +482,7 @@ def head(title, desc, canonical, extra=""):
 def topbar():
     return """<div class="topbar">
   <div class="wrap topbar__in">
-    <a class="topbar__hot" href="tel:{tel}">{ic}<span>Hotline: {hot}</span></a>
+    <a class="topbar__hot" href="tel:{tel}">{ic}<span>Hotline CSKH: {hot}</span></a>
   </div>
 </div>
 """.format(tel=HOTLINE_TEL, hot=HOTLINE_TEXT, ic=IC["phone"])
@@ -558,8 +558,8 @@ def ld_org():
         "name": SITE_NAME,
         "alternateName": "BWT Barrier",
         "url": DOMAIN + "/",
-        "description": "Nhà phân phối máy lọc nước và bộ tiền xử lý nước BWT Barrier iMaster "
-                       "chính hãng tại Việt Nam.",
+        "description": "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước "
+                       "BWT Barrier iMaster tại Việt Nam.",
         "logo": {
             "@type": "ImageObject", "@id": LOGO_ID,
             "url": abs_url("assets/img/barrier-logo.webp"),
@@ -652,7 +652,6 @@ def ld_product(p):
         "url": url,
         "image": [abs_url(src) for src, _ in p["images"]],
         "brand": {"@type": "Brand", "name": "BWT Barrier"},
-        "manufacturer": {"@type": "Organization", "name": "BWT Group"},
         "category": "Máy lọc nước" if p["cat"] in ("may-loc", "co-bo-dem") else "Bộ tiền xử lý nước",
         "additionalProperty": [
             {"@type": "PropertyValue", "name": k, "value": v} for k, v in p["specs"]
@@ -706,8 +705,8 @@ def ld_itemlist():
 
 def ld_store():
     return {
-        "@type": "Store",
-        "@id": abs_url("lien-he.html") + "#store",
+        "@type": "LocalBusiness",
+        "@id": abs_url("lien-he.html") + "#business",
         "name": SITE_NAME,
         "url": abs_url("lien-he.html"),
         "image": abs_url("assets/img/og-image.jpg"),
@@ -735,7 +734,7 @@ def dock():
 </div>
 
 <nav class="mbar" aria-label="Liên hệ nhanh">
-  <a class="is-call" href="tel:{tel}">{phone}<span>Gọi ngay: {hot}</span></a>
+  <a class="is-call" href="tel:{tel}">{phone}<span>CSKH: {hot}</span></a>
   <a href="lien-he.html">{mail}<span>Liên hệ</span></a>
 </nav>
 """.format(tel=HOTLINE_TEL, hot=HOTLINE_TEXT, phone=IC["phone"], up=IC["up"], mail=IC["mail"])
@@ -748,8 +747,8 @@ def footer():
       <div>
         <a class="logo logo--ftr" href="index.html">{logo}</a>
         <p class="ftr__about">
-          BARRIER là thương hiệu máy lọc nước thành viên của BWT Group — tập đoàn công nghệ nước
-          châu Âu với gần 200 năm lịch sử, hiện diện tại hơn 80 quốc gia.
+          Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster:
+          tiếp nhận bảo hành, thay lõi chính hãng và hỗ trợ kỹ thuật trên toàn quốc.
         </p>
       </div>
       <div>
@@ -762,9 +761,9 @@ def footer():
         </ul>
       </div>
       <div>
-        <p class="ftr__h">Liên hệ</p>
+        <p class="ftr__h">Hotline CSKH</p>
         <ul>
-          <li>Hotline: <a href="tel:{tel}"><strong>{hot}</strong></a></li>
+          <li>Hotline CSKH: <a href="tel:{tel}"><strong>{hot}</strong></a></li>
           <li>{addr}</li>
         </ul>
       </div>
@@ -841,16 +840,16 @@ def cta_band():
 def page_index():
     org_ld = ld(
         ld_org(), ld_website(),
-        ld_page("index.html", "BWT Barrier Việt Nam — Máy lọc nước iMaster chính hãng",
-                "Máy lọc nước BWT Barrier iMaster M, L, H và bộ tiền xử lý nước iMaster ion — "
-                "công nghệ châu Âu, giữ khoáng tự nhiên, không dùng điện, không nước thải.",
+        ld_page("index.html", "Trung tâm bảo hành BWT Barrier",
+                "Tiếp nhận bảo hành, thay lõi chính hãng và hỗ trợ kỹ thuật cho máy lọc nước "
+                "BWT Barrier iMaster.",
                 image="assets/img/og-image.jpg", ptype="WebPage", has_crumb=False,
                 main=abs_url("san-pham.html") + "#itemlist"),
         ld_itemlist(),
     )
 
     trust_items = [
-        ("shield", "Chính hãng châu Âu", "Nhập khẩu nguyên hộp, đầy đủ CO/CQ và tem chống giả."),
+        ("shield", "Bảo hành 36 tháng", "Trung tâm tiếp nhận bảo hành và hỗ trợ kỹ thuật tận nơi."),
         ("bolt", "Không dùng điện", "Lọc bằng áp lực nước, không tốn điện, không cần bình áp."),
         ("leaf", "Không nước thải", "Khác RO — không xả bỏ nước, tiết kiệm hoá đơn nước hằng tháng."),
         ("tool", "Thay lõi One Touch", "Tự thay lõi tại nhà trong một phút, không cần dụng cụ."),
@@ -866,12 +865,12 @@ def page_index():
                 "Thiết kế độc quyền bao kín cụm lõi thành một khối liền, chống nhiễm khuẩn ngược và rò rỉ."),
         feature("filter", "8 công nghệ lọc",
                 "Hạt trao đổi ion, sợi trao đổi ion, nano tăng cường, than hoạt tính, màng sợi rỗng và cân bằng khoáng."),
-        feature("award", "Chứng nhận quốc tế",
-                "Sản phẩm đạt các chứng nhận WQA, NSF và ISO — tiêu chuẩn ngành lọc nước toàn cầu."),
+        feature("award", "Lõi thay thế chính hãng",
+                "Trung tâm cung cấp lõi chính hãng, hướng dẫn hoặc thay giúp tại nhà."),
         feature("clock", "Tuổi thọ lõi 12 tháng",
                 "Lõi 8.000 – 10.000 lít, bộ đếm Water Meter báo chính xác thời điểm cần thay."),
-        feature("globe", "Hiện diện 80 quốc gia",
-                "BWT Group có hơn 80 công ty thành viên và hàng nghìn đối tác trên khắp thế giới."),
+        feature("phone", "Hỗ trợ kỹ thuật tận nơi",
+                "Gọi hotline CSKH, kỹ thuật viên kiểm tra và xử lý ngay tại nhà bạn."),
         feature("tool", "Lắp âm tủ gọn gàng",
                 "Kích thước 240 x 150 x 330 mm, lắp dưới chậu rửa hoặc trong tủ bếp, không chiếm mặt bàn."),
         feature("shield", "Bảo hành 36 tháng",
@@ -881,9 +880,9 @@ def page_index():
     cards = "".join(product_card(p) for p in PRODUCTS)
 
     return (
-        head("BWT Barrier Việt Nam — Máy lọc nước iMaster chính hãng",
-             "Máy lọc nước BWT Barrier iMaster M, L, H và bộ tiền xử lý nước iMaster ion M, ion H — "
-             "công nghệ châu Âu, giữ khoáng tự nhiên, không dùng điện, không nước thải.",
+        head("Trung tâm bảo hành BWT Barrier Art AI Series",
+             "Trung tâm bảo hành BWT Barrier: tiếp nhận bảo hành, thay lõi chính hãng, hỗ trợ "
+             "kỹ thuật cho máy lọc nước iMaster và Art AI Series. Hotline CSKH " + HOTLINE_TEXT + ".",
              "index.html", org_ld)
         + topbar() + header("index.html")
         + """
@@ -892,25 +891,24 @@ def page_index():
 <section class="hero">
   <div class="wrap hero__in">
     <div>
-      <span class="hero__eyebrow">Member of BWT Group · Since 1823</span>
-      <h1>Nước sạch chuẩn châu Âu,<br><em>giữ trọn khoáng chất</em></h1>
+      <h1>Trung tâm bảo hành<br><em>BWT Barrier</em></h1>
       <p class="hero__lead">
-        BWT Barrier iMaster loại bỏ cặn bẩn, clo, kim loại nặng và vi khuẩn — nhưng vẫn giữ lại
-        canxi, magie, kẽm mà cơ thể cần. Không dùng điện, không xả nước thải, lắp gọn dưới chậu rửa.
+        Tiếp nhận bảo hành, thay lõi chính hãng, hỗ trợ kỹ thuật và lắp đặt cho máy lọc nước
+        BWT Barrier iMaster. Kỹ thuật viên kiểm tra tận nơi, hỗ trợ trên toàn quốc.
       </p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="san-pham.html">Xem sản phẩm</a>
-        <a class="btn btn--outline-light" href="tel:{tel}">{ic} <span class="nb">{hot}</span></a>
+        <a class="btn btn--primary" href="lien-he.html#bao-hanh">Chính sách bảo hành</a>
+        <a class="btn btn--outline-light" href="san-pham.html">Xem sản phẩm</a>
       </div>
       <div class="hero__stats">
-        <div class="hero__stat"><b>200</b><span>năm lịch sử BWT Group</span></div>
-        <div class="hero__stat"><b>80+</b><span>quốc gia hiện diện</span></div>
-        <div class="hero__stat"><b>0đ</b><span>tiền điện &amp; nước thải</span></div>
+        <div class="hero__stat"><b>36 tháng</b><span>bảo hành chính hãng</span></div>
+        <div class="hero__stat"><b>12 tháng</b><span>chu kỳ thay lõi</span></div>
+        <div class="hero__stat"><b>Toàn quốc</b><span>phạm vi hỗ trợ</span></div>
       </div>
     </div>
     <div class="hero__media">
-      <img src="assets/img/imaster-l-meter-hero.webp" width="900" height="900"
-           alt="Máy lọc nước BWT Barrier iMaster L kèm bộ đếm Water Meter" fetchpriority="high">
+      <img src="assets/img/bao-hanh-service.webp" width="900" height="900"
+           alt="Minh hoạ dịch vụ bảo hành và thay lõi máy lọc nước BWT Barrier" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -940,18 +938,12 @@ def page_index():
       </div>
       <div class="split__body">
         <span class="eyebrow">Về thương hiệu</span>
-        <h2>BWT Barrier — gần 200 năm công nghệ nước của châu Âu</h2>
+        <h2>BWT Barrier iMaster</h2>
         <p>
-          BWT Barrier là thương hiệu máy lọc nước thành viên của BWT Group (Best Water Technology) —
-          tập đoàn công nghệ nước của Đức với lịch sử gần 200 năm, sở hữu hơn 80 công ty con và hàng
-          nghìn đối tác tại 80 quốc gia. Dòng máy lọc BWT Barrier được tin dùng rộng rãi tại châu Âu.
-        </p>
-        <p>
-          Ngày 18/02/2022, BWT Barrier iMaster chính thức ra mắt tại TP. Hồ Chí Minh với hơn 300 khách mời,
-          mang tới thị trường Việt Nam 12 dòng sản phẩm: 6 model bình có tay cầm và 6 model âm bồn.
+          BWT Barrier iMaster là dòng máy lọc nước lắp âm tủ, chạy bằng chính áp lực nước trong
+          đường ống nên không cần điện và không xả nước thải.
         </p>
         <ul class="checklist">
-          <li>{chk}<span>Sản xuất tại Đức và các nước châu Âu, đạt chứng nhận WQA, NSF, ISO</span></li>
           <li>{chk}<span>Lõi đúc nguyên khối độc quyền — chống nhiễm khuẩn và rỉ nước</span></li>
           <li>{chk}<span>Loại bỏ tạp chất, gỉ sét, kim loại nặng, vi khuẩn và clo</span></li>
           <li>{chk}<span>Giữ lại và bổ sung magie, kẽm — khoáng chất quan trọng cho sức khoẻ</span></li>
@@ -968,7 +960,7 @@ def page_index():
   <div class="wrap">
     <div class="sec__head">
       <span class="eyebrow">Vì sao chọn iMaster</span>
-      <h2>Sạch như RO, nhưng không lấy đi khoáng chất</h2>
+      <h2>Sạch nhưng không mất đi khoáng chất</h2>
       <p>Điểm khác biệt của BWT Barrier nằm ở triết lý lọc: không khử sạch trơ,
          mà đưa nguồn nước về đúng thành phần khoáng có lợi cho cơ thể.</p>
     </div>
@@ -1182,15 +1174,15 @@ def page_about():
                 "Lọc bằng chính áp lực nước trong đường ống — không tốn điện và không xả bỏ nước."),
     ])
     return (
-        head("Về BWT Barrier — Công nghệ nước châu Âu gần 200 năm",
-             "BWT Barrier là thương hiệu máy lọc nước thành viên BWT Group — tập đoàn công nghệ nước "
-             "của Đức gần 200 năm lịch sử, hiện diện tại 80 quốc gia.",
+        head("Về chúng tôi — Trung tâm bảo hành BWT Barrier",
+             "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster: "
+             "tiếp nhận bảo hành, thay lõi chính hãng, hỗ trợ kỹ thuật và lắp đặt tại nhà.",
              "ve-chung-toi.html",
              ld(ld_org(), ld_website(),
-                ld_page("ve-chung-toi.html", "Về BWT Barrier",
-                        "BWT Barrier là thương hiệu máy lọc nước thành viên BWT Group — "
-                        "tập đoàn công nghệ nước của Đức gần 200 năm lịch sử.",
-                        image="assets/img/bwt-giau-duong-chat.webp",
+                ld_page("ve-chung-toi.html", "Về chúng tôi",
+                        "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước "
+                        "BWT Barrier iMaster.",
+                        image="assets/img/bao-hanh-service.webp",
                         ptype="AboutPage", main=ORG_ID),
                 ld_crumb("ve-chung-toi.html", [("ve-chung-toi.html", "Về chúng tôi")])))
         + topbar() + header("ve-chung-toi.html")
@@ -1199,8 +1191,8 @@ def page_about():
 <main id="main">
 <section class="phead">
   <div class="wrap">
-    <h1>Về BWT Barrier</h1>
-    <p>Từ một tập đoàn công nghệ nước gần 200 năm tuổi của châu Âu đến căn bếp của gia đình Việt.</p>
+    <h1>Về chúng tôi</h1>
+    <p>Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster tại Việt Nam.</p>
   </div>
 </section>
 
@@ -1208,40 +1200,28 @@ def page_about():
   <div class="wrap">
     <div class="split">
       <div class="split__body prose">
-        <span class="eyebrow">Thương hiệu</span>
-        <h2>BWT Barrier — thương hiệu lọc nước của BWT Group</h2>
+        <span class="eyebrow">Chúng tôi làm gì</span>
+        <h2>Trung tâm bảo hành BWT Barrier</h2>
         <p>
-          BWT Group (Best Water Technology) là tập đoàn công nghệ nước của Đức với lịch sử gần 200 năm,
-          sở hữu hơn 80 công ty con và hàng nghìn đối tác hoạt động tại 80 quốc gia.
-          <strong>BWT Barrier</strong> là thương hiệu máy lọc nước thành viên của tập đoàn, được tin dùng
-          rộng rãi trên thị trường châu Âu.
+          Chúng tôi tiếp nhận bảo hành, thay lõi và xử lý sự cố cho máy lọc nước BWT Barrier iMaster.
+          Khách hàng gọi hotline CSKH, kỹ thuật viên sẽ hỏi về tình trạng máy và nguồn nước, sau đó
+          hẹn lịch kiểm tra tại nhà hoặc hướng dẫn xử lý trực tiếp qua điện thoại.
         </p>
         <p>
-          Thiết bị BWT Barrier iMaster được sản xuất tại Đức và các nước châu Âu, đạt các chứng nhận
-          quốc tế uy tín <strong>WQA, NSF và ISO</strong>.
+          Ngoài bảo hành, trung tâm còn hỗ trợ lắp đặt, cung cấp lõi thay thế và nhắc lịch thay lõi
+          định kỳ để máy luôn chạy đúng công suất thiết kế.
         </p>
         <blockquote>
           <p>
-            Sản phẩm loại bỏ các chất có hại như tạp chất, gỉ sét, kim loại nặng, vi khuẩn và clo, đồng thời
-            giữ lại và bổ sung magie cùng kẽm — những khoáng chất quan trọng cho sức khoẻ.
+            Máy lọc nước dùng lâu mà không thay lõi đúng hạn thì chất lượng nước đầu ra giảm dần mà
+            người dùng khó nhận ra. Đó là lý do trung tâm chủ động nhắc lịch thay vì chờ khách gọi.
           </p>
         </blockquote>
       </div>
       <div class="split__media">
-        <img src="assets/img/bwt-giau-duong-chat.webp" width="1200" height="800" loading="lazy"
-             alt="Công nghệ lọc BWT Barrier loại bỏ tạp chất và giữ lại khoáng chất có lợi">
+        <img src="assets/img/bao-hanh-service.webp" width="900" height="900" loading="lazy"
+             alt="Minh hoạ dịch vụ bảo hành và thay lõi máy lọc nước BWT Barrier">
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec--navy">
-  <div class="wrap">
-    <div class="stats">
-      <div><b>~200</b><span>năm lịch sử</span></div>
-      <div><b>80+</b><span>công ty thành viên</span></div>
-      <div><b>80</b><span>quốc gia hiện diện</span></div>
-      <div><b>12</b><span>dòng sản phẩm tại Việt Nam</span></div>
     </div>
   </div>
 </section>
@@ -1251,23 +1231,23 @@ def page_about():
     <div class="split split--rev">
       <div class="split__media">
         <img src="assets/img/imaster-m-box.webp" width="900" height="900" loading="lazy"
-             alt="Hộp sản phẩm BWT Barrier iMaster nhập khẩu châu Âu">
+             alt="Hộp sản phẩm máy lọc nước BWT Barrier iMaster">
       </div>
       <div class="split__body prose">
-        <span class="eyebrow">Tại Việt Nam</span>
-        <h2>iMaster ra mắt thị trường Việt Nam</h2>
+        <span class="eyebrow">Quy trình</span>
+        <h2>Bảo hành diễn ra thế nào</h2>
         <ul class="tl">
           <li>
-            <b>18/02/2022 — Lễ ra mắt tại TP. Hồ Chí Minh</b>
-            <span>BWT Barrier iMaster chính thức được giới thiệu với sự tham gia của hơn 300 khách mời.</span>
+            <b>1. Gọi hotline CSKH</b>
+            <span>Cung cấp model máy và mô tả hiện tượng đang gặp để kỹ thuật viên khoanh vùng nguyên nhân.</span>
           </li>
           <li>
-            <b>12 dòng sản phẩm</b>
-            <span>Gồm 6 model bình có tay cầm và 6 model âm bồn, thiết kế riêng cho nguồn nước Việt Nam.</span>
+            <b>2. Kiểm tra và báo phương án</b>
+            <span>Hướng dẫn xử lý qua điện thoại nếu đơn giản, hoặc hẹn lịch kiểm tra tại nhà.</span>
           </li>
           <li>
-            <b>Hệ thống phân phối toàn quốc</b>
-            <span>Có mặt tại các chuỗi bán lẻ lớn và hệ thống showroom trên khắp cả nước.</span>
+            <b>3. Xử lý và bàn giao</b>
+            <span>Thay lõi hoặc linh kiện chính hãng, chạy thử và hẹn lịch thay lõi cho chu kỳ kế tiếp.</span>
           </li>
         </ul>
       </div>
@@ -1278,8 +1258,8 @@ def page_about():
 <section class="sec">
   <div class="wrap">
     <div class="sec__head">
-      <span class="eyebrow">Công nghệ</span>
-      <h2>Điều làm nên khác biệt của iMaster</h2>
+      <span class="eyebrow">Sản phẩm</span>
+      <h2>Đặc điểm dòng iMaster</h2>
     </div>
     <div class="fgrid">{feats}</div>
   </div>
@@ -1306,7 +1286,7 @@ def page_contact():
                         "Hotline %s — tư vấn chọn máy lọc nước BWT Barrier iMaster, "
                         "lắp đặt và bảo hành." % HOTLINE_TEXT,
                         ptype="ContactPage",
-                        main=abs_url("lien-he.html") + "#store"),
+                        main=abs_url("lien-he.html") + "#business"),
                 ld_crumb("lien-he.html", [("lien-he.html", "Liên hệ")]),
                 ld_store()))
         + topbar() + header("lien-he.html")
@@ -1332,7 +1312,7 @@ def page_contact():
         <ul class="cinfo">
           <li>
             <span class="cinfo__ic">{phone}</span>
-            <span><b>Hotline</b><a href="tel:{tel}" class="cinfo__big">{hot}</a>
+            <span><b>Hotline CSKH</b><a href="tel:{tel}" class="cinfo__big">{hot}</a>
               <span>Tư vấn chọn model, báo giá và đặt hàng</span></span>
           </li>
           <li>

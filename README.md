@@ -1,6 +1,7 @@
 # bwtbarrier.com.vn — website tĩnh
 
-Website giới thiệu thương hiệu và sản phẩm **BWT Barrier iMaster** tại Việt Nam.
+Website **Trung tâm bảo hành BWT Barrier** — tiếp nhận bảo hành, thay lõi chính hãng và
+hỗ trợ kỹ thuật cho máy lọc nước BWT Barrier iMaster.
 Trang tĩnh: chỉ HTML + CSS + JS, không cần server, không database, không build tool ngoài Python.
 
 ---
@@ -61,8 +62,9 @@ build.py                            Bộ sinh HTML — sửa nội dung ở đâ
 Mở `build.py`, sửa khối ngay đầu file rồi chạy `python build.py`:
 
 ```python
-HOTLINE_TEXT = "0896 613 768"                          # số hiển thị
-HOTLINE_TEL  = "+84896613768"                          # số cho link tel:
+SITE_NAME    = "Trung tâm bảo hành BWT Barrier"
+HOTLINE_TEXT = "1800 8134"                             # số hiển thị (hotline CSKH)
+HOTLINE_TEL  = "18008134"                              # số cho link tel:
 ADDRESS      = "90 Đinh Thị Thi, Hiệp Bình, Hồ Chí Minh"
 ```
 
@@ -256,6 +258,11 @@ trước khi gửi sitemap cho Google.
   cạnh cụm lõi tương ứng — **nên thay bằng ảnh chụp thật khi có**.
 
 > ⚠️ **Cần bổ sung trước khi công bố:**
+> - Thẻ `<title>` trang chủ nhắm từ khoá **"BWT Barrier Art AI Series"** nhưng site
+>   **chưa có nội dung nào về dòng Art AI**. Google khó xếp hạng cho từ khoá không có
+>   nội dung tương ứng — nên thêm một mục hoặc trang riêng về Art AI Series / Art AI Titan.
+> - Ảnh hộp sản phẩm (ion M, ion H, iMaster M) có in sẵn huy hiệu "Member of BWT Group"
+>   trên bao bì thật. Muốn bỏ hẳn thì phải thay bằng ảnh chụp khác, không nên sửa ảnh bao bì.
 > - Toàn bộ 8 sản phẩm đang để giá **"Liên hệ"**. Khi có bảng giá chính thức, điền
 >   `price` trong `PRODUCTS` và bật lại khối `Offer` trong `ld_product()`.
 > - Ảnh "có bộ đếm" của iMaster M và H là ảnh ghép — nên thay bằng ảnh chụp thật.
@@ -268,12 +275,14 @@ Khi viết thêm nội dung cho site, giữ hai quy tắc sau:
 
 1. **Không dùng từ ngữ tuyệt đối** — tránh "số 1", "nhất", "duy nhất", "100%", "hoàn toàn",
    "triệt để", "hàng đầu"… Viết theo hướng mô tả sự thật kiểm chứng được.
-2. **Luôn viết đủ "BWT Barrier"**, không để "BWT" đứng một mình. Khi nói về tập đoàn thì
-   dùng "BWT Group".
+2. **Luôn viết đủ "BWT Barrier"**. Không để "BWT" đứng một mình và **không nhắc tới
+   "BWT Group"** hay lịch sử tập đoàn.
+3. **Không nêu chứng nhận** — bỏ mọi nhắc đến WQA, NSF, ISO, CO/CQ.
 
 Kiểm tra nhanh sau khi build:
 
 ```bash
 grep -ohiE "(nhất|số 1|100%|hoàn toàn|triệt để|hàng đầu|duy nhất)" *.html
-grep -ohP "BWT(?!\s(?:Barrier|Group|BARRIER|WATER|Water))" *.html
+grep -ohP "BWT(?!\s(?:Barrier|BARRIER|WATER|Water))" *.html   # phải rỗng
+grep -ohiE "WQA|NSF|ISO|chứng nhận|CO/CQ" *.html               # phải rỗng
 ```

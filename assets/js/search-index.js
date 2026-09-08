@@ -85,11 +85,11 @@ window.BWT_INDEX = [
   {
     url: "/ve-chung-toi",
     type: "Trang",
-    title: "Về BWT Barrier",
-    desc: "BWT Barrier — thương hiệu thành viên BWT Group, gần 200 năm lịch sử, có mặt tại 80 quốc gia.",
+    title: "Về chúng tôi — Trung tâm bảo hành",
+    desc: "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster.",
     price: "",
-    img: "assets/img/bwt-giau-duong-chat.webp",
-    keys: "ve chung toi gioi thieu thuong hieu bwt barrier best water technology duc chau au lich su"
+    img: "assets/img/bao-hanh-service.webp",
+    keys: "ve chung toi trung tam bao hanh cskh thay loi ho tro ky thuat bwt barrier imaster"
   },
   {
     url: "/lien-he",
