@@ -30,7 +30,12 @@
 
     var backdrop = document.createElement("div");
     backdrop.className = "nav-backdrop";
-    document.body.appendChild(backdrop);
+    var hdr = $(".hdr");
+    if (hdr) {
+      hdr.insertBefore(backdrop, hdr.firstChild);
+    } else {
+      document.body.appendChild(backdrop);
+    }
 
     var closeBtn = $(".nav__close", menu);
 

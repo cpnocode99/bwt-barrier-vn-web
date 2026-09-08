@@ -26,11 +26,11 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
-html{overflow-x:hidden;-webkit-text-size-adjust:100%;background:#fff}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:#fff}
 body{
   margin:0;font-family:var(--font);color:var(--ink);background:var(--white);
   font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;
-  width:100%;overflow-x:hidden;
+  width:100%;overflow-x:clip;
 }
 body.nav-open{overflow:hidden}
 img{max-width:100%;height:auto;display:block}
@@ -137,9 +137,8 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
 @media(max-width:980px){
   /* backdrop-filter tao containing block cho position:fixed -> tat tren mobile
      de drawer .nav bam dung viewport */
-  /* .nav nam trong stacking context cua .hdr -> .hdr phai cao hon .nav-backdrop
-     neu khong lop phu se de len ca drawer */
   .hdr{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:#fff;z-index:126;padding-block:12px 10px}
+  body.nav-open .hdr{z-index:200}
   .hdr__in{min-height:auto;gap:12px;flex-wrap:wrap}
   .burger{display:grid;position:relative;z-index:120;margin-left:auto;width:42px;height:42px}
   .burger[aria-expanded="true"]{opacity:0;pointer-events:none}
@@ -187,18 +186,18 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
 .hero__media{position:relative;display:grid;place-items:center}
 .hero__media::after{content:"";position:absolute;width:100%;max-width:440px;aspect-ratio:1;border-radius:50%;
   background:radial-gradient(circle,rgba(255,255,255,.16),rgba(255,255,255,0) 62%);z-index:-1;pointer-events:none}
-.hero__media img{filter:drop-shadow(0 26px 46px rgba(0,0,0,.42));max-height:460px;width:auto}
+.hero__media img:not(.hero__photo){filter:drop-shadow(0 26px 46px rgba(0,0,0,.42));max-height:460px;width:auto}
 /* Anh chup that: khung bo goc thay vi cutout tha noi */
 .hero__photo{width:100%;max-width:560px;aspect-ratio:16/9;height:auto;max-height:none;object-fit:cover;border-radius:24px;filter:none;
   box-shadow:0 26px 60px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.14)}
-@media(max-width:900px){.hero__photo{max-width:480px}}
+@media(max-width:900px){.hero__photo{max-width:min(480px,100%)}}
 @media(max-width:900px){
   .hero__in{grid-template-columns:1fr;gap:24px;padding:36px 20px 44px;text-align:center}
   .hero h1{font-size:clamp(1.4rem,1.05rem + 1.8vw,1.8rem);line-height:1.26;max-width:min(520px,92%);margin-inline:auto}
   .hero__lead{margin-inline:auto;max-width:min(480px,90%);padding-inline:4px}
   .hero__cta,.hero__stats{justify-content:center}
   .hero__stats{gap:26px}
-  .hero__media img{max-height:320px}
+  .hero__media img:not(.hero__photo){max-height:320px}
 }
 @media(max-width:520px){
   .nb{white-space:normal}
@@ -208,7 +207,7 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
   .hero__lead{font-size:.88rem;line-height:1.52;max-width:88%}
   .hero__stats{gap:14px}
   .hero__stat b{font-size:1.35rem}
-  .hero__photo{border-radius:16px}
+  .hero__photo{max-width:100%;border-radius:16px}
 }
 
 /* ---------- Page head (inner pages) ---------- */
