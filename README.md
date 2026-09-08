@@ -22,16 +22,15 @@ thường sẽ trả 404. `serve.py` cũng trả đúng trang `404.html`.
 
 ```
 index.html                          Trang chủ
-san-pham.html                       Danh mục 9 sản phẩm + tab lọc nhóm
+san-pham.html                       Danh mục 8 sản phẩm + tab lọc nhóm
 may-loc-nuoc-imaster-m.html         ─┐
 may-loc-nuoc-imaster-l.html          │
 may-loc-nuoc-imaster-h.html          │
-may-loc-nuoc-imaster-m-co-bo-dem.html│
-may-loc-nuoc-imaster-l-co-bo-dem.html├─ 9 trang chi tiết sản phẩm
+may-loc-nuoc-imaster-m-co-bo-dem.html├─ 8 trang chi tiết sản phẩm
+may-loc-nuoc-imaster-l-co-bo-dem.html│
 may-loc-nuoc-imaster-h-co-bo-dem.html│
 bo-tien-xu-ly-imaster-ion-m.html     │
-bo-tien-xu-ly-imaster-ion-h.html     │
-bo-tien-xu-ly-imaster-ion-l.html    ─┘
+bo-tien-xu-ly-imaster-ion-h.html    ─┘
 ve-chung-toi.html                   Giới thiệu thương hiệu BWT Barrier
 lien-he.html                        Liên hệ + form đăng ký tư vấn
 tim-kiem.html                       Trang kết quả tìm kiếm
@@ -85,9 +84,9 @@ Messenger. Muốn thêm lại, khai báo hằng số mới trong `build.py` và 
    |---|---|
    | `slug` | tên file, ví dụ `may-loc-nuoc-imaster-m` → `may-loc-nuoc-imaster-m.html` |
    | `cat` | `may-loc`, `co-bo-dem` hoặc `tien-xu-ly` (dùng cho tab lọc) |
-   | `price`, `price_note` | giá hiển thị và ghi chú dưới giá |
-   | `sibling` | `(slug, nhãn, giá)` của bản đối ứng — hiện thành ô liên kết ở trang chi tiết, để `None` nếu không có |
-   | `images` | danh sách `(đường dẫn, alt)`; ảnh đầu tiên là ảnh chính |
+   | `price`, `price_note` | giá hiển thị và ghi chú dưới giá — hiện để `"Liên hệ"` cho mọi sản phẩm |
+   | `sibling` | `(slug, nhãn)` của bản đối ứng — hiện thành ô liên kết ở trang chi tiết, để `None` nếu không có |
+   | `images` | danh sách `(đường dẫn, alt)` — mỗi sản phẩm đang dùng **một ảnh**; thêm ảnh thứ hai thì dải ảnh nhỏ tự hiện lại |
    | `usps` | gạch đầu dòng điểm nổi bật (3 dòng đầu hiện trên thẻ sản phẩm) |
    | `specs` | bảng thông số `(tên, giá trị)` |
    | `intro`, `best_for` | đoạn giới thiệu và dòng "phù hợp với" |
@@ -148,6 +147,68 @@ Google Apps Script hoặc một Vercel Serverless Function trong thư mục `api
 
 ---
 
+## SEO
+
+Đã xử lý sẵn:
+
+- `<title>` và `<meta description>` riêng cho từng trang, không trùng lặp, độ dài trong
+  ngưỡng Google hiển thị
+- `canonical`, `og:*` (kèm `og:locale=vi_VN`), `twitter:card` + `twitter:image`
+- Đúng một `<h1>` mỗi trang, không nhảy bậc tiêu đề
+- Mọi `<img>` có `alt` và `width`/`height` thật (CLS = 0), ảnh dưới màn hình đầu dùng
+  `loading="lazy"`
+- `sitemap.xml` có `lastmod`, chỉ liệt kê trang được index; `robots.txt` chặn `/tim-kiem`
+- `tim-kiem` và `404` gắn `noindex`
+- Ảnh WebP: tổng thư mục ảnh 592 KB
+
+### Schema.org
+
+Mỗi trang xuất một khối `<script type="application/ld+json">` chứa `@graph`, các thực thể
+tham chiếu nhau bằng `@id` thay vì lặp lại dữ liệu:
+
+| Thực thể | Có ở đâu | Nội dung chính |
+|---|---|---|
+| `Organization` (`#organization`) | mọi trang | tên, logo `ImageObject`, hotline, địa chỉ, `contactPoint`, `areaServed` |
+| `WebSite` (`#website`) | mọi trang | `publisher` → Organization, `SearchAction` trỏ `/tim-kiem?q=` |
+| `WebPage` / `ItemPage` / `CollectionPage` / `AboutPage` / `ContactPage` / `SearchResultsPage` | theo từng trang | `isPartOf`, `breadcrumb`, `primaryImageOfPage`, `mainEntity` |
+| `BreadcrumbList` | 11 trang con | khớp đúng breadcrumb hiển thị |
+| `Product` | 8 trang sản phẩm | ảnh, `brand`, `manufacturer`, `additionalProperty` (toàn bộ bảng thông số), `width`/`height`/`depth`/`weight` tự tách từ specs, `isSimilarTo` trỏ bản đối ứng |
+| `ItemList` | trang chủ + danh mục | 8 sản phẩm theo thứ tự |
+| `Store` | trang liên hệ | địa chỉ, `geo` toạ độ, `hasMap`, `parentOrganization` |
+
+**Không khai `Offer`**: giá đang để "Liên hệ", mà Google bắt buộc `Offer` phải có `price`.
+Khai một Offer thiếu giá chỉ tạo cảnh báo trong Search Console. Khi có bảng giá chính thức,
+điền `price` vào `PRODUCTS` rồi bật lại khối `Offer` trong hàm `ld_product()` — chỗ đó còn
+ghi chú sẵn.
+
+Các hàm sinh schema nằm trong `build.py`: `ld()`, `ld_org()`, `ld_website()`, `ld_page()`,
+`ld_crumb()`, `ld_product()`, `ld_itemlist()`, `ld_store()`.
+
+### Kiểm tra nhanh sau khi build
+
+```bash
+grep -c "BreadcrumbList" *.html          # 11 trang con phải có
+grep -o "<title>[^<]*</title>" *.html    # không được trùng, dưới 65 ký tự
+```
+
+Sau khi lên domain thật, dán URL vào [Rich Results Test](https://search.google.com/test/rich-results)
+và [Schema Markup Validator](https://validator.schema.org/) để xác nhận lần cuối.
+
+---
+
+## Bản đồ
+
+Trang liên hệ nhúng Google Maps qua iframe không cần API key. Sửa `MAP_EMBED` và
+`MAP_LINK` ở đầu `build.py`; `MAP_EMBED` theo mẫu:
+
+```
+https://www.google.com/maps?q=<vĩ độ>,<kinh độ>&amp;hl=vi&amp;z=17&amp;output=embed
+```
+
+Toạ độ hiện tại `10.845839,106.712965` lấy từ link rút gọn
+[maps.app.goo.gl/h5tJqBYY9ZJqJzLB9](https://maps.app.goo.gl/h5tJqBYY9ZJqJzLB9).
+
+---
 ## Triển khai lên Vercel qua GitHub
 
 1. Push thư mục này lên một repo GitHub.
@@ -185,7 +246,7 @@ trước khi gửi sitemap cho Google.
 ## Nguồn nội dung & hình ảnh
 
 - Thông tin thương hiệu: [Dân trí — "BWT Barrier iMaster: Máy lọc nước nổi tiếng thế giới đã đến Việt Nam"](https://dantri.com.vn/doi-song/bwt-barrier-imaster-may-loc-nuoc-noi-tieng-the-gioi-da-den-viet-nam-20220225145502887.htm)
-- Thông số và giá sản phẩm: các trang sản phẩm trên thegioidiengiai.com (nhà phân phối)
+- Thông số kỹ thuật: các trang sản phẩm trên thegioidiengiai.com (nhà phân phối)
 - Ảnh sản phẩm: tải từ CDN nhà phân phối, đã **cắt bỏ watermark và logo nhà bán lẻ**
   để dùng cho website thương hiệu.
 - Logo BARRIER: bản tiếng Anh lấy từ website chính thức barrier.ph, đã tách nền và
@@ -195,10 +256,9 @@ trước khi gửi sitemap cho Google.
   cạnh cụm lõi tương ứng — **nên thay bằng ảnh chụp thật khi có**.
 
 > ⚠️ **Cần bổ sung trước khi công bố:**
-> - **iMaster ion L** chưa có ảnh thật và chưa có giá — đang dùng ảnh chờ và để giá
->   "Liên hệ". Cập nhật `images`, `price` và khối `specs` trong `build.py` khi có dữ liệu.
-> - Rà lại giá niêm yết của 8 sản phẩm còn lại — giá trong `build.py` là giá tham khảo
->   tại thời điểm dựng trang.
+> - Toàn bộ 8 sản phẩm đang để giá **"Liên hệ"**. Khi có bảng giá chính thức, điền
+>   `price` trong `PRODUCTS` và bật lại khối `Offer` trong `ld_product()`.
+> - Ảnh "có bộ đếm" của iMaster M và H là ảnh ghép — nên thay bằng ảnh chụp thật.
 
 ---
 
