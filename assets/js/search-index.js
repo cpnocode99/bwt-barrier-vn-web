@@ -88,7 +88,7 @@ window.BWT_INDEX = [
     title: "Về chúng tôi — Trung tâm bảo hành",
     desc: "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster.",
     price: "",
-    img: "assets/img/service.jpg",
+    img: "assets/img/bwt-barrier-service.jpg",
     keys: "ve chung toi trung tam bao hanh cskh thay loi ho tro ky thuat bwt barrier imaster"
   },
   {

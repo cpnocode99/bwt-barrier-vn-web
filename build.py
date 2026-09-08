@@ -907,8 +907,9 @@ def page_index():
       </div>
     </div>
     <div class="hero__media hero__media--photo">
-      <img class="hero__photo" src="assets/img/service.jpg" width="1120" height="1400"
-           alt="Kỹ thuật viên trung tâm bảo hành kiểm tra thiết bị lọc nước" fetchpriority="high">
+      <img class="hero__photo" src="assets/img/bwt-barrier-service.jpg" width="1500" height="1001"
+           alt="Kỹ thuật viên trung tâm bảo hành BWT Barrier kiểm tra máy lọc nước tại nhà khách hàng"
+           fetchpriority="high">
     </div>
   </div>
 </section>
@@ -1182,7 +1183,7 @@ def page_about():
                 ld_page("ve-chung-toi.html", "Về chúng tôi",
                         "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước "
                         "BWT Barrier iMaster.",
-                        image="assets/img/service.jpg",
+                        image="assets/img/bwt-barrier-service.jpg",
                         ptype="AboutPage", main=ORG_ID),
                 ld_crumb("ve-chung-toi.html", [("ve-chung-toi.html", "Về chúng tôi")])))
         + topbar() + header("ve-chung-toi.html")
@@ -1219,8 +1220,8 @@ def page_about():
         </blockquote>
       </div>
       <div class="split__media">
-        <img src="assets/img/service.jpg" width="1120" height="1400" loading="lazy"
-             alt="Kỹ thuật viên trung tâm bảo hành kiểm tra và thay lõi máy lọc nước">
+        <img src="assets/img/bwt-barrier-service.jpg" width="1500" height="1001" loading="lazy"
+             alt="Kỹ thuật viên trung tâm bảo hành BWT Barrier trao đổi với khách hàng khi kiểm tra máy lọc nước">
       </div>
     </div>
   </div>

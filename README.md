@@ -254,9 +254,9 @@ trước khi gửi sitemap cho Google.
 - Logo BARRIER: bản tiếng Anh lấy từ website chính thức barrier.ph, đã tách nền và
   đổi màu sang xanh thương hiệu (`#1F4E9C`) cho bản dùng trên nền sáng.
 - Favicon: cắt phần giọt nước từ ảnh logo do khách cung cấp.
-- Ảnh dịch vụ `assets/img/service.jpg`: ảnh kỹ thuật viên tải từ Pexels
-  ([pexels.com/photo/32588556](https://www.pexels.com/photo/32588556/)) — giấy phép Pexels,
-  miễn phí dùng cho mục đích thương mại, không bắt buộc ghi nguồn. Đã cắt tỉ lệ 4:5.
+- Ảnh dịch vụ `assets/img/bwt-barrier-service.jpg`: ảnh do khách hàng cung cấp.
+  Bản gốc 7360x4912 (18,9 MB) được giữ ở `assets/img/_src/` — thư mục này nằm trong
+  `.gitignore` nên không đẩy lên repo. Bản dùng cho web đã thu về 1500x1001, JPEG q82 (141 KB).
 - Ảnh "có bộ đếm" của iMaster M và H: ghép bộ đếm Water Meter (tách từ ảnh iMaster L)
   cạnh cụm lõi tương ứng — **nên thay bằng ảnh chụp thật khi có**.
 
