@@ -4,7 +4,7 @@ Sinh các trang HTML tĩnh cho bwtbarrier.com.vn.
 Chạy:  python build.py
 Sửa nội dung/sản phẩm ở phần DỮ LIỆU rồi chạy lại là xong.
 """
-import io, os, re, html, json, datetime
+import io, os, re, html, json, hashlib, datetime
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -431,6 +431,20 @@ def dims(src):
     return _DIMS[src]
 
 
+_VER = {}
+
+
+def v(path):
+    """?v=<hash noi dung> cho CSS/JS — de cache 1 nam ma van cap nhat ngay khi sua."""
+    if path not in _VER:
+        try:
+            with open(os.path.join(ROOT, path.replace("/", os.sep)), "rb") as f:
+                _VER[path] = "?v=" + hashlib.md5(f.read()).hexdigest()[:8]
+        except Exception:
+            _VER[path] = ""
+    return path + _VER[path]
+
+
 def head(title, desc, canonical, extra=""):
     return """<!doctype html>
 <html lang="vi" data-base="">
@@ -456,13 +470,13 @@ def head(title, desc, canonical, extra=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="{css}">
 {extra}
 </head>
 <body>
 <a class="skip" href="#main">Bỏ qua và tới nội dung chính</a>
 """.format(title=html.escape(title), desc=html.escape(desc), canonical=canonical,
-           domain=DOMAIN, site=SITE_NAME, extra=extra)
+           domain=DOMAIN, site=SITE_NAME, extra=extra, css=v("assets/css/style.css"))
 
 
 def topbar():
@@ -763,11 +777,11 @@ def footer():
 
 def tail():
     return """{dock}
-<script src="assets/js/search-index.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="{idx}"></script>
+<script src="{js}"></script>
 </body>
 </html>
-""".format(dock=dock())
+""".format(dock=dock(), idx=v("assets/js/search-index.js"), js=v("assets/js/main.js"))
 
 
 # ============================================================
