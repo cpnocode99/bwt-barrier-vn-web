@@ -56,7 +56,6 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "Ion-Exchange ByPass+, Magnesium Mineralizer, Nano Plus, Than hoạt tính tẩm bạc"),
             ("Công suất lọc định mức", "8.000 lít (khoảng 12 tháng sử dụng)"),
             ("Tốc độ tạo nước", "2 lít/phút"),
@@ -99,7 +98,6 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "iMaster L, Ion-Exchange ByPass Plus, Nano Plus, Silver-Impregnated Carbon"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
             ("Tốc độ tạo nước", "2 lít/phút"),
@@ -142,7 +140,6 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "Ion-Exchange ByPass+, Softening, Nano-Plus, Than hoạt tính tẩm bạc (Ag)"),
             ("Công suất lọc định mức", "8.000 lít (khoảng 12 tháng sử dụng)"),
             ("Tốc độ tạo nước", "2 lít/phút"),
@@ -186,7 +183,6 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "Ion-Exchange ByPass+, Magnesium Mineralizer, Nano Plus, Than hoạt tính tẩm bạc"),
             ("Công suất lọc định mức", "8.000 lít (khoảng 12 tháng sử dụng)"),
             ("Tốc độ tạo nước", "2 lít/phút"),
@@ -229,7 +225,6 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "iMaster L, Ion-Exchange ByPass Plus, Nano Plus, Silver-Impregnated Carbon"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
             ("Tốc độ tạo nước", "2 lít/phút"),
@@ -271,7 +266,6 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "Ion-Exchange ByPass+, Softening, Nano-Plus, Than hoạt tính tẩm bạc (Ag)"),
             ("Công suất lọc định mức", "8.000 lít (khoảng 12 tháng sử dụng)"),
             ("Tốc độ tạo nước", "2 lít/phút"),
@@ -315,7 +309,6 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "iON-Exchange ByPass Plus, Nano Plus, Silver Impregnated Carbon, iON-Exchange Fiber"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
             ("Điện áp", "Không sử dụng điện"),
@@ -357,7 +350,6 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Xuất xứ", "Châu Âu"),
             ("Công nghệ lọc", "iON-Exchange ByPass Plus, Softening, Nano Plus, Silver Impregnated Carbon"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
             ("Điện áp", "Không sử dụng điện"),
@@ -938,7 +930,7 @@ def page_index():
              alt="Sơ đồ công nghệ lọc BWT Barrier: loại bỏ tạp chất, giữ lại khoáng chất có lợi">
       </div>
       <div class="split__body">
-        <span class="eyebrow">Về thương hiệu</span>
+        <span class="eyebrow">Dòng sản phẩm iMaster</span>
         <h2>BWT Barrier iMaster</h2>
         <p>
           BWT Barrier iMaster là dòng máy lọc nước lắp âm tủ, chạy bằng chính áp lực nước trong
@@ -950,7 +942,7 @@ def page_index():
           <li>{chk}<span>Giữ lại và bổ sung magie, kẽm — khoáng chất quan trọng cho sức khoẻ</span></li>
         </ul>
         <p style="margin-top:26px">
-          <a class="btn btn--ghost" href="ve-chung-toi.html">Tìm hiểu về BWT Barrier</a>
+          <a class="btn btn--ghost" href="san-pham.html">Khám phá các dòng máy iMaster</a>
         </p>
       </div>
     </div>
@@ -1164,91 +1156,99 @@ def page_product(p):
 # TRANG VỀ CHÚNG TÔI
 # ============================================================
 def page_about():
-    feats = "".join([
-        feature("box", "Lõi đúc nguyên khối",
-                "Cụm lõi được bao phủ kín thành một khối không tách rời — chống nhiễm khuẩn và rỉ nước."),
-        feature("filter", "8 công nghệ lọc",
-                "Hạt trao đổi ion, sợi trao đổi ion, nano tăng cường, than hoạt tính, màng sợi rỗng và cân bằng khoáng."),
-        feature("drop", "Giữ khoáng có lợi",
-                "Loại bỏ tạp chất, gỉ sét, kim loại nặng, vi khuẩn, clo — đồng thời giữ lại và bổ sung magie, kẽm."),
-        feature("bolt", "Không dùng điện, không nước thải",
-                "Lọc bằng chính áp lực nước trong đường ống — không tốn điện và không xả bỏ nước."),
-    ])
     return (
-        head("Về chúng tôi — Trung tâm bảo hành BWT Barrier",
-             "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster: "
-             "tiếp nhận bảo hành, thay lõi chính hãng, hỗ trợ kỹ thuật và lắp đặt tại nhà.",
+        head("Về chúng tôi — BWT Barrier | Nguồn Nước Trong Lành, Giàu Khoáng Chất",
+             "BWT Barrier hướng tới chuẩn mực mới về nước uống tại vòi: không chỉ làm sạch tạp chất "
+             "mà còn bảo toàn và bổ sung các vi khoáng tự nhiên thiết yếu như Magie và Kẽm, "
+             "nâng cao chất lượng sống và thân thiện với môi trường.",
              "ve-chung-toi.html",
              ld(ld_org(), ld_website(),
-                ld_page("ve-chung-toi.html", "Về chúng tôi",
-                        "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước "
-                        "BWT Barrier iMaster.",
-                        image="assets/img/bwt-barrier-service.jpg",
+                ld_page("ve-chung-toi.html", "Về chúng tôi — BWT Barrier",
+                        "BWT Barrier – Nguồn Nước Trong Lành, Giàu Khoáng Chất Cho Cả Gia Đình. "
+                        "Chuyên nghiên cứu và phát triển các giải pháp lọc nước chất lượng cao.",
+                        image="assets/img/cong-nghe-loc-nuoc.webp",
                         ptype="AboutPage", main=ORG_ID),
                 ld_crumb("ve-chung-toi.html", [("ve-chung-toi.html", "Về chúng tôi")])))
         + topbar() + header("ve-chung-toi.html")
         + crumb([("ve-chung-toi.html", "Về chúng tôi")])
         + """
 <main id="main">
-<section class="phead">
-  <div class="wrap">
-    <h1>Về chúng tôi</h1>
-    <p>Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster tại Việt Nam.</p>
+<!-- 1. Hero Banner: Thông điệp chủ đạo -->
+<section class="hero">
+  <div class="wrap hero__in">
+    <div>
+      <span class="hero__eyebrow">{ic_drop} BWT Barrier · Chuẩn mực nước uống</span>
+      <h1><span class="nb">Nguồn Nước Trong Lành,</span><br><em>Giàu Khoáng Chất</em></h1>
+      <p class="hero__lead">
+        Chuẩn mực nước uống tại vòi: lọc sạch tạp chất, bổ sung vi khoáng Magie &amp; Kẽm tự nhiên, nâng cao chất lượng sống cho cả gia đình.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="san-pham.html">{ic_filter} Khám phá sản phẩm</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img class="hero__photo" src="assets/img/nha-may-bwrbarrier.webp" width="1540" height="846"
+           alt="Nhà máy sản xuất BWT Barrier hiện đại đạt tiêu chuẩn quốc tế" fetchpriority="high">
+    </div>
   </div>
 </section>
 
-<section class="sec">
+<!-- 2. Câu chuyện thương hiệu (Brand Story) -->
+<section class="sec" id="cau-chuyen">
   <div class="wrap">
     <div class="split">
-      <div class="split__body prose">
-        <span class="eyebrow">Chúng tôi làm gì</span>
-        <h2>Trung tâm bảo hành BWT Barrier</h2>
-        <p>
-          Chúng tôi tiếp nhận bảo hành, thay lõi và xử lý sự cố cho máy lọc nước BWT Barrier iMaster.
-          Khách hàng gọi hotline CSKH, kỹ thuật viên sẽ hỏi về tình trạng máy và nguồn nước, sau đó
-          hẹn lịch kiểm tra tại nhà hoặc hướng dẫn xử lý trực tiếp qua điện thoại.
-        </p>
-        <p>
-          Ngoài bảo hành, trung tâm còn hỗ trợ lắp đặt, cung cấp lõi thay thế và nhắc lịch thay lõi
-          định kỳ để máy luôn chạy đúng công suất thiết kế.
-        </p>
-        <blockquote>
-          <p>
-            Máy lọc nước dùng lâu mà không thay lõi đúng hạn thì chất lượng nước đầu ra giảm dần mà
-            người dùng khó nhận ra. Đó là lý do trung tâm chủ động nhắc lịch thay vì chờ khách gọi.
-          </p>
-        </blockquote>
-      </div>
       <div class="split__media">
-        <img src="assets/img/bwt-barrier-service.jpg" width="1500" height="1001" loading="lazy"
-             alt="Kỹ thuật viên trung tâm bảo hành BWT Barrier trao đổi với khách hàng khi kiểm tra máy lọc nước">
+        <img src="assets/img/cong-nghe-loc-nuoc.webp" width="1540" height="1371" loading="lazy"
+             alt="Sơ đồ công nghệ lọc nước phức hợp BWT Barrier">
+      </div>
+      <div class="split__body prose">
+        <span class="eyebrow">Câu chuyện thương hiệu</span>
+        <h2>Tiêu chuẩn châu Âu &amp; Nguồn nước tương lai</h2>
+        <p>
+          <strong>Về BWT Barrier:</strong> Chuyên nghiên cứu và phát triển các giải pháp lọc nước dân dụng và thương mại chất lượng cao.
+        </p>
+        <p>
+          <strong>Định hướng phát triển:</strong> BWT Barrier kết hợp các tiêu chuẩn kỹ thuật châu Âu khắt khe cùng kinh nghiệm xử lý các đặc tính nguồn nước phức tạp trên thế giới. Thương hiệu tập trung vào giải pháp nước uống có lợi cho sức khỏe, cân bằng giữa khả năng lọc sạch và việc duy trì dưỡng chất tự nhiên trong nước.
+        </p>
+        <div class="trust__it" style="background:var(--sky-2);border-radius:14px;padding:16px 20px;margin-top:20px;border:1px solid var(--line)">
+          {ic_award}
+          <div>
+            <b style="font-size:1rem;color:var(--navy)">Công nghệ vì sức khỏe gia đình</b>
+            <span style="font-size:.9rem;color:var(--muted)">Đột phá với khả năng bổ sung dưỡng chất tự nhiên và bảo vệ môi trường sống xanh.</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec sec--tint">
+<!-- 3. Tầm nhìn & Sứ mệnh (Vision & Mission) -->
+<section class="sec sec--tint" id="tam-nhin-su-menh">
   <div class="wrap">
-    <div class="split split--rev">
-      <div class="split__media">
-        <img src="assets/img/imaster-m-box.webp" width="900" height="900" loading="lazy"
-             alt="Hộp sản phẩm máy lọc nước BWT Barrier iMaster">
+    <div class="sec__head">
+      <span class="eyebrow">Mục tiêu &amp; Tôn chỉ hành động</span>
+      <h2>Tầm nhìn &amp; Sứ mệnh</h2>
+      <p>Kiến tạo thói quen sống khỏe, sử dụng nguồn nước uống chất lượng cao và đồng hành cùng lối sống xanh</p>
+    </div>
+    <div class="fgrid fgrid--2">
+      <div class="fcard" style="border-top:4px solid var(--blue)">
+        <div class="fcard__ic">{ic_globe}</div>
+        <h3 style="font-size:1.22rem;color:var(--navy);margin-bottom:12px">Tầm nhìn chiến lược</h3>
+        <p style="font-size:1rem;line-height:1.65;color:var(--ink)">
+          Định hình thói quen sử dụng nguồn nước uống có lợi cho sức khỏe tại các hộ gia đình, thúc đẩy lối sống xanh và giảm phát thải nhựa ra môi trường.
+        </p>
       </div>
-      <div class="split__body prose">
-        <span class="eyebrow">Quy trình</span>
-        <h2>Bảo hành diễn ra thế nào</h2>
-        <ul class="tl">
+      <div class="fcard" style="border-top:4px solid var(--cyan)">
+        <div class="fcard__ic">{ic_leaf}</div>
+        <h3 style="font-size:1.22rem;color:var(--navy);margin-bottom:12px">Sứ mệnh phụng sự</h3>
+        <ul class="checklist" style="margin:0">
           <li>
-            <b>1. Gọi hotline CSKH</b>
-            <span>Cung cấp model máy và mô tả hiện tượng đang gặp để kỹ thuật viên khoanh vùng nguyên nhân.</span>
+            {ic_check}
+            <span>Cung cấp nguồn nước uống an toàn, giàu khoáng chất ngay tại vòi cho người dùng.</span>
           </li>
           <li>
-            <b>2. Kiểm tra và báo phương án</b>
-            <span>Hướng dẫn xử lý qua điện thoại nếu đơn giản, hoặc hẹn lịch kiểm tra tại nhà.</span>
-          </li>
-          <li>
-            <b>3. Xử lý và bàn giao</b>
-            <span>Thay lõi hoặc linh kiện chính hãng, chạy thử và hẹn lịch thay lõi cho chu kỳ kế tiếp.</span>
+            {ic_check}
+            <span>Ứng dụng các công nghệ lọc không dùng điện năng và hạn chế tối đa việc xả thải nước thừa, góp phần tiết kiệm tài nguyên thiên nhiên.</span>
           </li>
         </ul>
       </div>
@@ -1256,19 +1256,95 @@ def page_about():
   </div>
 </section>
 
-<section class="sec">
+<!-- 4. Trụ cột giá trị & Điểm nổi bật (Key Pillars) -->
+<section class="sec" id="tru-cot-gia-tri">
   <div class="wrap">
     <div class="sec__head">
-      <span class="eyebrow">Sản phẩm</span>
-      <h2>Đặc điểm dòng iMaster</h2>
+      <span class="eyebrow">Giá trị vượt trội</span>
+      <h2>Trụ cột giá trị &amp; Điểm nổi bật</h2>
+      <p>Bốn thế mạnh công nghệ tạo nên sự khác biệt cho các giải pháp lọc nước BWT Barrier</p>
     </div>
-    <div class="fgrid">{feats}</div>
+    <div class="fgrid">
+      <div class="fcard">
+        <div class="fcard__ic">{ic_drop}</div>
+        <h3>Bổ sung vi khoáng Magie &amp; Kẽm</h3>
+        <p>Làm giàu vi khoáng tự nhiên giúp tăng đề kháng, hỗ trợ tuần hoàn và mang lại vị nước thanh mát tự nhiên.</p>
+      </div>
+      <div class="fcard">
+        <div class="fcard__ic">{ic_leaf}</div>
+        <h3>Lọc thân thiện môi trường</h3>
+        <p>Vận hành bằng áp lực nước tự nhiên: không cắm điện, không nước thải, tối ưu chi phí và tài nguyên nước.</p>
+      </div>
+      <div class="fcard">
+        <div class="fcard__ic">{ic_box}</div>
+        <h3>Lõi đúc nguyên khối SmartLock</h3>
+        <p>Lõi đúc kín chống tái nhiễm khuẩn và rò rỉ, cơ chế One-Touch giúp tự thay lõi tại nhà dễ dàng.</p>
+      </div>
+      <div class="fcard">
+        <div class="fcard__ic">{ic_shield}</div>
+        <h3>Tương thích máy ion kiềm</h3>
+        <p>Bảo toàn khoáng chất dẫn điện (Canxi, Magie), bảo vệ tấm điện cực máy điện giải hoạt động bền bỉ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Cam kết với khách hàng (Our Commitments) -->
+<section class="sec" id="cam-ket">
+  <div class="wrap">
+    <div class="split split--rev">
+      <div class="split__media">
+        <img src="assets/img/imaster-m-box.webp" width="900" height="900" loading="lazy"
+             alt="Hộp máy lọc nước BWT Barrier iMaster — Cam kết an toàn vật liệu và đồng hành dài hạn">
+      </div>
+      <div class="split__body prose">
+        <span class="eyebrow">Trách nhiệm &amp; Phụng sự</span>
+        <h2>Cam kết với khách hàng</h2>
+        <p>
+          BWT Barrier cam kết bảo vệ sức khỏe gia đình bạn bằng chất lượng vật liệu an toàn tuyệt đối và dịch vụ chăm sóc trọn vòng đời sản phẩm:
+        </p>
+        <div style="display:flex;flex-direction:column;gap:20px;margin:24px 0">
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div class="fcard__ic" style="flex:none;margin:0">{ic_shield}</div>
+            <div>
+              <h3 style="margin:0 0 6px;font-size:1.1rem;color:var(--navy)">An toàn vật liệu (BPA Free)</h3>
+              <p style="margin:0;font-size:.95rem;color:var(--muted)">Toàn bộ chi tiết tiếp xúc với dòng nước đều sử dụng nhựa nguyên sinh cao cấp không chứa BPA (BPA Free), đáp ứng các tiêu chuẩn khắt khe về an toàn thực phẩm.</p>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div class="fcard__ic" style="flex:none;margin:0">{ic_clock}</div>
+            <div>
+              <h3 style="margin:0 0 6px;font-size:1.1rem;color:var(--navy)">Đồng hành dài hạn</h3>
+              <p style="margin:0;font-size:.95rem;color:var(--muted)">Cung cấp dịch vụ chăm sóc khách hàng chu đáo, giải pháp theo dõi và nhắc lịch thay thế lõi lọc định kỳ nhằm duy trì chất lượng nước ổn định trong suốt quá trình sử dụng.</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:28px">
+          <a class="btn btn--primary" href="lien-he.html">{ic_phone} Trung tâm hỗ trợ &amp; CSKH</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 {cta}
 </main>
-""".format(feats=feats, cta=cta_band())
+""".format(
+            ic_drop=IC["drop"],
+            ic_filter=IC["filter"],
+            ic_phone=IC["phone"],
+            ic_award=IC["award"],
+            ic_globe=IC["globe"],
+            ic_leaf=IC["leaf"],
+            ic_check=IC["check"],
+            ic_box=IC["box"],
+            ic_shield=IC["shield"],
+            ic_tool=IC["tool"],
+            ic_clock=IC["clock"],
+            tel=HOTLINE_TEL,
+            hot=HOTLINE_TEXT,
+            cta=cta_band()
+        )
         + footer() + tail()
     )
 

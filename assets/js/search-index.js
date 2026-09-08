@@ -8,7 +8,7 @@ window.BWT_INDEX = [
     desc: "Giàu dưỡng chất Mg+ và Zn, công suất 8.000 lít, không dùng điện, không nước thải.",
     price: "Liên hệ",
     img: "assets/img/imaster-m-hero.webp",
-    keys: "imaster m may loc nuoc bwt barrier magie kem mg zn khong dien 8000 lit chau au"
+    keys: "imaster m may loc nuoc bwt barrier magie kem mg zn khong dien 8000 lit"
   },
   {
     url: "/may-loc-nuoc-imaster-l",
@@ -85,11 +85,11 @@ window.BWT_INDEX = [
   {
     url: "/ve-chung-toi",
     type: "Trang",
-    title: "Về chúng tôi — Trung tâm bảo hành",
-    desc: "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster.",
+    title: "Về chúng tôi — BWT Barrier",
+    desc: "BWT Barrier – Nguồn Nước Trong Lành, Giàu Khoáng Chất Cho Cả Gia Đình. Chuyên nghiên cứu và phát triển các giải pháp lọc nước chất lượng cao.",
     price: "",
-    img: "assets/img/bwt-barrier-service.jpg",
-    keys: "ve chung toi trung tam bao hanh cskh thay loi ho tro ky thuat bwt barrier imaster"
+    img: "assets/img/cong-nghe-loc-nuoc.webp",
+    keys: "ve chung toi bwt barrier tam nhin su menh tru cot gia tri bpa free ion kiem"
   },
   {
     url: "/lien-he",

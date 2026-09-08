@@ -157,10 +157,11 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
   background:radial-gradient(720px 480px at 82% 22%,rgba(0,163,224,.42),transparent 62%),
              radial-gradient(560px 420px at 12% 88%,rgba(0,163,224,.20),transparent 65%)}
 .hero__in{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center;padding:68px 20px 76px}
-.hero h1{color:#fff;margin-bottom:.4em;text-wrap:balance}
+.hero h1{color:#fff;margin-bottom:.4em;font-size:clamp(1.75rem,1.1rem + 1.6vw,2.65rem);text-wrap:normal}
 .hero h1 em{font-style:normal;background:linear-gradient(100deg,#7FD9FF,#B8ECFF);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero__eyebrow{display:inline-flex;align-items:center;gap:.55em;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
-  color:#CFEBFB;font-size:.78rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;padding:.5em 1.05em;border-radius:999px;margin-bottom:22px}
+  color:#CFEBFB;font-size:.78rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;padding:.5em 1.05em;border-radius:999px;margin-bottom:22px;white-space:nowrap}
+.hero__eyebrow svg{width:16px;height:16px;flex:none;fill:none;stroke:#7FD9FF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .hero__lead{font-size:1.08rem;color:#C6DAF0;max-width:52ch}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .hero__stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.16)}
@@ -171,9 +172,9 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
   background:radial-gradient(circle,rgba(255,255,255,.16),rgba(255,255,255,0) 62%);z-index:-1}
 .hero__media img{filter:drop-shadow(0 26px 46px rgba(0,0,0,.42));max-height:460px;width:auto}
 /* Anh chup that: khung bo goc thay vi cutout tha noi */
-.hero__photo{width:100%;max-width:520px;aspect-ratio:3/2;height:auto;max-height:none;object-fit:cover;border-radius:26px;filter:none;
+.hero__photo{width:100%;max-width:560px;aspect-ratio:16/9;height:auto;max-height:none;object-fit:cover;border-radius:24px;filter:none;
   box-shadow:0 26px 60px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.14)}
-@media(max-width:900px){.hero__photo{max-width:440px}}
+@media(max-width:900px){.hero__photo{max-width:480px}}
 @media(max-width:900px){
   .hero__in{grid-template-columns:1fr;gap:32px;padding:48px 20px 56px;text-align:center}
   .hero__lead{margin-inline:auto}
@@ -242,7 +243,11 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
 
 /* ---------- Feature grid ---------- */
 .fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.fgrid--2{grid-template-columns:repeat(2,1fr)}
+.fgrid--3{grid-template-columns:repeat(3,1fr)}
 @media(max-width:1040px){.fgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){.fgrid--3{grid-template-columns:1fr}}
+@media(max-width:680px){.fgrid--2{grid-template-columns:1fr}}
 @media(max-width:560px){.fgrid{grid-template-columns:1fr}}
 .fcard{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:28px 24px;transition:.22s}
 .fcard:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
