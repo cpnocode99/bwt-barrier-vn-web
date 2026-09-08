@@ -40,13 +40,11 @@ PRODUCTS = [
         "short": "Giàu dưỡng chất Mg+ và Zn, giữ khoáng tự nhiên, không dùng điện và không xả nước thải.",
         "cat": "may-loc",
         "cat_label": "Máy lọc nước",
-        "price": "7.100.000 đ",
-        "price_note": "Giá niêm yết, đã bao gồm VAT",
-        "sibling": ("may-loc-nuoc-imaster-m-co-bo-dem", "Bản kèm bộ đếm Water Meter", "8.100.000 đ"),
+        "price": "Liên hệ",
+        "price_note": "Gọi hotline để nhận báo giá",
+        "sibling": ("may-loc-nuoc-imaster-m-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
         "images": [
             ("assets/img/imaster-m-hero.webp", "Máy lọc nước BWT Barrier iMaster M — bộ 3 lõi và vòi nước"),
-            ("assets/img/imaster-m-box.webp", "Hộp sản phẩm BWT Barrier iMaster M kèm vòi lấy nước"),
-            ("assets/img/bwt-giau-duong-chat.webp", "Công nghệ lọc giàu dưỡng chất của BWT Barrier"),
         ],
         "usps": [
             "Công nghệ Magnesium Mineralizer bổ sung Mg+ theo bằng sáng chế châu Âu EP 2094611B1",
@@ -85,13 +83,11 @@ PRODUCTS = [
         "short": "Bản nâng cấp của dòng iMaster: lõi 10.000 lít, dùng bền hơn khoảng 25% so với iMaster M.",
         "cat": "may-loc",
         "cat_label": "Máy lọc nước",
-        "price": "8.900.000 đ",
-        "price_note": "Giá niêm yết, đã bao gồm VAT",
-        "sibling": ("may-loc-nuoc-imaster-l-co-bo-dem", "Bản kèm bộ đếm Water Meter", "9.900.000 đ"),
+        "price": "Liên hệ",
+        "price_note": "Gọi hotline để nhận báo giá",
+        "sibling": ("may-loc-nuoc-imaster-l-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
         "images": [
             ("assets/img/imaster-l-hero.webp", "Máy lọc nước BWT Barrier iMaster L — bộ 3 lõi và vòi nước"),
-            ("assets/img/voi-nuoc.webp", "Vòi lấy nước inox đi kèm máy lọc BWT Barrier iMaster L"),
-            ("assets/img/bwt-giau-duong-chat.webp", "Công nghệ lọc giàu dưỡng chất của BWT Barrier"),
         ],
         "usps": [
             "Tuổi thọ lõi 10.000 lít — dài hơn khoảng 25% so với bản iMaster M",
@@ -130,13 +126,11 @@ PRODUCTS = [
         "short": "Chuyên cho nước cứng: làm mềm nước, hạn chế cáu cặn canxi mà vẫn giữ khoáng Ca – Mg – K cân bằng.",
         "cat": "may-loc",
         "cat_label": "Máy lọc nước",
-        "price": "7.100.000 đ",
-        "price_note": "Giá niêm yết, đã bao gồm VAT",
-        "sibling": ("may-loc-nuoc-imaster-h-co-bo-dem", "Bản kèm bộ đếm Water Meter", "8.100.000 đ"),
+        "price": "Liên hệ",
+        "price_note": "Gọi hotline để nhận báo giá",
+        "sibling": ("may-loc-nuoc-imaster-h-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
         "images": [
             ("assets/img/imaster-h-hero.webp", "Máy lọc nước BWT Barrier iMaster H — bộ 3 lõi làm mềm nước cứng"),
-            ("assets/img/imaster-h-tech.webp", "Công nghệ Complex và tuổi thọ lõi 12 tháng của iMaster H"),
-            ("assets/img/voi-nuoc.webp", "Vòi lấy nước inox đi kèm máy lọc BWT Barrier"),
         ],
         "usps": [
             "Lõi Softening chuyên làm mềm nước cứng, hạn chế cáu cặn canxi",
@@ -176,13 +170,11 @@ PRODUCTS = [
         "short": "iMaster M kèm bộ đếm Water Meter — hiển thị lượng nước đã lọc và thời điểm cần thay lõi.",
         "cat": "co-bo-dem",
         "cat_label": "Có bộ đếm",
-        "price": "8.100.000 đ",
-        "price_note": "Đã gồm bộ đếm Water Meter",
-        "sibling": ("may-loc-nuoc-imaster-m", "Bản không kèm bộ đếm", "7.100.000 đ"),
+        "price": "Liên hệ",
+        "price_note": "Gọi hotline để nhận báo giá",
+        "sibling": ("may-loc-nuoc-imaster-m", "Bản không kèm bộ đếm"),
         "images": [
             ("assets/img/imaster-m-meter-hero.webp", "Máy lọc nước BWT Barrier iMaster M kèm bộ đếm Water Meter"),
-            ("assets/img/water-meter.webp", "Bộ đếm Water Meter — Cartridge Lifetime Monitor"),
-            ("assets/img/imaster-m-box.webp", "Hộp sản phẩm BWT Barrier iMaster M kèm vòi lấy nước"),
         ],
         "usps": [
             "Bộ đếm Water Meter đo lưu lượng thực tế, báo phần trăm tuổi thọ lõi còn lại",
@@ -221,13 +213,11 @@ PRODUCTS = [
         "short": "iMaster L lõi 10.000 lít kèm bộ đếm Water Meter theo dõi tuổi thọ lõi theo thời gian thực.",
         "cat": "co-bo-dem",
         "cat_label": "Có bộ đếm",
-        "price": "9.900.000 đ",
-        "price_note": "Đã gồm bộ đếm Water Meter",
-        "sibling": ("may-loc-nuoc-imaster-l", "Bản không kèm bộ đếm", "8.900.000 đ"),
+        "price": "Liên hệ",
+        "price_note": "Gọi hotline để nhận báo giá",
+        "sibling": ("may-loc-nuoc-imaster-l", "Bản không kèm bộ đếm"),
         "images": [
             ("assets/img/imaster-l-meter-hero.webp", "Máy lọc nước BWT Barrier iMaster L kèm bộ đếm Water Meter"),
-            ("assets/img/water-meter.webp", "Bộ đếm Water Meter — Cartridge Lifetime Monitor"),
-            ("assets/img/bwt-giau-duong-chat.webp", "Công nghệ lọc giàu dưỡng chất của BWT Barrier"),
         ],
         "usps": [
             "Cấu hình đầy đủ của dòng iMaster: lõi 10.000 lít cộng bộ đếm Water Meter",
@@ -265,13 +255,11 @@ PRODUCTS = [
         "short": "iMaster H làm mềm nước cứng, kèm bộ đếm Water Meter báo thời điểm thay lõi.",
         "cat": "co-bo-dem",
         "cat_label": "Có bộ đếm",
-        "price": "8.100.000 đ",
-        "price_note": "Đã gồm bộ đếm Water Meter",
-        "sibling": ("may-loc-nuoc-imaster-h", "Bản không kèm bộ đếm", "7.100.000 đ"),
+        "price": "Liên hệ",
+        "price_note": "Gọi hotline để nhận báo giá",
+        "sibling": ("may-loc-nuoc-imaster-h", "Bản không kèm bộ đếm"),
         "images": [
             ("assets/img/imaster-h-meter-hero.webp", "Máy lọc nước BWT Barrier iMaster H kèm bộ đếm Water Meter"),
-            ("assets/img/water-meter.webp", "Bộ đếm Water Meter — Cartridge Lifetime Monitor"),
-            ("assets/img/imaster-h-tech.webp", "Công nghệ Complex và tuổi thọ lõi 12 tháng của iMaster H"),
         ],
         "usps": [
             "Lõi Softening chuyên làm mềm nước cứng, hạn chế cáu cặn canxi",
@@ -311,12 +299,11 @@ PRODUCTS = [
         "short": "Bộ tiền lọc chuyên dụng cho máy điện giải ion kiềm — cân bằng pH và chống bám cặn điện cực.",
         "cat": "tien-xu-ly",
         "cat_label": "Bộ tiền xử lý",
-        "price": "7.100.000 đ",
-        "price_note": "Giá niêm yết, đã bao gồm VAT",
+        "price": "Liên hệ",
+        "price_note": "Gọi hotline để nhận báo giá",
         "sibling": None,
         "images": [
             ("assets/img/ion-m-hero.webp", "Hộp bộ tiền xử lý nước BWT Barrier iMaster ion M"),
-            ("assets/img/bwt-giau-duong-chat.webp", "Bộ tiền xử lý BWT Barrier giữ khoáng và loại bỏ tạp chất"),
         ],
         "usps": [
             "Cân bằng pH nước đầu vào, giúp máy điện giải đạt hiệu suất điện phân cao hơn tới 3 lần",
@@ -354,12 +341,11 @@ PRODUCTS = [
         "short": "Phiên bản dành cho khu vực nước cứng — làm mềm nước trước khi vào máy điện giải ion kiềm.",
         "cat": "tien-xu-ly",
         "cat_label": "Bộ tiền xử lý",
-        "price": "7.100.000 đ",
-        "price_note": "Giá niêm yết, đã bao gồm VAT",
+        "price": "Liên hệ",
+        "price_note": "Gọi hotline để nhận báo giá",
         "sibling": None,
         "images": [
             ("assets/img/ion-h-hero.webp", "Hộp bộ tiền xử lý nước BWT Barrier iMaster ion H"),
-            ("assets/img/bwt-giau-duong-chat.webp", "Bộ tiền xử lý BWT Barrier iMaster ion H loại bỏ tạp chất, giữ khoáng"),
         ],
         "usps": [
             "Làm mềm nước cứng trước khi vào máy điện giải — chống cáu cặn canxi trên buồng điện phân",
@@ -390,47 +376,6 @@ PRODUCTS = [
             "cân bằng pH, nhưng vẫn còn nguyên nhóm khoáng cần thiết để quá trình điện phân diễn ra hiệu quả.",
         ],
         "best_for": "Khu vực nước cứng, nước giếng khoan đang dùng máy điện giải ion kiềm.",
-    },
-    {
-        "slug": "bo-tien-xu-ly-imaster-ion-l",
-        "name": "Bộ tiền xử lý nước BWT Barrier iMaster ion L",
-        "short": "Bản lõi dung lượng lớn của dòng tiền xử lý iMaster ion, dành cho hộ dùng nhiều nước.",
-        "cat": "tien-xu-ly",
-        "cat_label": "Bộ tiền xử lý",
-        "price": "Liên hệ",
-        "price_note": "Gọi hotline để nhận báo giá",
-        "sibling": None,
-        "images": [
-            ("assets/img/ion-l-placeholder.webp", "Bộ tiền xử lý nước BWT Barrier iMaster ion L — đang cập nhật hình ảnh"),
-            ("assets/img/bwt-giau-duong-chat.webp", "Bộ tiền xử lý BWT Barrier giữ khoáng và loại bỏ tạp chất"),
-        ],
-        "usps": [
-            "Cùng dòng tiền xử lý iMaster ion, dùng cho máy lọc nước điện giải ion kiềm",
-            "Cân bằng pH nước đầu vào, hỗ trợ quá trình điện phân",
-            "iON-Exchange ByPass Plus hạn chế bám cặn trên tấm điện cực",
-            "Nano Plus và than hoạt tính tẩm bạc loại bỏ clo dư, vi khuẩn",
-            "Không dùng điện, không nước thải, lắp âm dưới chậu hoặc trong tủ",
-            "One Touch thay lõi nhanh, Smart Lock chống rò rỉ",
-        ],
-        "specs": [
-            ("Thương hiệu", "BWT Barrier — thành viên BWT Group (Đức)"),
-            ("Xuất xứ", "Châu Âu"),
-            ("Công nghệ lọc", "iON-Exchange ByPass Plus, Nano Plus, Silver Impregnated Carbon"),
-            ("Công suất lọc định mức", "Liên hệ để có số liệu chính thức"),
-            ("Điện áp", "Không sử dụng điện"),
-            ("Nước thải", "Không có"),
-            ("Kiểu lắp đặt", "Âm dưới chậu / trong tủ / cạnh bồn"),
-            ("Tương thích", "Máy lọc nước ion kiềm"),
-            ("Bảo hành", "36 tháng"),
-        ],
-        "intro": [
-            "iMaster ion L thuộc dòng bộ tiền xử lý nước BWT Barrier dành cho máy lọc nước điện giải ion kiềm, "
-            "cùng nguyên lý với ion M và ion H: xử lý nguồn nước trước khi vào máy để bảo vệ buồng điện phân "
-            "và giữ lại nhóm khoáng cần thiết cho quá trình điện phân.",
-            "Thông số chi tiết và giá niêm yết của bản ion L đang được cập nhật. Vui lòng gọi hotline để được "
-            "tư vấn cấu hình phù hợp với máy điện giải và nguồn nước nhà bạn.",
-        ],
-        "best_for": "Hộ dùng nhiều nước, đang dùng máy điện giải ion kiềm và cần bộ tiền xử lý dung lượng lớn.",
     },
 ]
 
@@ -541,7 +486,7 @@ def header(active):
     <div class="search">
       <form class="search__form" role="search" action="tim-kiem.html" method="get">
         <label class="visually-hidden" for="q">Tìm sản phẩm BWT Barrier</label>
-        <input class="search__input" id="q" name="q" type="search" placeholder="Tìm: iMaster M, nước cứng…"
+        <input class="search__input" id="q" name="q" type="search" placeholder="Tìm sản phẩm: iMaster M, có bộ đếm, nước cứng…"
                autocomplete="off" aria-controls="search-results">
         <button class="search__btn" type="submit" aria-label="Tìm kiếm">{ic}</button>
       </form>
@@ -719,25 +664,11 @@ def ld_product(p):
         except Exception:
             pass
 
-    if p["price"] != "Liên hệ":
-        d["offers"] = {
-            "@type": "Offer",
-            "@id": url + "#offer",
-            "url": url,
-            "priceCurrency": "VND",
-            "price": p["price"].replace(".", "").replace(" đ", ""),
-            "priceValidUntil": (datetime.date.today() + datetime.timedelta(days=365)).isoformat(),
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition",
-            "seller": {"@id": ORG_ID},
-            "warranty": {
-                "@type": "WarrantyPromise",
-                "durationOfWarranty": {"@type": "QuantitativeValue", "value": 36, "unitCode": "MON"},
-            },
-        }
+    # Gia dang de "Lien he" nen khong khai bao Offer — Google yeu cau co price.
+    # Khi co bang gia chinh thuc, dien "price" vao PRODUCTS roi bat lai khoi Offer.
 
     if p.get("sibling"):
-        sl, lb, pr = p["sibling"]
+        sl = p["sibling"][0]
         sib = PRODUCT_BY_SLUG.get(sl)
         if sib:
             d["isSimilarTo"] = {"@type": "Product", "name": sib["name"],
@@ -767,7 +698,6 @@ def ld_store():
         "url": abs_url("lien-he.html"),
         "image": abs_url("assets/img/og-image.jpg"),
         "telephone": HOTLINE_TEL,
-        "priceRange": "7.100.000 đ - 9.900.000 đ",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "90 Đinh Thị Thi",
@@ -1049,7 +979,7 @@ def page_products():
     return (
         head("Sản phẩm BWT Barrier iMaster — Máy lọc nước & bộ tiền xử lý",
              "Máy lọc nước BWT Barrier iMaster M, L, H (bản thường và bản kèm bộ đếm Water Meter) "
-             "cùng bộ tiền xử lý ion M, ion H, ion L — giá và thông số kỹ thuật.",
+             "cùng bộ tiền xử lý ion M, ion H — thông số kỹ thuật và tư vấn chọn model.",
              "san-pham.html",
              ld(ld_org(), ld_website(),
                 ld_page("san-pham.html", "Sản phẩm BWT Barrier iMaster",
@@ -1110,11 +1040,13 @@ def meta_desc(p):
 
 def page_product(p):
     thumbs = ""
-    for i, (src, alt) in enumerate(p["images"]):
+    for i, (src, alt) in enumerate(p["images"] if len(p["images"]) > 1 else []):
         thumbs += ('<button class="pd__thumb" type="button" data-src="{s}" data-alt="{a}" '
                    'aria-selected="{sel}" aria-label="Xem ảnh {n}">'
                    '<img src="{s}" alt="" loading="lazy"{d}></button>').format(
             s=src, a=html.escape(alt), sel="true" if i == 0 else "false", n=i + 1, d=dims(src))
+    if thumbs:
+        thumbs = '<div class="pd__thumbs">' + thumbs + "</div>"
 
     usps = "".join("<li>{ic}<span>{t}</span></li>".format(ic=IC["check"], t=html.escape(u)) for u in p["usps"])
     specs = "".join('<tr><th scope="row">{k}</th><td>{v}</td></tr>'.format(
@@ -1123,12 +1055,11 @@ def page_product(p):
 
     variants = ""
     if p.get("sibling"):
-        sl, lb, pr = p["sibling"]
+        sl, lb = p["sibling"]
         variants = (
             '<a class="pd__variant pd__variant--link" href="{sl}.html">'
-            '<span class="pd__variant__lb">{lb}</span>'
-            '<b>{pr}</b><span class="pd__variant__go">Xem bản này &rsaquo;</span></a>'
-        ).format(sl=sl, lb=html.escape(lb), pr=pr)
+            '<b>{lb}</b><span class="pd__variant__go">Xem bản này &rsaquo;</span></a>'
+        ).format(sl=sl, lb=html.escape(lb))
 
     related = "".join(product_card(x) for x in PRODUCTS if x["slug"] != p["slug"])
 
@@ -1142,7 +1073,7 @@ def page_product(p):
     )
 
     return (
-        head(p["name"] + " — " + p["price"], meta_desc(p), slug_url, ld_block)
+        head(p["name"] + " — Chính hãng", meta_desc(p), slug_url, ld_block)
         + topbar() + header("san-pham.html")
         + crumb([("san-pham.html", "Sản phẩm"), (p["slug"] + ".html", p["name"])])
         + """
@@ -1153,7 +1084,7 @@ def page_product(p):
       <div class="pd__main">
         <img id="pd-main-img" src="{img}" alt="{alt}"{dim0} fetchpriority="high">
       </div>
-      <div class="pd__thumbs">{thumbs}</div>
+      {thumbs}
     </div>
 
     <div>
@@ -1417,7 +1348,7 @@ def page_contact():
       <span class="eyebrow">Hệ thống phân phối</span>
       <h2>Mua hàng chính hãng ở đâu?</h2>
       <p>Sản phẩm BWT Barrier iMaster được phân phối qua hệ thống showroom và các chuỗi bán lẻ lớn trên toàn quốc.
-         Gọi hotline để được hướng dẫn tới điểm bán gần bạn nhất.</p>
+         Gọi hotline để nhận báo giá và được hướng dẫn tới điểm bán gần bạn nhất.</p>
     </div>
     <div class="map">
       <iframe src="{map}" title="Bản đồ tới {addr}"
@@ -1461,11 +1392,9 @@ def page_search():
   <div class="wrap">
     <h1 id="search-page-title">Tìm kiếm</h1>
     <p>Gõ tên model (iMaster M, L, H), nhóm sản phẩm hoặc vấn đề nguồn nước bạn đang gặp.</p>
-    <form action="tim-kiem.html" method="get" role="search"
-          style="max-width:520px;margin:26px auto 0;display:flex;gap:10px">
+    <form class="sform" action="tim-kiem.html" method="get" role="search">
       <label class="visually-hidden" for="search-page-input">Từ khoá</label>
-      <input class="field" id="search-page-input" name="q" type="search" placeholder="Ví dụ: nước cứng"
-             style="flex:1;padding:.8em 1.1em;border-radius:999px;border:0;font:inherit">
+      <input id="search-page-input" name="q" type="search" placeholder="Ví dụ: nước cứng, có bộ đếm">
       <button class="btn btn--light" type="submit">Tìm</button>
     </form>
   </div>
