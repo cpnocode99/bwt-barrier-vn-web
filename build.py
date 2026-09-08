@@ -504,6 +504,12 @@ def header(active):
     </button>
 
     <nav class="nav" id="site-nav" aria-label="Điều hướng chính">
+      <div class="nav__head">
+        <span class="nav__title">Menu</span>
+        <button class="nav__close" type="button" aria-label="Đóng menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
       <ul class="nav__list">{items}</ul>
     </nav>
   </div>
@@ -1165,7 +1171,7 @@ def page_about():
   <div class="wrap hero__in">
     <div>
       <span class="hero__eyebrow">{ic_drop} BWT Barrier · Chuẩn mực nước uống</span>
-      <h1><span class="nb">Nguồn Nước Trong Lành,</span><br><em>Giàu Khoáng Chất</em></h1>
+      <h1>Nguồn Nước Trong Lành,<br><em>Giàu Khoáng Chất</em></h1>
       <p class="hero__lead">
         Chuẩn mực nước uống tại vòi: lọc sạch tạp chất, bổ sung vi khoáng Magie &amp; Kẽm tự nhiên, nâng cao chất lượng sống cho cả gia đình.
       </p>

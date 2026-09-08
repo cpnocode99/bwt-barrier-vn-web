@@ -28,23 +28,41 @@
     var menu = $("#site-nav");
     if (!burger || !menu) return;
 
+    /* Dua menu ra truc tiep duoi body de tran sat 100% man hinh moi thiet bi */
+    if (menu.parentNode !== document.body) {
+      document.body.appendChild(menu);
+    }
+
     var backdrop = document.createElement("div");
     backdrop.className = "nav-backdrop";
     document.body.appendChild(backdrop);
+
+    var closeBtn = $(".nav__close", menu);
 
     function set(open) {
       burger.setAttribute("aria-expanded", open ? "true" : "false");
       menu.setAttribute("data-open", open ? "true" : "false");
       backdrop.setAttribute("data-open", open ? "true" : "false");
-      document.body.style.overflow = open ? "hidden" : "";
+      if (open) {
+        document.body.classList.add("nav-open");
+      } else {
+        document.body.classList.remove("nav-open");
+      }
     }
     burger.addEventListener("click", function () {
       set(burger.getAttribute("aria-expanded") !== "true");
     });
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function () { set(false); });
+    }
     backdrop.addEventListener("click", function () { set(false); });
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") set(false);
     });
+    var links = menu.querySelectorAll("a");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function () { set(false); });
+    }
     window.addEventListener("resize", function () {
       if (window.innerWidth > 980) set(false);
     });
