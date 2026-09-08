@@ -144,8 +144,8 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
   .burger{display:grid;position:relative;z-index:127;margin-left:auto;width:42px;height:42px}  /* noi len tren drawer de bam dong */
   .search{order:3;width:100%;flex:1 1 100%;padding-bottom:4px;margin-top:2px}
   .nav{position:fixed;inset:0 0 0 auto;width:min(320px,86vw);background:#fff;transform:translateX(100%);
-       transition:transform .28s ease,visibility .28s;box-shadow:var(--shadow-lg);padding:84px 20px 24px;overflow:auto;z-index:125;margin:0;visibility:hidden}
-  .nav[data-open="true"]{transform:translateX(0);visibility:visible}
+       transition:transform .28s ease;box-shadow:var(--shadow-lg);padding:84px 20px 24px;overflow:auto;z-index:125;margin:0;display:none}
+  .nav[data-open="true"]{display:block;transform:translateX(0)}
   .nav__list{flex-direction:column;align-items:stretch;gap:2px}
   .nav__list a{padding:.85em 1em;border-radius:12px;font-size:1rem}
   .nav-backdrop{position:fixed;inset:0;background:rgba(11,42,91,.42);opacity:0;pointer-events:none;transition:opacity .28s;z-index:124}
@@ -164,7 +164,7 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
 .hero__eyebrow{display:inline-flex;align-items:center;gap:.55em;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
   color:#CFEBFB;font-size:.78rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;padding:.5em 1.05em;border-radius:999px;margin-bottom:22px;white-space:nowrap}
 .hero__eyebrow svg{width:16px;height:16px;flex:none;fill:none;stroke:#7FD9FF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.hero__lead{font-size:1.08rem;color:#C6DAF0;max-width:52ch}
+.hero__lead{font-size:1.08rem;color:#C6DAF0;max-width:52ch;word-break:break-word;overflow-wrap:break-word}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .hero__stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.16)}
 .hero__stat b{display:block;font-size:1.7rem;font-weight:800;color:#fff;line-height:1.1}
@@ -178,20 +178,20 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
   box-shadow:0 26px 60px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.14)}
 @media(max-width:900px){.hero__photo{max-width:480px}}
 @media(max-width:900px){
-  .hero__in{grid-template-columns:1fr;gap:28px;padding:40px 20px 48px;text-align:center}
-  .hero__lead{margin-inline:auto;max-width:100%}
+  .hero__in{grid-template-columns:1fr;gap:24px;padding:36px 16px 44px;text-align:center}
+  .hero__lead{margin-inline:auto;max-width:100%;padding-inline:6px}
   .hero__cta,.hero__stats{justify-content:center}
   .hero__stats{gap:26px}
   .hero__media img{max-height:320px}
 }
 @media(max-width:520px){
   .nb{white-space:normal}
-  .hero__in{padding:30px 16px 38px}
-  .hero h1{font-size:clamp(1.48rem,1.05rem + 1.8vw,1.85rem);line-height:1.26}
-  .hero__eyebrow{font-size:.72rem;letter-spacing:.05em;padding:.4em .85em;white-space:normal;max-width:100%;text-align:center}
-  .hero__lead{font-size:.95rem;line-height:1.52}
-  .hero__stats{gap:16px}
-  .hero__stat b{font-size:1.45rem}
+  .hero__in{padding:28px 14px 34px}
+  .hero h1{font-size:clamp(1.36rem,1rem + 1.8vw,1.68rem);line-height:1.24}
+  .hero__eyebrow{font-size:.68rem;letter-spacing:.04em;padding:.36em .75em;white-space:normal;max-width:100%;text-align:center;line-height:1.3}
+  .hero__lead{font-size:.92rem;line-height:1.52;padding-inline:4px}
+  .hero__stats{gap:14px}
+  .hero__stat b{font-size:1.35rem}
   .hero__photo{border-radius:16px}
 }
 
@@ -199,6 +199,11 @@ mark{background:rgba(0,163,224,.22);color:inherit;border-radius:3px;padding:0 1p
 .phead{background:linear-gradient(135deg,#0B2A5B,#0A5490);color:#fff;padding:56px 0 60px;text-align:center}
 .phead h1{color:#fff;margin-bottom:.35em}
 .phead p{color:#C6DAF0;max-width:64ch;margin:0 auto;font-size:1.04rem}
+@media(max-width:600px){
+  .phead{padding:34px 16px 38px}
+  .phead h1{font-size:clamp(1.45rem,1.05rem + 1.6vw,1.8rem)}
+  .phead p{font-size:.92rem;padding-inline:4px}
+}
 
 /* ---------- Trust bar ---------- */
 .trust{background:var(--sky-2);border-bottom:1px solid var(--line)}
