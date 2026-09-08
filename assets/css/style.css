@@ -87,7 +87,9 @@ ul{margin:0 0 1em;padding-left:1.15em}
 .logo--ftr .logo__img{height:42px}
 @media(max-width:520px){.logo__img{height:31px}}
 
-.nav{margin-left:auto}
+/* Khong dung margin-left:auto: theo spec flexbox, auto margin an het khoang trong
+   con lai nen flex-grow cua .search bi vo hieu. De .search gian ra day nav sang phai. */
+.nav{margin-left:0}
 .nav__list{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
 .nav__list a{
   display:block;padding:.6em .95em;border-radius:999px;color:var(--navy);
@@ -97,7 +99,7 @@ ul{margin:0 0 1em;padding-left:1.15em}
 .nav__list a[aria-current="page"]{color:var(--blue);background:var(--sky)}
 
 /* ---------- Search ---------- */
-.search{position:relative;flex:1 1 auto;min-width:220px;max-width:440px}
+.search{position:relative;flex:1 1 auto;min-width:220px;max-width:560px}
 .search__form{display:flex;align-items:center;gap:8px;background:var(--sky-2);border:1.5px solid var(--line);border-radius:999px;padding:.42em .5em .42em .9em;transition:border-color .2s,background .2s}
 .search__form:focus-within{border-color:var(--cyan);background:#fff;box-shadow:0 0 0 4px rgba(0,163,224,.12)}
 .search__input{flex:1;min-width:0;border:0;background:transparent;font:inherit;font-size:.93rem;color:var(--ink);padding:0}
