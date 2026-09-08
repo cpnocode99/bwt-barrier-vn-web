@@ -840,15 +840,6 @@ def page_index():
         ld_itemlist(),
     )
 
-    trust_items = [
-        ("shield", "Bảo hành 36 tháng", "Trung tâm tiếp nhận bảo hành và hỗ trợ kỹ thuật tận nơi."),
-        ("bolt", "Không dùng điện", "Lọc bằng áp lực nước, không tốn điện, không cần bình áp."),
-        ("leaf", "Không nước thải", "Khác RO — không xả bỏ nước, tiết kiệm hoá đơn nước hằng tháng."),
-        ("tool", "Thay lõi One Touch", "Tự thay lõi tại nhà trong một phút, không cần dụng cụ."),
-    ]
-    trust = "".join(
-        '<div class="trust__it">{ic}<span><b>{t}</b><span>{d}</span></span></div>'.format(
-            ic=IC[i], t=html.escape(t), d=html.escape(d)) for i, t, d in trust_items)
 
     feats = "".join([
         feature("drop", "Giữ khoáng, không lọc trơ",
@@ -906,10 +897,6 @@ def page_index():
   </div>
 </section>
 
-<section class="trust">
-  <div class="wrap"><div class="trust__grid">{trust}</div></div>
-</section>
-
 <section class="sec" id="san-pham">
   <div class="wrap">
     <div class="sec__head">
@@ -964,7 +951,7 @@ def page_index():
 {cta}
 
 </main>
-""".format(tel=HOTLINE_TEL, hot=HOTLINE_TEXT, ic=IC["phone"], trust=trust,
+""".format(tel=HOTLINE_TEL, hot=HOTLINE_TEXT, ic=IC["phone"],
            cards=cards, feats=feats, chk=IC["check"], cta=cta_band())
         + footer() + tail()
     )
