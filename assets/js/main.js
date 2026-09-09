@@ -248,4 +248,27 @@
   $$("[data-year]").forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
   });
+
+  /* ---------- 8. FAQ Accordion (Câu hỏi thường gặp) ---------- */
+  (function faqAccordion() {
+    var faqItems = $$(".faq-item");
+    if (!faqItems.length) return;
+
+    faqItems.forEach(function (item) {
+      var btn = $(".faq-btn", item);
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var isOpen = item.getAttribute("data-open") === "true";
+        faqItems.forEach(function (other) {
+          if (other !== item) {
+            other.setAttribute("data-open", "false");
+            var otherBtn = $(".faq-btn", other);
+            if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+          }
+        });
+        item.setAttribute("data-open", isOpen ? "false" : "true");
+        btn.setAttribute("aria-expanded", isOpen ? "false" : "true");
+      });
+    });
+  })();
 })();

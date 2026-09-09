@@ -396,6 +396,11 @@ IC = {
     "clock": '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>',
     "box": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>',
     "filter": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8z"/></svg>',
+    "chevron": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>',
+    "cal": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
+    "flask": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2v7.31L4.14 20.3A2 2 0 005.86 23h12.28a2 2 0 001.72-2.7L14 9.31V2h-4zM8.5 2h7M7 16h10"/></svg>',
+    "clipboard": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>',
+    "sparkles": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg>',
 }
 
 def logo_img(white=False):
@@ -604,6 +609,24 @@ def ld_website():
     }
 
 
+def ld_faq(items):
+    return {
+        "@type": "FAQPage",
+        "@id": abs_url("index.html") + "#faq",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": q,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": a,
+                },
+            }
+            for q, a in items
+        ],
+    }
+
+
 def ld_page(url, name, desc, image=None, ptype="WebPage", has_crumb=True, main=None):
     d = {
         "@type": ptype,
@@ -775,13 +798,13 @@ def footer():
            addr=html.escape(ADDRESS))
 
 
-def tail():
-    return """{dock}
+def tail(extra=""):
+    return """{extra}
 <script src="{idx}"></script>
 <script src="{js}"></script>
 </body>
 </html>
-""".format(dock=dock(), idx=v("assets/js/search-index.js"), js=v("assets/js/main.js"))
+""".format(extra=extra, idx=v("assets/js/search-index.js"), js=v("assets/js/main.js"))
 
 
 # ============================================================
@@ -822,17 +845,40 @@ def cta_band():
   <div class="wrap">
     <div class="cta">
       <div>
-        <h2>Cần tư vấn chọn đúng model?</h2>
-        <p>Mỗi nguồn nước một khác. Gọi hotline, kỹ thuật viên sẽ hỏi về nguồn nước nhà bạn
-           và gợi ý model phù hợp — không mất phí.</p>
+        <h2>Trung tâm bảo hành BWT Barrier</h2>
+        <p>Tiếp nhận đăng ký bảo hành, cung cấp cụm lõi thay thế định kỳ và tư vấn xử lý kỹ thuật cho dòng máy lọc nước BWT Barrier iMaster.</p>
       </div>
       <div class="cta__act">
-        <a class="btn btn--light" href="tel:{tel}">{ic} Gọi <span class="nb">{hot}</span></a>
-        <a class="btn btn--outline-light" href="lien-he.html">Thông tin liên hệ</a>
+        <a class="btn btn--light" href="lien-he.html">Xem thông tin liên hệ</a>
       </div>
     </div>
   </div>
-</section>""".format(tel=HOTLINE_TEL, hot=HOTLINE_TEXT, ic=IC["phone"])
+</section>"""
+
+
+# Dữ liệu Câu hỏi thường gặp (FAQ) — 100% từ thông tin hiện có trên website
+FAQS_INDEX = [
+    (
+        "Bao lâu thì gia đình nên thay lõi lọc BWT Barrier một lần?",
+        "Chu kỳ thay lõi định kỳ khuyến nghị là 12 tháng hoặc theo định mức 8.000 lít (iMaster M) và 10.000 lít (iMaster L). Với các model có bộ đếm Water Meter, thiết bị sẽ hiển thị phần trăm tuổi thọ lõi còn lại theo lượng nước đã dùng thực tế.",
+    ),
+    (
+        "Máy lọc nước BWT Barrier iMaster có dùng điện và xả nước thải không?",
+        "BWT Barrier iMaster chạy bằng chính áp lực nước trong đường ống nên không cần điện và không xả nước thải, giúp tiết kiệm điện nước và bảo vệ môi trường.",
+    ),
+    (
+        "Nước sau lọc qua máy iMaster có uống trực tiếp được không?",
+        "Nước sau lọc uống trực tiếp tại vòi. Hệ thống loại bỏ clo, gỉ sét, kim loại nặng, vi khuẩn nhưng giữ lại và bổ sung khoáng chất canxi, magie, kẽm có lợi cho cơ thể thay vì lọc sạch trơ.",
+    ),
+    (
+        "Chính sách bảo hành và đổi trả của BWT Barrier quy định như thế nào?",
+        "Thân máy được bảo hành chính hãng 36 tháng, đổi trả theo quy định trong 7 ngày nếu lỗi từ nhà sản xuất. Đội ngũ kỹ thuật hướng dẫn lắp đặt, thay lõi tại nhà và theo dõi lịch thay lõi định kỳ 12 tháng.",
+    ),
+    (
+        "Nguồn nước có cặn trắng canxi (nước cứng) thì chọn model nào?",
+        "Đối với nguồn nước giếng khoan hoặc nước máy có độ cứng cao hay đóng cặn canxi ở ấm đun, model BWT Barrier iMaster H được trang bị lõi Softening chuyên làm mềm nước cứng, hạn chế cáu cặn canxi và giữ lại khoáng chất có lợi.",
+    ),
+]
 
 
 # ============================================================
@@ -842,13 +888,12 @@ def page_index():
     org_ld = ld(
         ld_org(), ld_website(),
         ld_page("index.html", "Trung tâm bảo hành BWT Barrier",
-                "Tiếp nhận bảo hành, thay lõi chính hãng và hỗ trợ kỹ thuật cho máy lọc nước "
+                "Tiếp nhận bảo hành chính hãng, cung cấp cụm lõi định kỳ và kiểm tra kỹ thuật máy lọc nước "
                 "BWT Barrier iMaster.",
                 image="assets/img/og-image.jpg", ptype="WebPage", has_crumb=False,
                 main=abs_url("san-pham.html") + "#itemlist"),
-        ld_itemlist(),
+        ld_faq(FAQS_INDEX),
     )
-
 
     feats = "".join([
         feature("drop", "Giữ khoáng, không lọc trơ",
@@ -857,24 +902,41 @@ def page_index():
                 "Thiết kế độc quyền bao kín cụm lõi thành một khối liền, chống nhiễm khuẩn ngược và rò rỉ."),
         feature("filter", "8 công nghệ lọc",
                 "Hạt trao đổi ion, sợi trao đổi ion, nano tăng cường, than hoạt tính, màng sợi rỗng và cân bằng khoáng."),
-        feature("award", "Lõi thay thế chính hãng",
-                "Trung tâm cung cấp lõi chính hãng, hướng dẫn hoặc thay giúp tại nhà."),
+        feature("award", "An toàn vật liệu BPA Free",
+                "Toàn bộ chi tiết tiếp xúc với dòng nước đều sử dụng nhựa nguyên sinh cao cấp, đáp ứng tiêu chuẩn an toàn thực phẩm."),
         feature("clock", "Tuổi thọ lõi 12 tháng",
                 "Lõi 8.000 – 10.000 lít, bộ đếm Water Meter báo chính xác thời điểm cần thay."),
-        feature("phone", "Hỗ trợ kỹ thuật tận nơi",
-                "Gọi hotline CSKH, kỹ thuật viên kiểm tra và xử lý ngay tại nhà bạn."),
+        feature("bolt", "Vận hành không dùng điện",
+                "Hệ thống hoạt động dựa trên áp lực nước tự nhiên trong đường ống, không tốn điện, không gây tiếng ồn và không xả nước thải."),
         feature("tool", "Lắp âm tủ gọn gàng",
                 "Kích thước 240 x 150 x 330 mm, lắp dưới chậu rửa hoặc trong tủ bếp, không chiếm mặt bàn."),
-        feature("shield", "Bảo hành 36 tháng",
-                "Bảo hành chính hãng cho thân máy, hỗ trợ lắp đặt và nhắc lịch thay lõi định kỳ."),
+        feature("sparkles", "Công nghệ One Touch",
+                "Thiết kế tháo lắp thông minh giúp việc thay thế cụm lõi tại nhà trở nên đơn giản chỉ với một thao tác xoay."),
     ])
 
-    cards = "".join(product_card(p) for p in PRODUCTS)
+    faq_html = "".join(
+        """<div class="faq-item" data-open="{is_open}">
+  <button class="faq-btn" type="button" aria-expanded="{is_exp}">
+    <span>{q}</span>
+    {chevron}
+  </button>
+  <div class="faq-panel">
+    <p>{a}</p>
+  </div>
+</div>""".format(
+            is_open="true" if i == 0 else "false",
+            is_exp="true" if i == 0 else "false",
+            q=html.escape(q),
+            a=html.escape(a),
+            chevron=IC["chevron"],
+        )
+        for i, (q, a) in enumerate(FAQS_INDEX)
+    )
 
     return (
         head("Trung tâm bảo hành BWT Barrier Art AI Series",
-             "Trung tâm bảo hành BWT Barrier: tiếp nhận bảo hành, thay lõi chính hãng, hỗ trợ "
-             "kỹ thuật cho máy lọc nước iMaster và Art AI Series. Hotline CSKH " + HOTLINE_TEXT + ".",
+             "Trung tâm bảo hành BWT Barrier: tiếp nhận bảo hành chính hãng, cung cấp cụm lõi và kiểm tra "
+             "kỹ thuật cho máy lọc nước iMaster và Art AI Series.",
              "index.html", org_ld)
         + topbar() + header("index.html")
         + """
@@ -885,12 +947,12 @@ def page_index():
     <div>
       <h1>Trung tâm bảo hành<br><em>BWT Barrier</em></h1>
       <p class="hero__lead">
-        Tiếp nhận bảo hành, thay lõi chính hãng, hỗ trợ kỹ thuật và lắp đặt. Kỹ thuật viên kiểm tra tận nơi, hỗ trợ trên toàn quốc.
+        Tiếp nhận bảo hành chính hãng, cung cấp cụm lõi định kỳ và kiểm tra kỹ thuật máy lọc nước BWT Barrier iMaster trên phạm vi toàn quốc.
       </p>
 
       <div class="hero__stats">
         <div class="hero__stat"><b>12 tháng</b><span>chu kỳ thay lõi</span></div>
-        <div class="hero__stat"><b>Toàn quốc</b><span>phạm vi hỗ trợ</span></div>
+        <div class="hero__stat"><b>Toàn quốc</b><span>mạng lưới phục vụ</span></div>
       </div>
     </div>
     <div class="hero__media hero__media--photo">
@@ -901,19 +963,121 @@ def page_index():
   </div>
 </section>
 
-<section class="sec" id="san-pham">
+<!-- 1. Dịch vụ khách hàng trọng tâm (Bento Showcase Layout) -->
+<section class="sec" id="dich-vu">
   <div class="wrap">
     <div class="sec__head">
-      <span class="eyebrow">Sản phẩm</span>
-      <h2>Máy lọc nước &amp; bộ tiền xử lý iMaster</h2>
-      <p>Các sản phẩm BWT Barrier đang phân phối tại Việt Nam — máy lọc nước uống trực tiếp,
-         bản kèm bộ đếm Water Meter và bộ tiền xử lý cho máy điện giải ion kiềm.</p>
+      <span class="eyebrow">Dịch vụ khách hàng</span>
+      <h2>Dịch vụ bảo hành &amp; kỹ thuật chính hãng</h2>
+      <p>Chính sách bảo hành chính hãng và các dịch vụ kỹ thuật định kỳ dành cho gia đình sử dụng máy lọc nước BWT Barrier.</p>
     </div>
-    <div class="pgrid">{cards}</div>
+
+    <div class="svc-bento">
+      <!-- Cột trái: Thẻ dịch vụ bảo hành chính hãng nổi bật -->
+      <div class="svc-bento__lead">
+        <div class="svc-bento__badge">{ic_shield} Bảo hành chính hãng 36 tháng</div>
+        <h3>Trung tâm tiếp nhận bảo hành chính hãng</h3>
+        <p class="svc-bento__desc">
+          Thân máy lọc nước BWT Barrier iMaster được bảo hành chính hãng 36 tháng trên toàn quốc.
+          Chính sách đổi trả theo quy định trong 7 ngày nếu có lỗi từ nhà sản xuất.
+        </p>
+        <ul class="checklist svc-bento__checklist">
+          <li>{chk}<span>Bảo hành chính hãng 36 tháng cho thân máy</span></li>
+          <li>{chk}<span>Đổi trả theo quy định trong 7 ngày nếu lỗi từ nhà sản xuất</span></li>
+          <li>{chk}<span>Tiếp nhận và xử lý kỹ thuật tận nơi trên toàn quốc</span></li>
+        </ul>
+      </div>
+
+      <!-- Cột phải: 3 dịch vụ dạng danh sách xếp lớp thanh lịch (thuần thông tin) -->
+      <div class="svc-bento__stack">
+        <div class="svc-item">
+          <div class="svc-item__ic">{ic_award}</div>
+          <div class="svc-item__body">
+            <div class="svc-item__meta">
+              <h4>Thay lõi lọc chính hãng</h4>
+              <span class="svc-item__tag">Chính hãng</span>
+            </div>
+            <p>Cung cấp cụm lõi thay thế chính hãng BWT Barrier iMaster M, L, H. Công nghệ One Touch tự thay lõi chỉ một thao tác xoay hoặc có kỹ thuật viên thay giúp tại nhà.</p>
+          </div>
+        </div>
+
+        <div class="svc-item">
+          <div class="svc-item__ic">{ic_tool}</div>
+          <div class="svc-item__body">
+            <div class="svc-item__meta">
+              <h4>Kiểm tra &amp; Xử lý kỹ thuật</h4>
+              <span class="svc-item__tag">Toàn quốc</span>
+            </div>
+            <p>Kỹ thuật viên kiểm tra áp lực nước, vận hành thiết bị và xử lý sự cố trực tiếp tại nhà khách hàng trên phạm vi toàn quốc.</p>
+          </div>
+        </div>
+
+        <div class="svc-item">
+          <div class="svc-item__ic">{ic_clock}</div>
+          <div class="svc-item__body">
+            <div class="svc-item__meta">
+              <h4>Lắp đặt &amp; Theo dõi chu kỳ</h4>
+              <span class="svc-item__tag">Chu kỳ 12 tháng</span>
+            </div>
+            <p>Lắp đặt máy âm dưới chậu rửa hoặc trong tủ bếp (240 x 150 x 330 mm), kết hợp theo dõi nhắc lịch thay lõi định kỳ 12 tháng hoặc qua bộ đếm Water Meter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="sec sec--tint">
+<!-- 2. Quy trình tiếp nhận dịch vụ 4 bước (Connected Flowline Timeline) -->
+<section class="sec sec--tint" id="quy-trinh">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">Quy trình phục vụ</span>
+      <h2>Quy trình tiếp nhận &amp; xử lý dịch vụ</h2>
+      <p>Các bước từ tiếp nhận yêu cầu đến khi hoàn tất kiểm tra vận hành và bàn giao thiết bị.</p>
+    </div>
+
+    <div class="flow-track">
+      <div class="flow-step">
+        <div class="flow-step__marker">01</div>
+        <div class="flow-step__card">
+          <div class="flow-step__ic">{ic_clipboard}</div>
+          <h4>Tiếp nhận yêu cầu</h4>
+          <p>Ghi nhận thông tin bảo hành, kiểm tra kỹ thuật hoặc nhu cầu thay lõi lọc.</p>
+        </div>
+      </div>
+
+      <div class="flow-step">
+        <div class="flow-step__marker">02</div>
+        <div class="flow-step__card">
+          <div class="flow-step__ic">{ic_cal}</div>
+          <h4>Tư vấn &amp; Hẹn lịch</h4>
+          <p>Kỹ thuật viên đối soát thông tin nguồn nước và xác nhận lịch hẹn kiểm tra phù hợp.</p>
+        </div>
+      </div>
+
+      <div class="flow-step">
+        <div class="flow-step__marker">03</div>
+        <div class="flow-step__card">
+          <div class="flow-step__ic">{ic_tool}</div>
+          <h4>Kiểm tra tại nhà</h4>
+          <p>Kỹ thuật viên kiểm tra vận hành máy, lắp đặt hoặc thay cụm lõi chính hãng.</p>
+        </div>
+      </div>
+
+      <div class="flow-step">
+        <div class="flow-step__marker">04</div>
+        <div class="flow-step__card">
+          <div class="flow-step__ic">{ic_sparkles}</div>
+          <h4>Bàn giao &amp; Nhắc lịch</h4>
+          <p>Bàn giao thiết bị vận hành ổn định và cập nhật thông tin chu kỳ thay lõi định kỳ 12 tháng.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Cầu nối Dòng sản phẩm iMaster -->
+<section class="sec">
   <div class="wrap">
     <div class="split">
       <div class="split__media">
@@ -922,25 +1086,26 @@ def page_index():
       </div>
       <div class="split__body">
         <span class="eyebrow">Dòng sản phẩm iMaster</span>
-        <h2>BWT Barrier iMaster</h2>
+        <h2>Công nghệ lọc nước giàu dưỡng chất BWT Barrier</h2>
         <p>
-          BWT Barrier iMaster là dòng máy lọc nước lắp âm tủ, chạy bằng chính áp lực nước trong
-          đường ống nên không cần điện và không xả nước thải.
+          BWT Barrier iMaster là dòng máy lọc nước lắp âm tủ cao cấp, vận hành bằng chính áp lực nước trong
+          đường ống — không cắm điện, không xả nước thải và bổ sung vi khoáng Magie, Kẽm có lợi cho tim mạch.
         </p>
         <ul class="checklist">
-          <li>{chk}<span>Lõi đúc nguyên khối độc quyền — chống nhiễm khuẩn và rỉ nước</span></li>
-          <li>{chk}<span>Loại bỏ tạp chất, gỉ sét, kim loại nặng, vi khuẩn và clo</span></li>
-          <li>{chk}<span>Giữ lại và bổ sung magie, kẽm — khoáng chất quan trọng cho sức khoẻ</span></li>
+          <li>{chk}<span>Lõi đúc nguyên khối độc quyền — chống nhiễm khuẩn ngược và rỉ nước</span></li>
+          <li>{chk}<span>Loại bỏ clo, kim loại nặng, vi khuẩn nhưng không làm nước mất khoáng trơ</span></li>
+          <li>{chk}<span>Công nghệ One Touch: tự thay cụm lõi tại nhà dễ dàng chỉ với một thao tác xoay</span></li>
         </ul>
         <p style="margin-top:26px">
-          <a class="btn btn--ghost" href="san-pham.html">Khám phá các dòng máy iMaster</a>
+          <a class="btn btn--primary" href="san-pham.html">Khám phá các dòng máy iMaster &rarr;</a>
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec">
+<!-- 4. Vì sao chọn iMaster -->
+<section class="sec sec--tint">
   <div class="wrap">
     <div class="sec__head">
       <span class="eyebrow">Vì sao chọn iMaster</span>
@@ -952,11 +1117,33 @@ def page_index():
   </div>
 </section>
 
+<!-- 5. Câu hỏi thường gặp (Split 2 Cột: Sidebar thuần nội dung + Accordion List) -->
+<section class="sec" id="hoi-dap">
+  <div class="wrap">
+    <div class="faq-layout">
+      <!-- Cột trái: Sidebar thuần thông tin -->
+      <div class="faq-sidebar">
+        <span class="eyebrow">Giải đáp thắc mắc</span>
+        <h2>Câu hỏi thường gặp</h2>
+        <p>Những giải đáp chi tiết về dịch vụ bảo hành, thay lõi và đặc tính kỹ thuật máy lọc nước BWT Barrier.</p>
+      </div>
+
+      <!-- Cột phải: Accordion list -->
+      <div class="faq-accordion-list">
+        {faq}
+      </div>
+    </div>
+  </div>
+</section>
+
 {cta}
 
 </main>
-""".format(tel=HOTLINE_TEL, hot=HOTLINE_TEXT, ic=IC["phone"],
-           cards=cards, feats=feats, chk=IC["check"], cta=cta_band())
+""".format(tel=HOTLINE_TEL, hot=HOTLINE_TEXT, ic_phone=IC["phone"],
+           ic_award=IC["award"], ic_shield=IC["shield"], ic_tool=IC["tool"],
+           ic_clock=IC["clock"], ic_clipboard=IC["clipboard"], ic_cal=IC["cal"],
+           ic_sparkles=IC["sparkles"], chk=IC["check"], feats=feats,
+           faq=faq_html, cta=cta_band())
         + footer() + tail()
     )
 
