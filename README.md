@@ -63,8 +63,8 @@ Mở `build.py`, sửa khối ngay đầu file rồi chạy `python build.py`:
 
 ```python
 SITE_NAME    = "Trung tâm bảo hành BWT Barrier"
-HOTLINE_TEXT = "1800 8134"                             # số hiển thị (hotline CSKH)
-HOTLINE_TEL  = "18008134"                              # số cho link tel:
+HOTLINE_TEXT = "0896 613 768"                             # số hiển thị (hotline CSKH)
+HOTLINE_TEL  = "0896613768"                              # số cho link tel:
 ADDRESS      = "90 Đinh Thị Thi, Hiệp Bình, Hồ Chí Minh"
 ```
 

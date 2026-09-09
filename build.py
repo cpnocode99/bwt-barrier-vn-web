@@ -15,8 +15,8 @@ SITE_NAME = "Trung tâm bảo hành BWT Barrier"
 DOMAIN = "https://bwtbarrier.com.vn"
 
 # >>> THÔNG TIN LIÊN HỆ — sửa 3 dòng dưới đây là đổi toàn site <<<
-HOTLINE_TEXT = "1800 8134"
-HOTLINE_TEL = "18008134"
+HOTLINE_TEXT = "0896 613 768"
+HOTLINE_TEL = "0896613768"
 ADDRESS = "90 Đinh Thị Thi, Hiệp Bình, Hồ Chí Minh"
 MAP_LINK = "https://maps.app.goo.gl/h5tJqBYY9ZJqJzLB9"
 MAP_EMBED = ("https://www.google.com/maps?q=10.845839,106.712965"
