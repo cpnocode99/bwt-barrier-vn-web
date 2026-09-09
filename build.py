@@ -882,8 +882,7 @@ def page_index():
     <div>
       <h1>Trung tâm bảo hành<br><em>BWT Barrier</em></h1>
       <p class="hero__lead">
-        Tiếp nhận bảo hành, thay lõi chính hãng, hỗ trợ kỹ thuật và lắp đặt cho máy lọc nước
-        BWT Barrier iMaster. Kỹ thuật viên kiểm tra tận nơi, hỗ trợ trên toàn quốc.
+        Tiếp nhận bảo hành, thay lõi chính hãng, hỗ trợ kỹ thuật và lắp đặt. Kỹ thuật viên kiểm tra tận nơi, hỗ trợ trên toàn quốc.
       </p>
 
       <div class="hero__stats">
