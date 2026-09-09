@@ -456,9 +456,9 @@ def head(title, desc, canonical, extra=""):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{domain}/assets/img/og-image.jpg">
 <meta name="theme-color" content="#0B2A5B">
-<link rel="icon" href="assets/img/favicon.ico" sizes="any">
-<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="icon" href="{fav_ico}" sizes="any">
+<link rel="icon" href="{fav_png}" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="{fav_apple}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
@@ -468,7 +468,10 @@ def head(title, desc, canonical, extra=""):
 <body>
 <a class="skip" href="#main">Bỏ qua và tới nội dung chính</a>
 """.format(title=html.escape(title), desc=html.escape(desc), canonical=canonical,
-           domain=DOMAIN, site=SITE_NAME, extra=extra, css=v("assets/css/style.css"))
+           domain=DOMAIN, site=SITE_NAME, extra=extra, css=v("assets/css/style.css"),
+           fav_ico=v("assets/img/favicon.ico"),
+           fav_png=v("assets/img/favicon-32.png"),
+           fav_apple=v("assets/img/apple-touch-icon.png"))
 
 
 def topbar():
