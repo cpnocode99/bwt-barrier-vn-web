@@ -886,7 +886,6 @@ def page_index():
       </p>
 
       <div class="hero__stats">
-        <div class="hero__stat"><b>36 tháng</b><span>bảo hành chính hãng</span></div>
         <div class="hero__stat"><b>12 tháng</b><span>chu kỳ thay lõi</span></div>
         <div class="hero__stat"><b>Toàn quốc</b><span>phạm vi hỗ trợ</span></div>
       </div>
