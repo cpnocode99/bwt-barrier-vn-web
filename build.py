@@ -1289,16 +1289,9 @@ def page_about():
         <span class="eyebrow">Trách nhiệm &amp; Phụng sự</span>
         <h2>Cam kết với khách hàng</h2>
         <p>
-          BWT Barrier cam kết bảo vệ sức khỏe gia đình bạn bằng chất lượng vật liệu an toàn tuyệt đối và dịch vụ chăm sóc trọn vòng đời sản phẩm:
+          BWT Barrier cam kết bảo vệ sức khỏe gia đình bạn bằng dịch vụ chăm sóc trọn vòng đời sản phẩm:
         </p>
         <div style="display:flex;flex-direction:column;gap:20px;margin:24px 0">
-          <div style="display:flex;gap:16px;align-items:flex-start">
-            <div class="fcard__ic" style="flex:none;margin:0">{ic_shield}</div>
-            <div>
-              <h3 style="margin:0 0 6px;font-size:1.1rem;color:var(--navy)">An toàn vật liệu (BPA Free)</h3>
-              <p style="margin:0;font-size:.95rem;color:var(--muted)">Toàn bộ chi tiết tiếp xúc với dòng nước đều sử dụng nhựa nguyên sinh cao cấp không chứa BPA (BPA Free), đáp ứng các tiêu chuẩn khắt khe về an toàn thực phẩm.</p>
-            </div>
-          </div>
           <div style="display:flex;gap:16px;align-items:flex-start">
             <div class="fcard__ic" style="flex:none;margin:0">{ic_clock}</div>
             <div>
