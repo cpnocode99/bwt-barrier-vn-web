@@ -802,6 +802,7 @@ def tail(extra=""):
     return """{extra}
 <script src="{idx}"></script>
 <script src="{js}"></script>
+<script src="https://app.2pm.space/widget.js" data-id="7070b23c-82cc-4860-9bf0-847e88250197"></script>
 </body>
 </html>
 """.format(extra=extra, idx=v("assets/js/search-index.js"), js=v("assets/js/main.js"))
