@@ -6,17 +6,74 @@
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Permissions-Policy", "value": "geolocation=(), microphone=(), camera=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), microphone=(), camera=()"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/may-loc-nuoc-imaster-m-co-bo-dem",
+      "destination": "/may-loc-nuoc-bwt-barrier-m-co-bo-dem",
+      "permanent": true
+    },
+    {
+      "source": "/may-loc-nuoc-imaster-l-co-bo-dem",
+      "destination": "/may-loc-nuoc-bwt-barrier-l-co-bo-dem",
+      "permanent": true
+    },
+    {
+      "source": "/may-loc-nuoc-imaster-h-co-bo-dem",
+      "destination": "/may-loc-nuoc-bwt-barrier-h-co-bo-dem",
+      "permanent": true
+    },
+    {
+      "source": "/may-loc-nuoc-imaster-m",
+      "destination": "/may-loc-nuoc-bwt-barrier-m",
+      "permanent": true
+    },
+    {
+      "source": "/may-loc-nuoc-imaster-l",
+      "destination": "/may-loc-nuoc-bwt-barrier-l",
+      "permanent": true
+    },
+    {
+      "source": "/may-loc-nuoc-imaster-h",
+      "destination": "/may-loc-nuoc-bwt-barrier-h",
+      "permanent": true
+    },
+    {
+      "source": "/bo-tien-xu-ly-imaster-ion-m",
+      "destination": "/bo-tien-xu-ly-bwt-barrier-ion-m",
+      "permanent": true
+    },
+    {
+      "source": "/bo-tien-xu-ly-imaster-ion-h",
+      "destination": "/bo-tien-xu-ly-bwt-barrier-ion-h",
+      "permanent": true
     }
   ]
 }

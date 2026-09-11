@@ -118,7 +118,7 @@
     function render(list, q) {
       if (!q) { box.hidden = true; box.innerHTML = ""; return; }
       if (!list.length) {
-        box.innerHTML = '<p class="sres-empty">Không tìm thấy kết quả cho “' + esc(q) + '”.<br>Thử: <b>iMaster M</b>, <b>tiền xử lý</b>, <b>nước cứng</b>…</p>';
+        box.innerHTML = '<p class="sres-empty">Không tìm thấy kết quả cho “' + esc(q) + '”.<br>Thử: <b>BWT Barrier M</b>, <b>tiền xử lý</b>, <b>nước cứng</b>…</p>';
         box.hidden = false;
         return;
       }
@@ -226,7 +226,7 @@
     if (!list.length) {
       wrap.innerHTML =
         '<p class="sres-empty">Không tìm thấy nội dung phù hợp. Bạn thử các từ khoá: ' +
-        '<b>iMaster M</b>, <b>iMaster L</b>, <b>iMaster H</b>, <b>tiền xử lý</b>, <b>nước cứng</b>.</p>';
+        '<b>BWT Barrier M</b>, <b>BWT Barrier L</b>, <b>BWT Barrier H</b>, <b>tiền xử lý</b>, <b>nước cứng</b>.</p>';
       return;
     }
     wrap.innerHTML = list.map(function (it) {

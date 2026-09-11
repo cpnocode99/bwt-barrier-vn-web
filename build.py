@@ -35,16 +35,16 @@ NAV = [
 PRODUCTS = [
     # ---------------- Máy lọc nước ----------------
     {
-        "slug": "may-loc-nuoc-imaster-m",
-        "name": "Máy lọc nước BWT Barrier iMaster M",
+        "slug": "may-loc-nuoc-bwt-barrier-m",
+        "name": "Máy lọc nước BWT Barrier M",
         "short": "Giàu dưỡng chất Mg+ và Zn, giữ khoáng tự nhiên, không dùng điện và không xả nước thải.",
         "cat": "may-loc",
         "cat_label": "Máy lọc nước",
         "price": "Liên hệ",
         "price_note": "Gọi hotline để nhận báo giá",
-        "sibling": ("may-loc-nuoc-imaster-m-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
+        "sibling": ("may-loc-nuoc-bwt-barrier-m-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
         "images": [
-            ("assets/img/imaster-m-hero.webp", "Máy lọc nước BWT Barrier iMaster M — bộ 3 lõi và vòi nước"),
+            ("assets/img/bwt-barrier-m-hero.webp", "Máy lọc nước BWT Barrier M — bộ 3 lõi và vòi nước"),
         ],
         "usps": [
             "Công nghệ Magnesium Mineralizer bổ sung Mg+ theo bằng sáng chế châu Âu EP 2094611B1",
@@ -68,8 +68,8 @@ PRODUCTS = [
             ("Bảo hành", "36 tháng"),
         ],
         "intro": [
-            "BWT Barrier iMaster M là mẫu máy lọc nước gia đình phổ biến của dòng iMaster tại Việt Nam. "
-            "Thay vì loại bỏ cả khoáng chất như màng RO, iMaster M giữ lại canxi, magie và kẽm ở hàm lượng "
+            "BWT Barrier M là mẫu máy lọc nước gia đình phổ biến của dòng BWT Barrier tại Việt Nam. "
+            "Thay vì loại bỏ cả khoáng chất như màng RO, BWT Barrier M giữ lại canxi, magie và kẽm ở hàm lượng "
             "tối ưu, đồng thời bổ sung thêm Mg+ qua công nghệ Magnesium Mineralizer được cấp bằng sáng chế châu Âu.",
             "Cụm lọc được đúc nguyên khối và gắn nhanh theo cơ chế One Touch, nên bạn có thể tự thay lõi "
             "tại nhà trong chưa đầy một phút mà không cần dụng cụ, không lo rò rỉ hay nhiễm khuẩn ngược.",
@@ -77,19 +77,19 @@ PRODUCTS = [
         "best_for": "Hộ gia đình dùng nước máy đô thị, muốn nước uống giàu khoáng, lắp gọn trong tủ bếp.",
     },
     {
-        "slug": "may-loc-nuoc-imaster-l",
-        "name": "Máy lọc nước BWT Barrier iMaster L",
-        "short": "Bản nâng cấp của dòng iMaster: lõi 10.000 lít, dùng bền hơn khoảng 25% so với iMaster M.",
+        "slug": "may-loc-nuoc-bwt-barrier-l",
+        "name": "Máy lọc nước BWT Barrier L",
+        "short": "Bản nâng cấp của dòng BWT Barrier: lõi 10.000 lít, dùng bền hơn khoảng 25% so với BWT Barrier M.",
         "cat": "may-loc",
         "cat_label": "Máy lọc nước",
         "price": "Liên hệ",
         "price_note": "Gọi hotline để nhận báo giá",
-        "sibling": ("may-loc-nuoc-imaster-l-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
+        "sibling": ("may-loc-nuoc-bwt-barrier-l-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
         "images": [
-            ("assets/img/imaster-l-hero.webp", "Máy lọc nước BWT Barrier iMaster L — bộ 3 lõi và vòi nước"),
+            ("assets/img/bwt-barrier-l-hero.webp", "Máy lọc nước BWT Barrier L — bộ 3 lõi và vòi nước"),
         ],
         "usps": [
-            "Tuổi thọ lõi 10.000 lít — dài hơn khoảng 25% so với bản iMaster M",
+            "Tuổi thọ lõi 10.000 lít — dài hơn khoảng 25% so với bản BWT Barrier M",
             "Bộ lõi Ion-Exchange ByPass Plus + Nano Plus + than hoạt tính tẩm bạc",
             "Bổ sung magie, giữ vi khoáng có lợi, loại bỏ clo, kim loại nặng, vi khuẩn",
             "Không dùng điện, không nước thải, không cần bình áp",
@@ -98,7 +98,7 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Công nghệ lọc", "iMaster L, Ion-Exchange ByPass Plus, Nano Plus, Silver-Impregnated Carbon"),
+            ("Công nghệ lọc", "Ion-Exchange ByPass Plus, Nano Plus, Silver-Impregnated Carbon"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
             ("Tốc độ tạo nước", "2 lít/phút"),
             ("Bộ đếm Water Meter", "Không kèm theo"),
@@ -110,25 +110,25 @@ PRODUCTS = [
             ("Bảo hành", "36 tháng"),
         ],
         "intro": [
-            "iMaster L là bản nâng cấp của dòng máy lọc nước âm tủ BWT Barrier. Cùng triết lý “lọc sạch nhưng "
-            "giữ khoáng”, iMaster L nâng tuổi thọ lõi lên 10.000 lít — tương đương khoảng 12 tháng cho hộ gia đình "
-            "4 người, dài hơn bản iMaster M khoảng một phần tư.",
+            "BWT Barrier L là bản nâng cấp của dòng máy lọc nước âm tủ BWT Barrier. Cùng triết lý “lọc sạch nhưng "
+            "giữ khoáng”, BWT Barrier L nâng tuổi thọ lõi lên 10.000 lít — tương đương khoảng 12 tháng cho hộ gia đình "
+            "4 người, dài hơn bản BWT Barrier M khoảng một phần tư.",
             "Đây là lựa chọn phù hợp cho gia đình đông người hoặc văn phòng nhỏ, nơi lượng nước tiêu thụ mỗi ngày "
             "cao nên chi phí thay lõi theo năm là khoản đáng cân nhắc.",
         ],
         "best_for": "Gia đình đông người hoặc văn phòng nhỏ, cần lõi bền và ít phải thay.",
     },
     {
-        "slug": "may-loc-nuoc-imaster-h",
-        "name": "Máy lọc nước BWT Barrier iMaster H",
+        "slug": "may-loc-nuoc-bwt-barrier-h",
+        "name": "Máy lọc nước BWT Barrier H",
         "short": "Chuyên cho nước cứng: làm mềm nước, hạn chế cáu cặn canxi mà vẫn giữ khoáng Ca – Mg – K cân bằng.",
         "cat": "may-loc",
         "cat_label": "Máy lọc nước",
         "price": "Liên hệ",
         "price_note": "Gọi hotline để nhận báo giá",
-        "sibling": ("may-loc-nuoc-imaster-h-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
+        "sibling": ("may-loc-nuoc-bwt-barrier-h-co-bo-dem", "Bản kèm bộ đếm Water Meter"),
         "images": [
-            ("assets/img/imaster-h-hero.webp", "Máy lọc nước BWT Barrier iMaster H — bộ 3 lõi làm mềm nước cứng"),
+            ("assets/img/bwt-barrier-h-hero.webp", "Máy lọc nước BWT Barrier H — bộ 3 lõi làm mềm nước cứng"),
         ],
         "usps": [
             "Lõi Softening chuyên làm mềm nước cứng, hạn chế cáu cặn canxi",
@@ -153,7 +153,7 @@ PRODUCTS = [
         ],
         "intro": [
             "Nhiều khu vực tại Việt Nam dùng nước giếng khoan hoặc nước máy có độ cứng cao: ấm đun đóng cặn trắng, "
-            "nước pha trà nổi váng, thiết bị gia dụng nhanh hỏng. iMaster H được thiết kế riêng cho tình huống này.",
+            "nước pha trà nổi váng, thiết bị gia dụng nhanh hỏng. BWT Barrier H được thiết kế riêng cho tình huống này.",
             "Lõi số 2 Softening sử dụng hạt trao đổi ion kết hợp cơ chế ByPass+ — thay vì khử hết ion canxi và "
             "magie làm nước trở nên trơ, hệ thống chỉ đưa độ cứng về ngưỡng an toàn và giữ lại phần khoáng có lợi cho cơ thể.",
         ],
@@ -162,21 +162,21 @@ PRODUCTS = [
 
     # ---------------- Máy lọc nước có bộ đếm ----------------
     {
-        "slug": "may-loc-nuoc-imaster-m-co-bo-dem",
-        "name": "Máy lọc nước BWT Barrier iMaster M có bộ đếm",
-        "short": "iMaster M kèm bộ đếm Water Meter — hiển thị lượng nước đã lọc và thời điểm cần thay lõi.",
+        "slug": "may-loc-nuoc-bwt-barrier-m-co-bo-dem",
+        "name": "Máy lọc nước BWT Barrier M có bộ đếm",
+        "short": "BWT Barrier M kèm bộ đếm Water Meter — hiển thị lượng nước đã lọc và thời điểm cần thay lõi.",
         "cat": "co-bo-dem",
         "cat_label": "Có bộ đếm",
         "price": "Liên hệ",
         "price_note": "Gọi hotline để nhận báo giá",
-        "sibling": ("may-loc-nuoc-imaster-m", "Bản không kèm bộ đếm"),
+        "sibling": ("may-loc-nuoc-bwt-barrier-m", "Bản không kèm bộ đếm"),
         "images": [
-            ("assets/img/imaster-m-meter-hero.webp", "Máy lọc nước BWT Barrier iMaster M kèm bộ đếm Water Meter"),
+            ("assets/img/bwt-barrier-m-meter-hero.webp", "Máy lọc nước BWT Barrier M kèm bộ đếm Water Meter"),
         ],
         "usps": [
             "Bộ đếm Water Meter đo lưu lượng thực tế, báo phần trăm tuổi thọ lõi còn lại",
             "Không phải nhớ ngày thay lõi — thiết bị nhắc theo lượng nước đã dùng",
-            "Giữ nguyên bộ lõi 8.000 lít và công nghệ Magnesium Mineralizer của iMaster M",
+            "Giữ nguyên bộ lõi 8.000 lít và công nghệ Magnesium Mineralizer của BWT Barrier M",
             "Giữ lại khoáng chất có lợi Ca, Mg, Zn thay vì lọc sạch trơ như công nghệ RO",
             "Không dùng điện, không nước thải, tốc độ 2 lít/phút",
             "Lắp âm dưới chậu rửa, thay lõi One Touch tại nhà",
@@ -195,7 +195,7 @@ PRODUCTS = [
             ("Bảo hành", "36 tháng"),
         ],
         "intro": [
-            "Đây là bản iMaster M đi kèm bộ đếm Water Meter — thiết bị đo lưu lượng gắn trực tiếp trên đường nước "
+            "Đây là bản BWT Barrier M đi kèm bộ đếm Water Meter — thiết bị đo lưu lượng gắn trực tiếp trên đường nước "
             "vào máy. Màn hình hiển thị lượng nước đã lọc và phần tuổi thọ lõi còn lại, thay cho việc phải nhớ "
             "ngày lắp và ước lượng bằng cảm tính.",
             "Thay lõi muộn là lỗi thường gặp khiến nước đầu ra không còn đạt chất lượng như thiết kế. Với hộ gia "
@@ -204,19 +204,19 @@ PRODUCTS = [
         "best_for": "Hộ gia đình muốn theo dõi tuổi thọ lõi tự động, dùng nước không đều giữa các tháng.",
     },
     {
-        "slug": "may-loc-nuoc-imaster-l-co-bo-dem",
-        "name": "Máy lọc nước BWT Barrier iMaster L có bộ đếm",
-        "short": "iMaster L lõi 10.000 lít kèm bộ đếm Water Meter theo dõi tuổi thọ lõi theo thời gian thực.",
+        "slug": "may-loc-nuoc-bwt-barrier-l-co-bo-dem",
+        "name": "Máy lọc nước BWT Barrier L có bộ đếm",
+        "short": "BWT Barrier L lõi 10.000 lít kèm bộ đếm Water Meter theo dõi tuổi thọ lõi theo thời gian thực.",
         "cat": "co-bo-dem",
         "cat_label": "Có bộ đếm",
         "price": "Liên hệ",
         "price_note": "Gọi hotline để nhận báo giá",
-        "sibling": ("may-loc-nuoc-imaster-l", "Bản không kèm bộ đếm"),
+        "sibling": ("may-loc-nuoc-bwt-barrier-l", "Bản không kèm bộ đếm"),
         "images": [
-            ("assets/img/imaster-l-meter-hero.webp", "Máy lọc nước BWT Barrier iMaster L kèm bộ đếm Water Meter"),
+            ("assets/img/bwt-barrier-l-meter-hero.webp", "Máy lọc nước BWT Barrier L kèm bộ đếm Water Meter"),
         ],
         "usps": [
-            "Cấu hình đầy đủ của dòng iMaster: lõi 10.000 lít cộng bộ đếm Water Meter",
+            "Cấu hình đầy đủ của dòng BWT Barrier: lõi 10.000 lít cộng bộ đếm Water Meter",
             "Bộ đếm hiển thị chính xác lượng nước đã lọc và thời điểm cần thay lõi",
             "Bộ lõi Ion-Exchange ByPass Plus + Nano Plus + than hoạt tính tẩm bạc",
             "Bổ sung magie, giữ vi khoáng có lợi, loại bỏ clo, kim loại nặng, vi khuẩn",
@@ -225,7 +225,7 @@ PRODUCTS = [
         ],
         "specs": [
             ("Thương hiệu", "BWT Barrier"),
-            ("Công nghệ lọc", "iMaster L, Ion-Exchange ByPass Plus, Nano Plus, Silver-Impregnated Carbon"),
+            ("Công nghệ lọc", "Ion-Exchange ByPass Plus, Nano Plus, Silver-Impregnated Carbon"),
             ("Công suất lọc định mức", "10.000 lít (khoảng 12 tháng sử dụng)"),
             ("Tốc độ tạo nước", "2 lít/phút"),
             ("Bộ đếm Water Meter", "Có — Cartridge Lifetime Monitor, gắn trên đường nước vào"),
@@ -237,7 +237,7 @@ PRODUCTS = [
             ("Bảo hành", "36 tháng"),
         ],
         "intro": [
-            "iMaster L có bộ đếm là cấu hình đầy đủ của dòng máy lọc nước âm tủ BWT Barrier: lõi tuổi thọ "
+            "BWT Barrier L có bộ đếm là cấu hình đầy đủ của dòng máy lọc nước âm tủ BWT Barrier: lõi tuổi thọ "
             "10.000 lít đi cùng bộ đếm Water Meter gắn trực tiếp trên đường nước.",
             "Với gia đình đông người hoặc văn phòng nhỏ, lượng nước tiêu thụ mỗi ngày cao và việc theo dõi tuổi "
             "thọ lõi bằng cảm tính dễ dẫn tới thay muộn — bộ đếm giải quyết đúng điểm này.",
@@ -245,16 +245,16 @@ PRODUCTS = [
         "best_for": "Gia đình đông người hoặc văn phòng nhỏ, cần lõi bền và muốn theo dõi tuổi thọ lõi tự động.",
     },
     {
-        "slug": "may-loc-nuoc-imaster-h-co-bo-dem",
-        "name": "Máy lọc nước BWT Barrier iMaster H có bộ đếm",
-        "short": "iMaster H làm mềm nước cứng, kèm bộ đếm Water Meter báo thời điểm thay lõi.",
+        "slug": "may-loc-nuoc-bwt-barrier-h-co-bo-dem",
+        "name": "Máy lọc nước BWT Barrier H có bộ đếm",
+        "short": "BWT Barrier H làm mềm nước cứng, kèm bộ đếm Water Meter báo thời điểm thay lõi.",
         "cat": "co-bo-dem",
         "cat_label": "Có bộ đếm",
         "price": "Liên hệ",
         "price_note": "Gọi hotline để nhận báo giá",
-        "sibling": ("may-loc-nuoc-imaster-h", "Bản không kèm bộ đếm"),
+        "sibling": ("may-loc-nuoc-bwt-barrier-h", "Bản không kèm bộ đếm"),
         "images": [
-            ("assets/img/imaster-h-meter-hero.webp", "Máy lọc nước BWT Barrier iMaster H kèm bộ đếm Water Meter"),
+            ("assets/img/bwt-barrier-h-meter-hero.webp", "Máy lọc nước BWT Barrier H kèm bộ đếm Water Meter"),
         ],
         "usps": [
             "Lõi Softening chuyên làm mềm nước cứng, hạn chế cáu cặn canxi",
@@ -278,7 +278,7 @@ PRODUCTS = [
             ("Bảo hành", "36 tháng"),
         ],
         "intro": [
-            "Bản iMaster H đi kèm bộ đếm Water Meter. Với nguồn nước cứng, lõi làm mềm chịu tải nặng hơn bình "
+            "Bản BWT Barrier H đi kèm bộ đếm Water Meter. Với nguồn nước cứng, lõi làm mềm chịu tải nặng hơn bình "
             "thường nên tuổi thọ thực tế có thể ngắn hơn con số 8.000 lít trên lý thuyết.",
             "Bộ đếm đo lưu lượng thật đi qua máy, nhờ đó bạn biết chính xác khi nào cần thay lõi thay vì ước "
             "lượng theo lịch — điều khá quan trọng ở khu vực nước giếng khoan.",
@@ -288,8 +288,8 @@ PRODUCTS = [
 
     # ---------------- Bộ tiền xử lý ----------------
     {
-        "slug": "bo-tien-xu-ly-imaster-ion-m",
-        "name": "Bộ tiền xử lý nước BWT Barrier iMaster ion M",
+        "slug": "bo-tien-xu-ly-bwt-barrier-ion-m",
+        "name": "Bộ tiền xử lý nước BWT Barrier ion M",
         "short": "Bộ tiền lọc chuyên dụng cho máy điện giải ion kiềm — cân bằng pH và chống bám cặn điện cực.",
         "cat": "tien-xu-ly",
         "cat_label": "Bộ tiền xử lý",
@@ -297,7 +297,7 @@ PRODUCTS = [
         "price_note": "Gọi hotline để nhận báo giá",
         "sibling": None,
         "images": [
-            ("assets/img/ion-m-hero.webp", "Hộp bộ tiền xử lý nước BWT Barrier iMaster ion M"),
+            ("assets/img/ion-m-hero.webp", "Hộp bộ tiền xử lý nước BWT Barrier ion M"),
         ],
         "usps": [
             "Cân bằng pH nước đầu vào, giúp máy điện giải đạt hiệu suất điện phân cao hơn tới 3 lần",
@@ -323,14 +323,14 @@ PRODUCTS = [
             "Máy điện giải ion kiềm chỉ hoạt động tốt khi nguồn nước đầu vào đủ sạch và có độ pH phù hợp. Nếu nước "
             "đầu vào còn clo dư, cặn canxi hay độ cứng cao, tấm điện cực sẽ đóng cặn rất nhanh — hiệu suất điện phân "
             "giảm dần và chi phí sửa chữa buồng điện phân là khoản đắt nhất của một chiếc máy ion kiềm.",
-            "Bộ tiền xử lý iMaster ion M giải quyết đúng điểm này: xử lý nguồn nước trước khi vào máy, cân bằng pH, "
+            "Bộ tiền xử lý BWT Barrier ion M giải quyết đúng điểm này: xử lý nguồn nước trước khi vào máy, cân bằng pH, "
             "chống bám cặn điện cực, đồng thời vẫn giữ lại nhóm khoáng Ca – Mg – Zn cần thiết cho quá trình điện phân.",
         ],
         "best_for": "Nhà đang dùng máy lọc nước ion kiềm với nguồn nước máy đô thị, muốn bảo vệ buồng điện phân.",
     },
     {
-        "slug": "bo-tien-xu-ly-imaster-ion-h",
-        "name": "Bộ tiền xử lý nước BWT Barrier iMaster ion H",
+        "slug": "bo-tien-xu-ly-bwt-barrier-ion-h",
+        "name": "Bộ tiền xử lý nước BWT Barrier ion H",
         "short": "Phiên bản dành cho khu vực nước cứng — làm mềm nước trước khi vào máy điện giải ion kiềm.",
         "cat": "tien-xu-ly",
         "cat_label": "Bộ tiền xử lý",
@@ -338,7 +338,7 @@ PRODUCTS = [
         "price_note": "Gọi hotline để nhận báo giá",
         "sibling": None,
         "images": [
-            ("assets/img/ion-h-hero.webp", "Hộp bộ tiền xử lý nước BWT Barrier iMaster ion H"),
+            ("assets/img/ion-h-hero.webp", "Hộp bộ tiền xử lý nước BWT Barrier ion H"),
         ],
         "usps": [
             "Làm mềm nước cứng trước khi vào máy điện giải — chống cáu cặn canxi trên buồng điện phân",
@@ -361,7 +361,7 @@ PRODUCTS = [
             ("Bảo hành", "36 tháng"),
         ],
         "intro": [
-            "iMaster ion H là bản “nước cứng” của bộ tiền xử lý BWT Barrier. Cấu hình lõi được thay đổi để ưu tiên "
+            "BWT Barrier ion H là bản “nước cứng” của bộ tiền xử lý BWT Barrier. Cấu hình lõi được thay đổi để ưu tiên "
             "làm mềm nước — phù hợp với các khu vực dùng nước giếng khoan hoặc nước máy có độ cứng cao, nơi buồng "
             "điện phân của máy ion kiềm rất nhanh đóng cặn trắng.",
             "Sau khi qua bộ tiền xử lý, nước vào máy điện giải đã được khử clo, giảm độ cứng về ngưỡng an toàn và "
@@ -500,7 +500,7 @@ def header(active):
     <div class="search">
       <form class="search__form" role="search" action="tim-kiem.html" method="get">
         <label class="visually-hidden" for="q">Tìm sản phẩm BWT Barrier</label>
-        <input class="search__input" id="q" name="q" type="search" placeholder="Tìm sản phẩm: iMaster M, có bộ đếm, nước cứng…"
+        <input class="search__input" id="q" name="q" type="search" placeholder="Tìm sản phẩm: BWT Barrier M, có bộ đếm, nước cứng…"
                autocomplete="off" aria-controls="search-results">
         <button class="search__btn" type="submit" aria-label="Tìm kiếm">{ic}</button>
       </form>
@@ -565,7 +565,7 @@ def ld_org():
         "alternateName": "BWT Barrier",
         "url": DOMAIN + "/",
         "description": "Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước "
-                       "BWT Barrier iMaster tại Việt Nam.",
+                       "BWT Barrier tại Việt Nam.",
         "logo": {
             "@type": "ImageObject", "@id": LOGO_ID,
             "url": abs_url("assets/img/barrier-logo.webp"),
@@ -717,7 +717,7 @@ def ld_itemlist():
     return {
         "@type": "ItemList",
         "@id": abs_url("san-pham.html") + "#itemlist",
-        "name": "Sản phẩm BWT Barrier iMaster",
+        "name": "Sản phẩm BWT Barrier",
         "numberOfItems": len(PRODUCTS),
         "itemListElement": [
             {"@type": "ListItem", "position": i + 1, "name": x["name"],
@@ -771,7 +771,7 @@ def footer():
       <div>
         <a class="logo logo--ftr" href="index.html">{logo}</a>
         <p class="ftr__about">
-          Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier iMaster:
+          Trung tâm bảo hành và chăm sóc khách hàng cho máy lọc nước BWT Barrier:
           tiếp nhận bảo hành, thay lõi chính hãng và hỗ trợ kỹ thuật trên toàn quốc.
         </p>
       </div>
@@ -847,7 +847,7 @@ def cta_band():
     <div class="cta">
       <div>
         <h2>Trung tâm bảo hành BWT Barrier</h2>
-        <p>Tiếp nhận đăng ký bảo hành, cung cấp cụm lõi thay thế định kỳ và tư vấn xử lý kỹ thuật cho dòng máy lọc nước BWT Barrier iMaster.</p>
+        <p>Tiếp nhận đăng ký bảo hành, cung cấp cụm lõi thay thế định kỳ và tư vấn xử lý kỹ thuật cho dòng máy lọc nước BWT Barrier.</p>
       </div>
       <div class="cta__act">
         <a class="btn btn--light" href="lien-he.html">Xem thông tin liên hệ</a>
@@ -861,14 +861,14 @@ def cta_band():
 FAQS_INDEX = [
     (
         "Bao lâu thì gia đình nên thay lõi lọc BWT Barrier một lần?",
-        "Chu kỳ thay lõi định kỳ khuyến nghị là 12 tháng hoặc theo định mức 8.000 lít (iMaster M) và 10.000 lít (iMaster L). Với các model có bộ đếm Water Meter, thiết bị sẽ hiển thị phần trăm tuổi thọ lõi còn lại theo lượng nước đã dùng thực tế.",
+        "Chu kỳ thay lõi định kỳ khuyến nghị là 12 tháng hoặc theo định mức 8.000 lít (BWT Barrier M) và 10.000 lít (BWT Barrier L). Với các model có bộ đếm Water Meter, thiết bị sẽ hiển thị phần trăm tuổi thọ lõi còn lại theo lượng nước đã dùng thực tế.",
     ),
     (
-        "Máy lọc nước BWT Barrier iMaster có dùng điện và xả nước thải không?",
-        "BWT Barrier iMaster chạy bằng chính áp lực nước trong đường ống nên không cần điện và không xả nước thải, giúp tiết kiệm điện nước và bảo vệ môi trường.",
+        "Máy lọc nước BWT Barrier có dùng điện và xả nước thải không?",
+        "BWT Barrier chạy bằng chính áp lực nước trong đường ống nên không cần điện và không xả nước thải, giúp tiết kiệm điện nước và bảo vệ môi trường.",
     ),
     (
-        "Nước sau lọc qua máy iMaster có uống trực tiếp được không?",
+        "Nước sau lọc qua máy BWT Barrier có uống trực tiếp được không?",
         "Nước sau lọc uống trực tiếp tại vòi. Hệ thống loại bỏ clo, gỉ sét, kim loại nặng, vi khuẩn nhưng giữ lại và bổ sung khoáng chất canxi, magie, kẽm có lợi cho cơ thể thay vì lọc sạch trơ.",
     ),
     (
@@ -877,7 +877,7 @@ FAQS_INDEX = [
     ),
     (
         "Nguồn nước có cặn trắng canxi (nước cứng) thì chọn model nào?",
-        "Đối với nguồn nước giếng khoan hoặc nước máy có độ cứng cao hay đóng cặn canxi ở ấm đun, model BWT Barrier iMaster H được trang bị lõi Softening chuyên làm mềm nước cứng, hạn chế cáu cặn canxi và giữ lại khoáng chất có lợi.",
+        "Đối với nguồn nước giếng khoan hoặc nước máy có độ cứng cao hay đóng cặn canxi ở ấm đun, model BWT Barrier H được trang bị lõi Softening chuyên làm mềm nước cứng, hạn chế cáu cặn canxi và giữ lại khoáng chất có lợi.",
     ),
 ]
 
@@ -890,7 +890,7 @@ def page_index():
         ld_org(), ld_website(),
         ld_page("index.html", "Trung tâm bảo hành BWT Barrier",
                 "Tiếp nhận bảo hành chính hãng, cung cấp cụm lõi định kỳ và kiểm tra kỹ thuật máy lọc nước "
-                "BWT Barrier iMaster.",
+                "BWT Barrier.",
                 image="assets/img/og-image.jpg", ptype="WebPage", has_crumb=False,
                 main=abs_url("san-pham.html") + "#itemlist"),
         ld_faq(FAQS_INDEX),
@@ -937,7 +937,7 @@ def page_index():
     return (
         head("Trung tâm bảo hành BWT Barrier Art AI Series",
              "Trung tâm bảo hành BWT Barrier: tiếp nhận bảo hành chính hãng, cung cấp cụm lõi và kiểm tra "
-             "kỹ thuật cho máy lọc nước iMaster và Art AI Series.",
+             "kỹ thuật cho máy lọc nước BWT Barrier và Art AI Series.",
              "index.html", org_ld)
         + topbar() + header("index.html")
         + """
@@ -948,7 +948,7 @@ def page_index():
     <div>
       <h1>Trung tâm bảo hành<br><em>BWT Barrier</em></h1>
       <p class="hero__lead">
-        Tiếp nhận bảo hành chính hãng, cung cấp cụm lõi định kỳ và kiểm tra kỹ thuật máy lọc nước BWT Barrier iMaster trên phạm vi toàn quốc.
+        Tiếp nhận bảo hành chính hãng, cung cấp cụm lõi định kỳ và kiểm tra kỹ thuật máy lọc nước BWT Barrier trên phạm vi toàn quốc.
       </p>
 
       <div class="hero__stats">
@@ -979,7 +979,7 @@ def page_index():
         <div class="svc-bento__badge">{ic_shield} Bảo hành chính hãng 36 tháng</div>
         <h3>Trung tâm tiếp nhận bảo hành chính hãng</h3>
         <p class="svc-bento__desc">
-          Thân máy lọc nước BWT Barrier iMaster được bảo hành chính hãng 36 tháng trên toàn quốc.
+          Thân máy lọc nước BWT Barrier được bảo hành chính hãng 36 tháng trên toàn quốc.
           Chính sách đổi trả theo quy định trong 7 ngày nếu có lỗi từ nhà sản xuất.
         </p>
         <ul class="checklist svc-bento__checklist">
@@ -998,7 +998,7 @@ def page_index():
               <h4>Thay lõi lọc chính hãng</h4>
               <span class="svc-item__tag">Chính hãng</span>
             </div>
-            <p>Cung cấp cụm lõi thay thế chính hãng BWT Barrier iMaster M, L, H. Công nghệ One Touch tự thay lõi chỉ một thao tác xoay hoặc có kỹ thuật viên thay giúp tại nhà.</p>
+            <p>Cung cấp cụm lõi thay thế chính hãng BWT Barrier M, L, H. Công nghệ One Touch tự thay lõi chỉ một thao tác xoay hoặc có kỹ thuật viên thay giúp tại nhà.</p>
           </div>
         </div>
 
@@ -1077,7 +1077,7 @@ def page_index():
   </div>
 </section>
 
-<!-- 3. Cầu nối Dòng sản phẩm iMaster -->
+<!-- 3. Cầu nối Dòng sản phẩm BWT Barrier -->
 <section class="sec">
   <div class="wrap">
     <div class="split">
@@ -1086,10 +1086,10 @@ def page_index():
              alt="Sơ đồ công nghệ lọc BWT Barrier: loại bỏ tạp chất, giữ lại khoáng chất có lợi">
       </div>
       <div class="split__body">
-        <span class="eyebrow">Dòng sản phẩm iMaster</span>
+        <span class="eyebrow">Dòng sản phẩm BWT Barrier</span>
         <h2>Công nghệ lọc nước giàu dưỡng chất BWT Barrier</h2>
         <p>
-          BWT Barrier iMaster là dòng máy lọc nước lắp âm tủ cao cấp, vận hành bằng chính áp lực nước trong
+          BWT Barrier là dòng máy lọc nước lắp âm tủ cao cấp, vận hành bằng chính áp lực nước trong
           đường ống — không cắm điện, không xả nước thải và bổ sung vi khoáng Magie, Kẽm có lợi cho tim mạch.
         </p>
         <ul class="checklist">
@@ -1098,18 +1098,18 @@ def page_index():
           <li>{chk}<span>Công nghệ One Touch: tự thay cụm lõi tại nhà dễ dàng chỉ với một thao tác xoay</span></li>
         </ul>
         <p style="margin-top:26px">
-          <a class="btn btn--primary" href="san-pham.html">Khám phá các dòng máy iMaster &rarr;</a>
+          <a class="btn btn--primary" href="san-pham.html">Khám phá các dòng máy BWT Barrier &rarr;</a>
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 4. Vì sao chọn iMaster -->
+<!-- 4. Vì sao chọn BWT Barrier -->
 <section class="sec sec--tint">
   <div class="wrap">
     <div class="sec__head">
-      <span class="eyebrow">Vì sao chọn iMaster</span>
+      <span class="eyebrow">Vì sao chọn BWT Barrier</span>
       <h2>Sạch nhưng không mất đi khoáng chất</h2>
       <p>Điểm khác biệt của BWT Barrier nằm ở triết lý lọc: không khử sạch trơ,
          mà đưa nguồn nước về đúng thành phần khoáng có lợi cho cơ thể.</p>
@@ -1155,13 +1155,13 @@ def page_index():
 def page_products():
     cards = "".join(product_card(p) for p in PRODUCTS)
     return (
-        head("Sản phẩm BWT Barrier iMaster — Máy lọc nước & bộ tiền xử lý",
-             "Máy lọc nước BWT Barrier iMaster M, L, H (bản thường và bản kèm bộ đếm Water Meter) "
+        head("Sản phẩm BWT Barrier — Máy lọc nước & bộ tiền xử lý",
+             "Máy lọc nước BWT Barrier M, L, H (bản thường và bản kèm bộ đếm Water Meter) "
              "cùng bộ tiền xử lý ion M, ion H — thông số kỹ thuật và tư vấn chọn model.",
              "san-pham.html",
              ld(ld_org(), ld_website(),
-                ld_page("san-pham.html", "Sản phẩm BWT Barrier iMaster",
-                        "Danh mục máy lọc nước và bộ tiền xử lý nước BWT Barrier iMaster.",
+                ld_page("san-pham.html", "Sản phẩm BWT Barrier",
+                        "Danh mục máy lọc nước và bộ tiền xử lý nước BWT Barrier.",
                         ptype="CollectionPage",
                         main=abs_url("san-pham.html") + "#itemlist"),
                 ld_crumb("san-pham.html", [("san-pham.html", "Sản phẩm")]),
@@ -1172,8 +1172,8 @@ def page_products():
 <main id="main">
 <section class="phead">
   <div class="wrap">
-    <h1>Sản phẩm BWT Barrier iMaster</h1>
-    <p>Các sản phẩm BWT Barrier iMaster đang phân phối tại Việt Nam. Chọn nhóm bên dưới để lọc nhanh
+    <h1>Sản phẩm BWT Barrier</h1>
+    <p>Các sản phẩm BWT Barrier đang phân phối tại Việt Nam. Chọn nhóm bên dưới để lọc nhanh
        giữa máy lọc nước uống trực tiếp, bản kèm bộ đếm Water Meter và bộ tiền xử lý cho máy điện giải.</p>
   </div>
 </section>
@@ -1186,7 +1186,7 @@ def page_products():
       <button class="tab" type="button" role="tab" data-filter="co-bo-dem" aria-selected="false">Có bộ đếm ({n_bd})</button>
       <button class="tab" type="button" role="tab" data-filter="tien-xu-ly" aria-selected="false">Bộ tiền xử lý ({n_tx})</button>
     </div>
-    <h2 class="visually-hidden">Danh sách sản phẩm BWT Barrier iMaster</h2>
+    <h2 class="visually-hidden">Danh sách sản phẩm BWT Barrier</h2>
     <div class="pgrid">{cards}</div>
   </div>
 </section>
@@ -1473,8 +1473,8 @@ def page_about():
   <div class="wrap">
     <div class="split split--rev">
       <div class="split__media">
-        <img src="assets/img/imaster-m-box.webp" width="900" height="900" loading="lazy"
-             alt="Hộp máy lọc nước BWT Barrier iMaster — Cam kết an toàn vật liệu và đồng hành dài hạn">
+        <img src="assets/img/bwt-barrier-m-box.webp" width="900" height="900" loading="lazy"
+             alt="Hộp máy lọc nước BWT Barrier — Cam kết an toàn vật liệu và đồng hành dài hạn">
       </div>
       <div class="split__body prose">
         <span class="eyebrow">Trách nhiệm &amp; Phụng sự</span>
@@ -1527,12 +1527,12 @@ def page_about():
 def page_contact():
     return (
         head("Liên hệ BWT Barrier Việt Nam — Tư vấn, lắp đặt, bảo hành",
-             "Hotline " + HOTLINE_TEXT + " — tư vấn chọn máy lọc nước BWT Barrier iMaster phù hợp "
+             "Hotline " + HOTLINE_TEXT + " — tư vấn chọn máy lọc nước BWT Barrier phù hợp "
              "với nguồn nước gia đình bạn, hỗ trợ lắp đặt và bảo hành chính hãng.",
              "lien-he.html",
              ld(ld_org(), ld_website(),
                 ld_page("lien-he.html", "Liên hệ BWT Barrier Việt Nam",
-                        "Hotline %s — tư vấn chọn máy lọc nước BWT Barrier iMaster, "
+                        "Hotline %s — tư vấn chọn máy lọc nước BWT Barrier, "
                         "lắp đặt và bảo hành." % HOTLINE_TEXT,
                         ptype="ContactPage",
                         main=abs_url("lien-he.html") + "#business"),
@@ -1590,7 +1590,7 @@ def page_contact():
     <div class="sec__head">
       <span class="eyebrow">Hệ thống phân phối</span>
       <h2>Mua hàng chính hãng ở đâu?</h2>
-      <p>Sản phẩm BWT Barrier iMaster được phân phối qua hệ thống showroom và các chuỗi bán lẻ lớn trên toàn quốc.
+      <p>Sản phẩm BWT Barrier được phân phối qua hệ thống showroom và các chuỗi bán lẻ lớn trên toàn quốc.
          Gọi hotline để nhận báo giá và được hướng dẫn tới điểm bán gần bạn nhất.</p>
     </div>
     <div class="map">
@@ -1620,11 +1620,11 @@ def page_contact():
 def page_search():
     return (
         head("Tìm kiếm — BWT Barrier Việt Nam",
-             "Tìm nhanh sản phẩm máy lọc nước và bộ tiền xử lý nước BWT Barrier iMaster.",
+             "Tìm nhanh sản phẩm máy lọc nước và bộ tiền xử lý nước BWT Barrier.",
              "tim-kiem.html",
              '<meta name="robots" content="noindex">'
              + ld(ld_org(), ld_website(),
-                  ld_page("tim-kiem.html", "Tìm kiếm", "Tìm sản phẩm BWT Barrier iMaster.",
+                  ld_page("tim-kiem.html", "Tìm kiếm", "Tìm sản phẩm BWT Barrier.",
                           ptype="SearchResultsPage",
                           has_crumb=False)))
         + topbar() + header("san-pham.html")
@@ -1634,7 +1634,7 @@ def page_search():
 <section class="phead">
   <div class="wrap">
     <h1 id="search-page-title">Tìm kiếm</h1>
-    <p>Gõ tên model (iMaster M, L, H), nhóm sản phẩm hoặc vấn đề nguồn nước bạn đang gặp.</p>
+    <p>Gõ tên model (BWT Barrier M, L, H), nhóm sản phẩm hoặc vấn đề nguồn nước bạn đang gặp.</p>
     <form class="sform" action="tim-kiem.html" method="get" role="search">
       <label class="visually-hidden" for="search-page-input">Từ khoá</label>
       <input id="search-page-input" name="q" type="search" placeholder="Ví dụ: nước cứng, có bộ đếm">
@@ -1660,7 +1660,7 @@ def page_404():
     return (
         head("Không tìm thấy trang — BWT Barrier Việt Nam",
              "Đường dẫn bạn vừa mở không tồn tại hoặc đã đổi tên. Quay lại trang chủ BWT Barrier "
-             "Việt Nam để xem máy lọc nước và bộ tiền xử lý nước iMaster chính hãng.",
+             "Việt Nam để xem máy lọc nước và bộ tiền xử lý nước BWT Barrier chính hãng.",
              "404.html", '<meta name="robots" content="noindex">')
         + topbar() + header("index.html")
         + """

@@ -1,7 +1,7 @@
 # bwtbarrier.com.vn — website tĩnh
 
 Website **Trung tâm bảo hành BWT Barrier** — tiếp nhận bảo hành, thay lõi chính hãng và
-hỗ trợ kỹ thuật cho máy lọc nước BWT Barrier iMaster.
+hỗ trợ kỹ thuật cho máy lọc nước BWT Barrier.
 Trang tĩnh: chỉ HTML + CSS + JS, không cần server, không database, không build tool ngoài Python.
 
 ---
@@ -24,14 +24,14 @@ thường sẽ trả 404. `serve.py` cũng trả đúng trang `404.html`.
 ```
 index.html                          Trang chủ
 san-pham.html                       Danh mục 8 sản phẩm + tab lọc nhóm
-may-loc-nuoc-imaster-m.html         ─┐
-may-loc-nuoc-imaster-l.html          │
-may-loc-nuoc-imaster-h.html          │
-may-loc-nuoc-imaster-m-co-bo-dem.html├─ 8 trang chi tiết sản phẩm
-may-loc-nuoc-imaster-l-co-bo-dem.html│
-may-loc-nuoc-imaster-h-co-bo-dem.html│
-bo-tien-xu-ly-imaster-ion-m.html     │
-bo-tien-xu-ly-imaster-ion-h.html    ─┘
+may-loc-nuoc-bwt-barrier-m.html         ─┐
+may-loc-nuoc-bwt-barrier-l.html          │
+may-loc-nuoc-bwt-barrier-h.html          │
+may-loc-nuoc-bwt-barrier-m-co-bo-dem.html├─ 8 trang chi tiết sản phẩm
+may-loc-nuoc-bwt-barrier-l-co-bo-dem.html│
+may-loc-nuoc-bwt-barrier-h-co-bo-dem.html│
+bo-tien-xu-ly-bwt-barrier-ion-m.html     │
+bo-tien-xu-ly-bwt-barrier-ion-h.html    ─┘
 ve-chung-toi.html                   Giới thiệu thương hiệu BWT Barrier
 lien-he.html                        Liên hệ + form đăng ký tư vấn
 tim-kiem.html                       Trang kết quả tìm kiếm
@@ -84,7 +84,7 @@ Messenger. Muốn thêm lại, khai báo hằng số mới trong `build.py` và 
 
    | Khoá | Ý nghĩa |
    |---|---|
-   | `slug` | tên file, ví dụ `may-loc-nuoc-imaster-m` → `may-loc-nuoc-imaster-m.html` |
+   | `slug` | tên file, ví dụ `may-loc-nuoc-bwt-barrier-m` → `may-loc-nuoc-bwt-barrier-m.html` |
    | `cat` | `may-loc`, `co-bo-dem` hoặc `tien-xu-ly` (dùng cho tab lọc) |
    | `price`, `price_note` | giá hiển thị và ghi chú dưới giá — hiện để `"Liên hệ"` cho mọi sản phẩm |
    | `sibling` | `(slug, nhãn)` của bản đối ứng — hiện thành ô liên kết ở trang chi tiết, để `None` nếu không có |
@@ -132,7 +132,7 @@ Rồi thêm đường dẫn `.webp` vào `images` trong `build.py` và `img` tro
 
 Tìm kiếm chạy hoàn toàn phía client trên `window.BWT_INDEX`:
 
-- không phân biệt hoa thường và **không phân biệt dấu** — gõ `nuoc cung` vẫn ra `iMaster H`;
+- không phân biệt hoa thường và **không phân biệt dấu** — gõ `nuoc cung` vẫn ra `BWT Barrier H`;
 - gợi ý dropdown ngay dưới ô tìm kiếm ở mọi trang;
 - Enter chuyển sang `tim-kiem.html?q=...` hiển thị đầy đủ kết quả.
 
@@ -227,7 +227,7 @@ Toạ độ hiện tại `10.845839,106.712965` lấy từ link rút gọn
 |---|---|
 | Trang chủ | `https://tenmien.com/` |
 | Danh mục | `https://tenmien.com/san-pham` |
-| Sản phẩm | `https://tenmien.com/may-loc-nuoc-imaster-m` |
+| Sản phẩm | `https://tenmien.com/may-loc-nuoc-bwt-barrier-m` |
 | Liên hệ | `https://tenmien.com/lien-he` |
 
 Toàn bộ link nội bộ, `canonical`, `og:url`, JSON-LD và `sitemap.xml` đều đã sinh ra ở
@@ -247,7 +247,7 @@ trước khi gửi sitemap cho Google.
 
 ## Nguồn nội dung & hình ảnh
 
-- Thông tin thương hiệu: [Dân trí — "BWT Barrier iMaster: Máy lọc nước nổi tiếng thế giới đã đến Việt Nam"](https://dantri.com.vn/doi-song/bwt-barrier-imaster-may-loc-nuoc-noi-tieng-the-gioi-da-den-viet-nam-20220225145502887.htm)
+- Thông tin thương hiệu: [Dân trí — "BWT Barrier: Máy lọc nước nổi tiếng thế giới đã đến Việt Nam"](https://dantri.com.vn/doi-song/bwt-barrier-bwt barrier-may-loc-nuoc-noi-tieng-the-gioi-da-den-viet-nam-20220225145502887.htm)
 - Thông số kỹ thuật: các trang sản phẩm trên thegioidiengiai.com (nhà phân phối)
 - Ảnh sản phẩm: tải từ CDN nhà phân phối, đã **cắt bỏ watermark và logo nhà bán lẻ**
   để dùng cho website thương hiệu.
@@ -257,18 +257,18 @@ trước khi gửi sitemap cho Google.
 - Ảnh dịch vụ `assets/img/bwt-barrier-service.jpg`: ảnh do khách hàng cung cấp.
   Bản gốc 7360x4912 (18,9 MB) được giữ ở `assets/img/_src/` — thư mục này nằm trong
   `.gitignore` nên không đẩy lên repo. Bản dùng cho web đã thu về 1500x1001, JPEG q82 (141 KB).
-- Ảnh "có bộ đếm" của iMaster M và H: ghép bộ đếm Water Meter (tách từ ảnh iMaster L)
+- Ảnh "có bộ đếm" của BWT Barrier M và H: ghép bộ đếm Water Meter (tách từ ảnh BWT Barrier L)
   cạnh cụm lõi tương ứng — **nên thay bằng ảnh chụp thật khi có**.
 
 > ⚠️ **Cần bổ sung trước khi công bố:**
 > - Thẻ `<title>` trang chủ nhắm từ khoá **"BWT Barrier Art AI Series"** nhưng site
 >   **chưa có nội dung nào về dòng Art AI**. Google khó xếp hạng cho từ khoá không có
 >   nội dung tương ứng — nên thêm một mục hoặc trang riêng về Art AI Series / Art AI Titan.
-> - Ảnh hộp sản phẩm (ion M, ion H, iMaster M) có in sẵn huy hiệu "Member of BWT Group"
+> - Ảnh hộp sản phẩm (ion M, ion H, BWT Barrier M) có in sẵn huy hiệu "Member of BWT Group"
 >   trên bao bì thật. Muốn bỏ hẳn thì phải thay bằng ảnh chụp khác, không nên sửa ảnh bao bì.
 > - Toàn bộ 8 sản phẩm đang để giá **"Liên hệ"**. Khi có bảng giá chính thức, điền
 >   `price` trong `PRODUCTS` và bật lại khối `Offer` trong `ld_product()`.
-> - Ảnh "có bộ đếm" của iMaster M và H là ảnh ghép — nên thay bằng ảnh chụp thật.
+> - Ảnh "có bộ đếm" của BWT Barrier M và H là ảnh ghép — nên thay bằng ảnh chụp thật.
 
 ---
 
