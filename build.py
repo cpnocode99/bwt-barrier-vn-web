@@ -792,6 +792,13 @@ def footer():
         </ul>
       </div>
     </div>
+    <div class="ftr__bot">
+      <span>Đối tác đồng hành:
+        <a href="https://thegioidiengiai.com/" target="_blank" rel="noopener">TGDG</a>
+        <span class="ftr__sep">-</span>
+        <a href="https://thegioiloctong.com/" target="_blank" rel="noopener">TGLT</a>
+      </span>
+    </div>
   </div>
 </footer>
 """.format(logo=logo_img(True), tel=HOTLINE_TEL, hot=HOTLINE_TEXT,

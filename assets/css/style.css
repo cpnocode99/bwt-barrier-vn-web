@@ -437,6 +437,11 @@ table.spec td{color:var(--navy);font-weight:600}
 @media(max-width:900px){.ftr__grid{grid-template-columns:1fr 1fr;gap:28px}}
 @media(max-width:560px){.ftr__grid{grid-template-columns:1fr}}
 
+.ftr__bot{border-top:1px solid rgba(255,255,255,.12);margin-top:8px;padding:18px 0 14px;font-size:.88rem;color:#96B4D6;text-align:center}
+.ftr__bot a{color:#fff;font-weight:700;letter-spacing:.02em}
+.ftr__bot a:hover{color:var(--cyan-soft);text-decoration:underline}
+.ftr__sep{margin:0 .4em;color:#5F7FA8}
+
 /* ---------- Fixed contact dock ---------- */
 .dock{position:fixed;right:18px;bottom:18px;z-index:140;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
 .dock__btn{
