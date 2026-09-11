@@ -5,6 +5,7 @@ Chạy:  python build.py
 Sửa nội dung/sản phẩm ở phần DỮ LIỆU rồi chạy lại là xong.
 """
 import io, os, re, html, json, hashlib, datetime
+from articles import ARTICLES
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -26,6 +27,7 @@ NAV = [
     ("index.html", "Trang chủ"),
     ("san-pham.html", "Sản phẩm"),
     ("ve-chung-toi.html", "Về chúng tôi"),
+    ("bai-viet.html", "Bài viết"),
     ("lien-he.html", "Liên hệ"),
 ]
 
@@ -1615,6 +1617,166 @@ def page_contact():
 
 
 # ============================================================
+# BÀI VIẾT
+# ============================================================
+def fmt_date(iso):
+    y, m, d = iso.split("-")
+    return "%s/%s/%s" % (d, m, y)
+
+
+def reading_time(html_body):
+    words = len(re.sub(r"<[^>]+>", " ", html_body).split())
+    return max(1, round(words / 220))
+
+
+def post_card(a):
+    return """<article class="post-card" data-cat="{cat}">
+  <a class="post-card__media" href="{slug}.html">
+    <img src="{cover}" alt="{alt}" loading="lazy"{dim}>
+  </a>
+  <div class="post-card__body">
+    <span class="post-card__topic">{topic}</span>
+    <h3 class="post-card__title"><a href="{slug}.html">{title}</a></h3>
+    <p class="post-card__excerpt">{excerpt}</p>
+    <div class="post-card__meta"><time datetime="{date}">{date_vi}</time> · {rt} phút đọc</div>
+  </div>
+</article>""".format(cat=a["topic"], slug=a["slug"], cover=a["cover"], alt=html.escape(a["cover_alt"]), dim=dims(a["cover"]),
+                     topic=html.escape(a["topic_label"]), title=html.escape(a["title"]),
+                     excerpt=html.escape(a["excerpt"]), date=a["date"], date_vi=fmt_date(a["date"]),
+                     rt=reading_time(a["body"]))
+
+
+def ld_article(a):
+    url = abs_url(a["slug"] + ".html")
+    return {
+        "@type": "BlogPosting",
+        "@id": url + "#article",
+        "headline": a["title"],
+        "description": a["desc"],
+        "image": abs_url(a["cover"]),
+        "datePublished": a["date"],
+        "dateModified": a["date"],
+        "inLanguage": "vi-VN",
+        "articleSection": a["topic_label"],
+        "wordCount": len(re.sub(r"<[^>]+>", " ", a["body"]).split()),
+        "author": {"@id": ORG_ID},
+        "publisher": {"@id": ORG_ID},
+        "mainEntityOfPage": {"@id": url + "#webpage"},
+        "isPartOf": {"@id": abs_url("bai-viet.html") + "#blog"},
+    }
+
+
+def page_blog():
+    cards = "".join(post_card(a) for a in ARTICLES)
+    topics = []
+    for a in ARTICLES:
+        if a["topic"] not in [t[0] for t in topics]:
+            topics.append((a["topic"], a["topic_label"]))
+    tabs = '<button class="tab" type="button" role="tab" data-filter="all" aria-selected="true">Tất cả ({})</button>'.format(len(ARTICLES))
+    for key, label in topics:
+        cnt = sum(1 for a in ARTICLES if a["topic"] == key)
+        tabs += '<button class="tab" type="button" role="tab" data-filter="{k}" aria-selected="false">{l} ({c})</button>'.format(k=key, l=html.escape(label), c=cnt)
+    blog_ld = {
+        "@type": "Blog",
+        "@id": abs_url("bai-viet.html") + "#blog",
+        "name": "Bài viết — " + SITE_NAME,
+        "url": abs_url("bai-viet.html"),
+        "publisher": {"@id": ORG_ID},
+        "blogPost": [{"@id": abs_url(a["slug"] + ".html") + "#article"} for a in ARTICLES],
+    }
+    return (
+        head("Bài viết — Kiến thức lọc nước đầu nguồn và máy lọc nước",
+             "Bài viết về lọc nước đầu nguồn, xử lý nước giếng khoan, cách chọn máy lọc nước gia đình và "
+             "chu kỳ thay lõi — từ trung tâm bảo hành BWT Barrier.",
+             "bai-viet.html",
+             ld(ld_org(), ld_website(),
+                ld_page("bai-viet.html", "Bài viết",
+                        "Kiến thức về lọc nước đầu nguồn và máy lọc nước gia đình.",
+                        ptype="CollectionPage", main=abs_url("bai-viet.html") + "#blog"),
+                ld_crumb("bai-viet.html", [("bai-viet.html", "Bài viết")]),
+                blog_ld))
+        + topbar() + header("bai-viet.html")
+        + crumb([("bai-viet.html", "Bài viết")])
+        + """
+<main id="main">
+<section class="phead">
+  <div class="wrap">
+    <h1>Bài viết</h1>
+    <p>Kiến thức thực tế về lọc nước đầu nguồn, xử lý nước giếng khoan, chọn máy lọc nước và bảo trì lõi lọc.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="tabs" role="tablist" aria-label="Lọc theo chủ đề">{tabs}</div>
+    <h2 class="visually-hidden">Danh sách bài viết</h2>
+    <div class="post-grid">{cards}</div>
+  </div>
+</section>
+
+{cta}
+</main>
+""".format(tabs=tabs, cards=cards, cta=cta_band())
+        + footer() + tail()
+    )
+
+
+def page_article(a):
+    slug_url = a["slug"] + ".html"
+    others = [x for x in ARTICLES if x["slug"] != a["slug"]][:3]
+    related = "".join(post_card(x) for x in others)
+    return (
+        head(a.get("seo_title") or a["title"], a["desc"], slug_url,
+             ld(ld_org(), ld_website(),
+                ld_page(slug_url, a["title"], a["desc"], image=a["cover"],
+                        ptype="WebPage", main=abs_url(slug_url) + "#article"),
+                ld_crumb(slug_url, [("bai-viet.html", "Bài viết"), (slug_url, a["title"])]),
+                ld_article(a)))
+        + topbar() + header("bai-viet.html")
+        + crumb([("bai-viet.html", "Bài viết"), (slug_url, a["title"])])
+        + """
+<main id="main">
+<article class="post">
+  <header class="post__head">
+    <div class="wrap wrap--narrow">
+      <span class="post__topic">{topic}</span>
+      <h1>{title}</h1>
+      <p class="post__meta">
+        <time datetime="{date}">{date_vi}</time> · {rt} phút đọc · {site}
+      </p>
+    </div>
+  </header>
+  <div class="wrap wrap--narrow">
+    <figure class="post__cover">
+      <img src="{cover}" alt="{alt}"{dim} fetchpriority="high">
+    </figure>
+    <div class="post__body prose">
+{body}
+    </div>
+  </div>
+</article>
+
+<section class="sec sec--tint">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">Đọc tiếp</span>
+      <h2>Bài viết liên quan</h2>
+    </div>
+    <div class="post-grid">{related}</div>
+  </div>
+</section>
+
+{cta}
+</main>
+""".format(topic=html.escape(a["topic_label"]), title=html.escape(a["title"]),
+           date=a["date"], date_vi=fmt_date(a["date"]), rt=reading_time(a["body"]), site=SITE_NAME,
+           cover=a["cover"], alt=html.escape(a["cover_alt"]), dim=dims(a["cover"]),
+           body=a["body"].strip(), related=related, cta=cta_band())
+        + footer() + tail()
+    )
+
+
+# ============================================================
 # TRANG TÌM KIẾM + 404
 # ============================================================
 def page_search():
@@ -1685,8 +1847,9 @@ def page_404():
 # FAVICON / SITEMAP / ROBOTS
 # ============================================================
 def sitemap():
-    urls = ["index.html", "san-pham.html", "ve-chung-toi.html", "lien-he.html"] + \
-           [p["slug"] + ".html" for p in PRODUCTS]
+    urls = ["index.html", "san-pham.html", "ve-chung-toi.html", "lien-he.html", "bai-viet.html"] + \
+           [p["slug"] + ".html" for p in PRODUCTS] + \
+           [a["slug"] + ".html" for a in ARTICLES]
     body = "".join(
         "  <url><loc>{d}/{u}</loc><lastmod>{lm}</lastmod>"
         "<changefreq>monthly</changefreq><priority>{pr}</priority></url>\n".format(
@@ -1750,6 +1913,9 @@ def main():
     write("ve-chung-toi.html", page_about())
     write("lien-he.html", page_contact())
     write("tim-kiem.html", page_search())
+    write("bai-viet.html", page_blog())
+    for a in ARTICLES:
+        write(a["slug"] + ".html", page_article(a))
     write("404.html", page_404())
     write("sitemap.xml", sitemap())
     write("robots.txt", ROBOTS)

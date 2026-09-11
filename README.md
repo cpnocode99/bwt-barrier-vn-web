@@ -128,6 +128,31 @@ Rồi thêm đường dẫn `.webp` vào `images` trong `build.py` và `img` tro
 
 ---
 
+## Bài viết
+
+Nội dung bài viết nằm trong `articles.py` (tách khỏi `build.py` cho gọn). Mỗi bài là một dict
+với `slug`, `title`, `seo_title`, `desc`, `topic`, `date`, `cover`, `excerpt`, `body` (HTML) và `keys`.
+Thêm bài mới: thêm dict vào `ARTICLES`, chuẩn bị ảnh bìa 16:9 trong `assets/img/`, thêm một mục
+vào `assets/js/search-index.js`, rồi `python build.py`. Trang danh sách `/bai-viet` và sitemap tự cập nhật.
+
+Hiện có 4 bài, 2 chủ đề:
+
+| Chủ đề | Bài | Link ra đối tác |
+|---|---|---|
+| Lọc nước đầu nguồn | `/loc-nuoc-dau-nguon-la-gi` | Thế Giới Lọc Tổng, Thế Giới Điện Giải |
+| Lọc nước đầu nguồn | `/nuoc-gieng-khoan-nhiem-phen-xu-ly-the-nao` | Thế Giới Lọc Tổng, Thế Giới Điện Giải |
+| Máy lọc nước | `/chon-may-loc-nuoc-gia-dinh-ro-nano-hay-dien-giai` | Thế Giới Điện Giải (2), Thế Giới Lọc Tổng |
+| Máy lọc nước | `/bao-lau-nen-thay-loi-may-loc-nuoc` | Thế Giới Lọc Tổng, Thế Giới Điện Giải |
+
+Link ra `thegioiloctong.com` và `thegioidiengiai.com` là **dofollow** có chủ đích (backlink cho đối tác) —
+chỉ có `target="_blank" rel="noopener"`, không `nofollow`. Mỗi bài cũng có link nội bộ về trang sản phẩm
+và trang liên hệ. Schema: `Blog` ở trang danh sách, `BlogPosting` ở từng bài, `author`/`publisher` trỏ về
+Organization.
+
+Ảnh bìa hai bài lọc đầu nguồn lấy từ Pexels (giấy phép cho phép dùng thương mại); hai bài máy lọc nước
+ghép từ ảnh sản phẩm sẵn có.
+
+---
 ## Tìm kiếm
 
 Tìm kiếm chạy hoàn toàn phía client trên `window.BWT_INDEX`:

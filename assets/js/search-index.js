@@ -99,5 +99,50 @@ window.BWT_INDEX = [
     price: "",
     img: "assets/img/voi-nuoc.webp",
     keys: "lien he hotline tu van bao hanh lap dat dai ly showroom dia chi ban do doi tra"
+  },
+  {
+    url: "/loc-nuoc-dau-nguon-la-gi",
+    type: "Bài viết",
+    title: "Lọc nước đầu nguồn là gì? Khi nào gia đình nên lắp hệ thống lọc tổng",
+    desc: "Máy lọc ở bếp chỉ xử lý nước uống. Phần còn lại — nước tắm, giặt, rửa, nước vào bình nóng lạnh — đi thẳng từ đường ống vào nhà. Lọc đầu nguồn là lớp bảo vệ cho phần đó.",
+    price: "",
+    img: "assets/img/bai-loc-nuoc-dau-nguon.webp",
+    keys: "loc nuoc dau nguon loc tong he thong loc tong cot loc cat than hoat tinh gieng khoan nuoc may cau can"
+  },
+  {
+    url: "/nuoc-gieng-khoan-nhiem-phen-xu-ly-the-nao",
+    type: "Bài viết",
+    title: "Nước giếng khoan nhiễm phèn, đá vôi: xử lý từ đầu nguồn hay lọc tại vòi?",
+    desc: "Nước giếng trong vắt lúc bơm lên nhưng để một lúc lại ngả vàng, đóng cặn, tanh mùi sắt. Đó là chuyện của cả đường ống, không riêng gì vòi uống.",
+    price: "",
+    img: "assets/img/bai-nuoc-gieng-khoan.webp",
+    keys: "nuoc gieng khoan nhiem phen sat mangan da voi nuoc cung xu ly loc tong loc dau nguon bo tien xu ly"
+  },
+  {
+    url: "/chon-may-loc-nuoc-gia-dinh-ro-nano-hay-dien-giai",
+    type: "Bài viết",
+    title: "Chọn máy lọc nước gia đình: RO, Nano hay điện giải ion kiềm?",
+    desc: "Không có máy nào hợp với mọi nhà. Câu trả lời phụ thuộc vào nguồn nước đầu vào, bạn muốn nước ra như thế nào, và sẵn sàng bỏ bao nhiêu cho điện, nước thải và lõi thay.",
+    price: "",
+    img: "assets/img/bai-chon-may-loc-nuoc.webp",
+    keys: "chon may loc nuoc gia dinh ro nano dien giai ion kiem giu khoang so sanh khong dien nuoc thai"
+  },
+  {
+    url: "/bao-lau-nen-thay-loi-may-loc-nuoc",
+    type: "Bài viết",
+    title: "Bao lâu nên thay lõi máy lọc nước? 5 dấu hiệu lõi đã hết hạn",
+    desc: "Lõi lọc là bộ phận hao mòn theo từng lít nước đi qua. Dùng quá hạn, nước ra trông vẫn trong nhưng chất lượng đã không còn như thiết kế.",
+    price: "",
+    img: "assets/img/bai-thay-loi-loc.webp",
+    keys: "thay loi may loc nuoc bao lau dau hieu loi het han chu ky thay loi tuoi tho loi bo dem water meter"
+  },
+  {
+    url: "/bai-viet",
+    type: "Trang",
+    title: "Bài viết — Kiến thức lọc nước",
+    desc: "Lọc nước đầu nguồn, nước giếng khoan, chọn máy lọc nước, thay lõi.",
+    price: "",
+    img: "assets/img/bai-loc-nuoc-dau-nguon.webp",
+    keys: "bai viet blog kien thuc loc nuoc dau nguon may loc nuoc thay loi"
   }
 ];
