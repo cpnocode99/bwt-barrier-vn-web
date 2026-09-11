@@ -139,14 +139,20 @@ Hiện có 4 bài, 2 chủ đề:
 
 | Chủ đề | Bài | Link ra đối tác |
 |---|---|---|
-| Lọc nước đầu nguồn | `/loc-nuoc-dau-nguon-la-gi` | Thế Giới Lọc Tổng, Thế Giới Điện Giải |
-| Lọc nước đầu nguồn | `/nuoc-gieng-khoan-nhiem-phen-xu-ly-the-nao` | Thế Giới Lọc Tổng, Thế Giới Điện Giải |
-| Máy lọc nước | `/chon-may-loc-nuoc-gia-dinh-ro-nano-hay-dien-giai` | Thế Giới Điện Giải (2), Thế Giới Lọc Tổng |
-| Máy lọc nước | `/bao-lau-nen-thay-loi-may-loc-nuoc` | Thế Giới Lọc Tổng, Thế Giới Điện Giải |
+| Lọc nước đầu nguồn | `/loc-nuoc-dau-nguon-la-gi` | TGDG: "máy lọc nước gia đình" · TGLT: "hệ thống lọc tổng đầu nguồn cho toàn bộ ngôi nhà" |
+| Lọc nước đầu nguồn | `/nuoc-gieng-khoan-nhiem-phen-xu-ly-the-nao` | TGDG: "máy lọc nước ion kiềm cho gia đình" · TGLT: "lắp đặt lọc tổng đầu nguồn cho nhà ở" |
+| Máy lọc nước | `/chon-may-loc-nuoc-gia-dinh-ro-nano-hay-dien-giai` | TGDG: "máy lọc nước gia đình" · TGLT: "lọc tổng đầu nguồn cho toàn bộ ngôi nhà" |
+| Máy lọc nước | `/bao-lau-nen-thay-loi-may-loc-nuoc` | TGDG: "máy lọc nước điện giải ion kiềm" · TGLT: "lắp hệ thống lọc tổng cho toàn bộ ngôi nhà" |
 
 Link ra `thegioiloctong.com` và `thegioidiengiai.com` là **dofollow** có chủ đích (backlink cho đối tác) —
-chỉ có `target="_blank" rel="noopener"`, không `nofollow`. Mỗi bài cũng có link nội bộ về trang sản phẩm
-và trang liên hệ. Schema: `Blog` ở trang danh sách, `BlogPosting` ở từng bài, `author`/`publisher` trỏ về
+chỉ có `target="_blank" rel="noopener"`, không `nofollow`. Cách đặt để không lộ liễu:
+
+- mỗi bài đúng **1 link cho mỗi đối tác**, không hơn;
+- anchor là **cụm từ khoá mô tả** ("máy lọc nước gia đình", "lọc tổng đầu nguồn cho toàn bộ ngôi nhà"…),
+  không dùng tên đối tác làm anchor và không nhắc tên đối tác trong bài;
+- link nằm trong câu thông tin, không có câu quảng cáo kiểu "đơn vị chuyên sâu, có showroom".
+
+Mỗi bài cũng có link nội bộ về trang sản phẩm và trang liên hệ. Schema: `Blog` ở trang danh sách, `BlogPosting` ở từng bài, `author`/`publisher` trỏ về
 Organization.
 
 Ảnh bìa hai bài lọc đầu nguồn lấy từ Pexels (giấy phép cho phép dùng thương mại); hai bài máy lọc nước

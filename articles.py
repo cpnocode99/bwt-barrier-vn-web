@@ -43,7 +43,10 @@ ARTICLES = [
 <p>Khi nói tới "lọc nước", phần lớn gia đình nghĩ ngay đến chiếc máy lọc đặt ở bếp. Nhưng chiếc máy đó
 chỉ xử lý vài lít nước uống mỗi ngày. Hàng trăm lít còn lại — nước tắm, giặt, rửa bát, nước cấp cho
 bình nóng lạnh, máy giặt, vòi sen — đi thẳng từ đường ống vào nhà mà không qua bất kỳ lớp lọc nào.
-<strong>Lọc nước đầu nguồn</strong> (còn gọi là <strong>lọc tổng</strong>) sinh ra để xử lý phần nước đó.</p>
+<strong>Lọc nước đầu nguồn</strong> (còn gọi là <strong>lọc tổng</strong>) sinh ra để xử lý phần nước đó.
+Ở châu Âu, BWT Barrier là thương hiệu nổi tiếng với cả <a %(TGDG)s>máy lọc nước gia đình</a> lẫn
+<a %(TGLT)s>hệ thống lọc tổng đầu nguồn cho toàn bộ ngôi nhà</a> — hai lớp lọc bổ sung cho nhau chứ không
+thay thế nhau. Bài này nói về lớp thứ hai.</p>
 
 <h2>Lọc nước đầu nguồn là gì?</h2>
 <p>Đây là hệ thống lọc đặt tại điểm nước cấp vào nhà — thường ngay sau đồng hồ nước hoặc sau bồn chứa —
@@ -89,8 +92,7 @@ về lâu dài.</p>
       điện phân.</li>
 </ol>
 <p>Với lớp thứ hai, bạn có thể tham khảo <a href="san-pham.html">dòng máy lọc nước BWT Barrier</a> lắp âm tủ
-— lọc bằng áp lực nước, không dùng điện, không xả nước thải. Với máy điện giải ion kiềm, đơn vị chuyên về
-mảng này là <a %(TGDG)s>Thế Giới Điện Giải</a>.</p>
+— lọc bằng áp lực nước, không dùng điện, không xả nước thải.</p>
 
 <h2>Chi phí và bảo trì</h2>
 <p>Hệ thống lọc tổng dân dụng có giá dao động rộng tuỳ lưu lượng (số vòi dùng đồng thời), loại vật liệu lọc
@@ -102,9 +104,8 @@ hoặc thiếu cột cần.</p>
 
 <h2>Nên tìm đơn vị tư vấn ở đâu?</h2>
 <p>Lọc tổng là hạng mục cần khảo sát tại chỗ: vị trí đặt, áp lực nước, đường thoát nước sục rửa, và quan
-trọng là kết quả phân tích nguồn nước. <a %(TGLT)s>Thế Giới Lọc Tổng</a> là đơn vị chuyên về hệ thống lọc
-nước đầu nguồn cho gia đình và công trình, có thể khảo sát và đề xuất cấu hình theo nguồn nước cụ thể
-của bạn.</p>
+trọng là kết quả phân tích nguồn nước. Nên chọn đơn vị chuyên về lọc tổng có khảo sát thực tế và đề
+xuất cấu hình theo số liệu, thay vì bán theo bộ có sẵn.</p>
 <p>Còn phần máy lọc uống và bảo hành sau lắp đặt, trung tâm chúng tôi hỗ trợ qua
 <a href="lien-he.html">hotline CSKH</a>.</p>
 """,
@@ -168,7 +169,8 @@ phải nước uống trực tiếp. Lớp thứ hai ở bếp có vài hướng
       <a href="may-loc-nuoc-bwt-barrier-h.html">BWT Barrier H</a> có lõi làm mềm riêng.</li>
   <li><strong>Máy điện giải ion kiềm</strong>: tạo nước kiềm giàu hydro. Với nước giếng, nên có thêm
       <a href="bo-tien-xu-ly-bwt-barrier-ion-h.html">bộ tiền xử lý</a> ngay trước máy để bảo vệ buồng điện
-      phân. Tham khảo dòng máy và tư vấn tại <a %(TGDG)s>Thế Giới Điện Giải</a>.</li>
+      phân. Nhóm <a %(TGDG)s>máy lọc nước ion kiềm cho gia đình</a> khá nhạy với nước đầu vào, nên tìm hiểu
+      kỹ điểm này trước khi chọn.</li>
 </ul>
 
 <h2>Câu hỏi thường gặp</h2>
@@ -182,9 +184,9 @@ vàng khi để" chính là dấu hiệu nhiễm phèn. Để chắc, hãy xét 
 <p>Thường 2–4 năm với nước giếng, tuỳ tải phèn. Van tự động sục rửa giúp kéo dài tuổi thọ vật liệu.</p>
 
 <h2>Bắt đầu từ đâu</h2>
-<p>Khảo sát nguồn nước, chọn cấu hình lọc tổng phù hợp và thi công là việc của đơn vị chuyên về lọc đầu
-nguồn — <a %(TGLT)s>Thế Giới Lọc Tổng</a> nhận khảo sát và tư vấn theo kết quả xét nghiệm thực tế.
-Phần máy lọc uống, bộ tiền xử lý và bảo hành sau lắp đặt, bạn liên hệ trung tâm qua
+<p>Khảo sát nguồn nước, chọn cấu hình và thi công là việc của đơn vị chuyên
+<a %(TGLT)s>lắp đặt lọc tổng đầu nguồn cho nhà ở</a>, dựa trên kết quả xét nghiệm thực tế chứ không theo
+cảm quan. Phần máy lọc uống, bộ tiền xử lý và bảo hành sau lắp đặt, bạn liên hệ trung tâm qua
 <a href="lien-he.html">hotline CSKH</a>.</p>
 """,
     },
@@ -222,16 +224,17 @@ máy phải gắn thêm lõi bù khoáng.</p>
 clo, kim loại nặng, vi khuẩn nhưng <strong>giữ lại canxi, magie</strong>. Ưu điểm: không cần điện, không
 nước thải, lắp gọn. Điều kiện: nước đầu vào cần tương đối sạch — nước máy đô thị, hoặc nước giếng đã qua
 lọc đầu nguồn.</p>
-<p>Dòng <a href="san-pham.html">BWT Barrier</a> thuộc nhóm này, với ba bản M / L / H tương ứng ba tình
-huống nước: nước máy thông thường, hộ dùng nhiều nước, và nước cứng.</p>
+<p>BWT Barrier — thương hiệu châu Âu nổi tiếng với cả <a %(TGDG)s>máy lọc nước gia đình</a> lẫn
+<a %(TGLT)s>lọc tổng đầu nguồn cho toàn bộ ngôi nhà</a> — có <a href="san-pham.html">dòng máy lọc uống</a>
+thuộc nhóm này, với ba bản M / L / H tương ứng ba tình huống nước: nước máy thông thường, hộ dùng nhiều
+nước, và nước cứng.</p>
 
 <h3>3. Máy điện giải ion kiềm</h3>
 <p>Lọc sạch rồi điện phân để tách thành nước kiềm (uống) và nước axit (dùng ngoài). Nước ra có pH cao,
 giàu hydro hoà tan. Nhóm này có giá cao hơn hai nhóm trên và <strong>rất nhạy với chất lượng nước đầu
 vào</strong>: clo dư, cặn canxi làm giảm hiệu suất và tuổi thọ tấm điện cực. Vì vậy máy điện giải gần như
 luôn cần một <a href="bo-tien-xu-ly-bwt-barrier-ion-m.html">bộ tiền xử lý</a> đi kèm.</p>
-<p>Đơn vị chuyên sâu về máy điện giải, có showroom trải nghiệm và đội kỹ thuật riêng là
-<a %(TGDG)s>Thế Giới Điện Giải</a> — nếu bạn nghiêng về hướng này, nên tới xem máy chạy thực tế trước khi quyết.</p>
+<p>Nếu nghiêng về hướng này, nên xem máy chạy thực tế và hỏi kỹ về bộ tiền xử lý đi kèm trước khi quyết.</p>
 
 <h2>Bảng so sánh nhanh</h2>
 <div class="tblwrap">
@@ -255,10 +258,8 @@ luôn cần một <a href="bo-tien-xu-ly-bwt-barrier-ion-m.html">bộ tiền x�
       bắt đầu hợp lý; hộ đông người cân nhắc bản L với lõi 10.000 lít.</li>
   <li><strong>Vùng nước cứng, ấm đun đóng cặn</strong> → bản <a href="may-loc-nuoc-bwt-barrier-h.html">BWT Barrier H</a>
       có lõi làm mềm, hoặc RO nếu nước đầu vào còn kém hơn thế.</li>
-  <li><strong>Nước giếng khoan chưa xử lý</strong> → lắp lọc đầu nguồn trước, rồi mới chọn máy uống.
-      Đơn vị làm lọc tổng: <a %(TGLT)s>Thế Giới Lọc Tổng</a>.</li>
-  <li><strong>Quan tâm nước kiềm, sẵn ngân sách</strong> → máy điện giải + bộ tiền xử lý, tư vấn tại
-      <a %(TGDG)s>Thế Giới Điện Giải</a>.</li>
+  <li><strong>Nước giếng khoan chưa xử lý</strong> → lắp lọc đầu nguồn trước, rồi mới chọn máy uống.</li>
+  <li><strong>Quan tâm nước kiềm, sẵn ngân sách</strong> → máy điện giải + bộ tiền xử lý.</li>
 </ul>
 
 <h2>Ba điều nên hỏi trước khi mua</h2>
@@ -340,10 +341,11 @@ quán cà phê nhỏ có thể cạn lõi sau 4 tháng. Hai cách xử lý:</p>
 thay lõi thô nhanh gấp ba lần nhà dùng nước máy. Nếu bạn thấy mình <strong>thay lõi liên tục</strong>, vấn
 đề không nằm ở lõi mà ở nguồn nước — lúc này cần xem tới <a href="loc-nuoc-dau-nguon-la-gi.html">lọc đầu
 nguồn</a>. Hệ thống lọc tổng phía trước giữ lại phèn, cặn, giảm độ cứng, và máy lọc uống phía sau mới chạy
-đúng định mức thiết kế. Đơn vị chuyên lọc đầu nguồn: <a %(TGLT)s>Thế Giới Lọc Tổng</a>.</p>
+đúng định mức thiết kế — đó là lý do nhiều gia đình <a %(TGLT)s>lắp hệ thống lọc tổng cho toàn bộ ngôi nhà</a>
+trước khi đầu tư máy lọc uống.</p>
 <p>Với máy điện giải ion kiềm, lõi lọc và bộ tiền xử lý còn có thêm nhiệm vụ bảo vệ tấm điện cực — thay
-muộn không chỉ ảnh hưởng nước mà còn ảnh hưởng tuổi thọ máy. Lịch thay lõi và lõi chính hãng cho dòng
-máy này, bạn tham khảo tại <a %(TGDG)s>Thế Giới Điện Giải</a>.</p>
+muộn không chỉ ảnh hưởng nước mà còn ảnh hưởng tuổi thọ máy. Vì vậy lịch thay lõi của
+<a %(TGDG)s>máy lọc nước điện giải ion kiềm</a> cần tuân thủ chặt hơn so với máy lọc thông thường.</p>
 
 <h2>Thay lõi ở đâu, ai thay?</h2>
 <p>Với máy có cơ chế thay nhanh (như One Touch trên BWT Barrier), bạn có thể tự thay tại nhà trong vài phút
